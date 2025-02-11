@@ -1,8 +1,9 @@
 import { NavLink, Outlet } from "react-router-dom";
+import { motion } from "motion/react";
 
 const Layout = () => {
   return (
-    <>
+    <motion.div className="layout" whileHover={{ scale: 1.1 }}>
       <header>
         <nav>
           <ul>
@@ -19,7 +20,7 @@ const Layout = () => {
         <Outlet />
       </main>
       <footer>Footer content</footer>
-    </>
+    </motion.div>
   );
 };
 

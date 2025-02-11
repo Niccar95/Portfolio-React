@@ -1,21 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap');
 
+
+
+:root {
+  font-family: "Atkinson Hyperlegible Mono", serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: rgb(22, 22, 22);
+  color: white;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Atkinson Hyperlegible Mono", serif;
+}
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: white;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #f29b53;
+  text-decoration: underline;
 }
 
 body {
-  margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 100vh;
 }
+
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 100vh;
+}
+
+
+main {
+  flex: 1;
+}
+
 
 h1 {
   font-size: 3.2em;
@@ -39,4 +73,23 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 1rem 0 0;
+}
+
+footer {
+  height: 100px;
 }
