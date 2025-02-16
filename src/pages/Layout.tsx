@@ -3,24 +3,38 @@ import { motion } from "motion/react";
 
 const Layout = () => {
   return (
-    <motion.div className="layout" whileHover={{ scale: 1.1 }}>
+    <div className="layout">
       <header>
         <nav>
           <ul>
-            <li>
+            <motion.li whileHover={{ scale: 1.3 }}>
               <NavLink to={"/"}>Home</NavLink>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li whileHover={{ scale: 1.3 }}>
+              <NavLink to={"/projects"}>Projects</NavLink>
+            </motion.li>
+
+            <motion.li whileHover={{ scale: 1.3 }}>
+              <NavLink to={"/contact"}>Contact</NavLink>
+            </motion.li>
+
+            <motion.li whileHover={{ scale: 1.3 }}>
               <NavLink to={"/about"}>About</NavLink>
-            </li>
+            </motion.li>
           </ul>
         </nav>
       </header>
       <main>
         <Outlet />
       </main>
-      <footer>Footer content</footer>
-    </motion.div>
+      <footer>
+        <p>Let’s Connect</p>
+        <ul>
+          <li>Linkedin</li>
+          <li>Github</li>
+        </ul>
+      </footer>
+    </div>
   );
 };
 

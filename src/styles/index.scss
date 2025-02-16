@@ -47,6 +47,9 @@ body {
 
 
 main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 1;
 }
 
@@ -87,9 +90,39 @@ ul {
   gap: 2rem;
   list-style: none;
   padding: 0;
-  margin: 0 1rem 0 0;
+  margin: 0;
 }
 
 footer {
   height: 100px;
 }
+
+
+.heroSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: #1c1c1c;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  width: 50%;
+  
+  .avatarImageContainer {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  
+    .avatarImage {    
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+  .introductionText {
+    width: 50%;
+  }
+}
+
+
