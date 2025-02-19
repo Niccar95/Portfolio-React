@@ -14,6 +14,7 @@
   margin: 0;
   padding: 0;
   font-family: "Atkinson Hyperlegible Mono", serif;
+  color: whitesmoke;
 }
 
 a {
@@ -100,7 +101,7 @@ ul {
 }
 
 footer {
-  height: 100px;
+  padding: 2rem;
 }
 
 
@@ -140,6 +141,13 @@ footer {
    margin-right: 8px;
  }
 
+ .bi-box-arrow-up-right {
+  font-size: 25px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+ }
+
  .socialLinkSection {
   display: flex; 
   flex-direction: column;
@@ -149,8 +157,9 @@ footer {
 
  .listContainer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(2, 550px);
+  grid-template-rows: repeat(3, 350px);
+  gap: 2rem;
  
  }
 
