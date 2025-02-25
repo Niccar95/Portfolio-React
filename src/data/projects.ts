@@ -20,7 +20,7 @@ export const projects: Project[] = [
     "PokeSearch",
     "A nerdy little game that tests your knowledge of classic Pokemon. My first ever project created entirely on vanilla Javascript.",
     "https://niccar95.github.io/PokeSearch/",
-    ""
+    "/pokeSearch.png"
   ),
   new Project(
     4,
@@ -33,8 +33,8 @@ export const projects: Project[] = [
     5,
     "The Zoo",
     "My last individual school project in React. A fictional zoo website with different animals that need to be fed.",
-    "https://niccar95.github.io/To-Do-List-2.0/",
-    ""
+    "https://react-the-zoo-niccar95.vercel.app/",
+    "/theZoo.png"
   ),
   new Project(
     6,

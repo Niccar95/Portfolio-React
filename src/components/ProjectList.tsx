@@ -29,6 +29,7 @@ export const ProjectList = ({ projects }: IProjects) => {
               <h2>{project.title}</h2>
               <p>{project.description}</p>
             </div>
+            <section className="stackContainer"></section>
           </motion.article>
         );
       })}
