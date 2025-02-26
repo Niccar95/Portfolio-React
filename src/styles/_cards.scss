@@ -6,7 +6,10 @@
     background-color: #1c1c1c;
     border-radius: 2rem;
     padding: 2rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
     cursor: pointer;
+
 
     &:hover {
         background-color: #212121; 
@@ -41,12 +44,15 @@
     }
     .stackContainer {
         position: absolute;
-        padding: 1em;
+        display: flex;
+        gap: 1em;
+        padding: 0 1em;
+        background-color: whitesmoke;
         height: 50px;
         bottom: 0;
-        right: 2em;
-        left: 2em;
-        z-index: 5;
+        right: 0;
+        left: 0;
+        z-index: 2;
        }
       
 }

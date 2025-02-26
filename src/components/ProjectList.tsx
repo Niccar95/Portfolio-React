@@ -1,6 +1,7 @@
 import { Project } from "../models/Project";
 import { motion } from "motion/react";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import StackIcon from "tech-stack-icons";
 
 interface IProjects {
   projects: Project[];
@@ -29,7 +30,15 @@ export const ProjectList = ({ projects }: IProjects) => {
               <h2>{project.title}</h2>
               <p>{project.description}</p>
             </div>
-            <section className="stackContainer"></section>
+            <section className="stackContainer">
+              {project.stacks.map((stack, index) => (
+                <StackIcon
+                  key={index}
+                  name={stack.name}
+                  className="stackIcon"
+                />
+              ))}
+            </section>
           </motion.article>
         );
       })}
