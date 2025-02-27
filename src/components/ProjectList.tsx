@@ -2,7 +2,6 @@ import { Project } from "../models/Project";
 import { motion } from "motion/react";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import StackIcon from "tech-stack-icons";
-
 interface IProjects {
   projects: Project[];
 }

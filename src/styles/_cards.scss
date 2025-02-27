@@ -1,20 +1,26 @@
 .projectCard {
     position: relative;
     display: flex;
-    align-items: center;
     gap: 2rem;
     background-color: #1c1c1c;
     border-radius: 2rem;
     padding: 2rem;
     overflow-x: hidden;
     overflow-y: hidden;
+    height: 350px;
     cursor: pointer;
-
 
     &:hover {
         background-color: #212121; 
     }
 
+ .bi-box-arrow-up-right {
+    font-size: 25px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+   }
+  
     .projectImageContainer {
         width: 50%;
         height: 70%;
