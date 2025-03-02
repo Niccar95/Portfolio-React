@@ -62,3 +62,23 @@
        }
       
 }
+
+
+
+.skillsCard {
+    width: 50%;
+    background-color: #1c1c1c;
+    border-radius: 2rem;
+    padding: 2rem;
+    
+    .stackLabel {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .stackIconsWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}

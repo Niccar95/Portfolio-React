@@ -8,14 +8,14 @@ export const projects: Project[] = [
     "https://tinysaves.vercel.app/",
     "/tinySaves.png",
     [
-      { name: "nextjs" },
-      { name: "typescript" },
-      { name: "nodejs" },
-      { name: "json" },
-      { name: "prisma" },
-      { name: "mongodb" },
-      { name: "sass" },
-      { name: "npm" },
+      { name: "ci ci-nextjs-light" },
+      { name: "ci ci-typescript" },
+      { name: "ci ci-sass" },
+      { name: "ci ci-json" },
+      { name: "ci ci-npm" },
+      { name: "ci ci-nodejs" },
+      { name: "ci ci-prisma" },
+      { name: "ci ci-mongodb2" },
     ]
   ),
   new Project(
@@ -25,11 +25,11 @@ export const projects: Project[] = [
     "https://niccar95.github.io/vue-tic-tac-toe-Niccar95/",
     "/tic-tac-toe.png",
     [
-      { name: "vuejs" },
-      { name: "typescript" },
-      { name: "sass" },
-      { name: "npm" },
-      { name: "vitejs" },
+      { name: "ci ci-vuejs" },
+      { name: "ci ci-typescript" },
+      { name: "ci ci-sass" },
+      { name: "ci ci-npm" },
+      { name: "ci ci-vitejs" },
     ]
   ),
   new Project(
@@ -39,11 +39,11 @@ export const projects: Project[] = [
     "https://niccar95.github.io/PokeSearch/",
     "/pokeSearch.png",
     [
-      { name: "js" },
-      { name: "json" },
-      { name: "sass" },
-      { name: "npm" },
-      { name: "vitejs" },
+      { name: "ci ci-javascript" },
+      { name: "ci ci-sass" },
+      { name: "ci ci-json" },
+      { name: "ci ci-npm" },
+      { name: "ci ci-vitejs" },
     ]
   ),
   new Project(
@@ -52,7 +52,12 @@ export const projects: Project[] = [
     "Just a simple To-do list I made with vanilla Javascript.",
     "https://niccar95.github.io/To-Do-List-2.0/",
     "/to-do.png",
-    [{ name: "js" }, { name: "sass" }, { name: "vitejs" }, { name: "npm" }]
+    [
+      { name: "ci ci-javascript" },
+      { name: "ci ci-sass" },
+      { name: "ci ci-npm" },
+      { name: "ci ci-vitejs" },
+    ]
   ),
   new Project(
     5,
@@ -61,12 +66,12 @@ export const projects: Project[] = [
     "https://react-the-zoo-niccar95.vercel.app/",
     "/theZoo.png",
     [
-      { name: "reactjs" },
-      { name: "typescript" },
-      { name: "sass" },
-      { name: "vitejs" },
-      { name: "json" },
-      { name: "npm" },
+      { name: "ci ci-react" },
+      { name: "ci ci-typescript" },
+      { name: "ci ci-sass" },
+      { name: "ci ci-vitejs" },
+      { name: "ci ci-json" },
+      { name: "ci ci-npm" },
     ]
   ),
   new Project(
@@ -76,12 +81,12 @@ export const projects: Project[] = [
     "https://niccar95.github.io/EmployeeSite/",
     "/employeeSite.png",
     [
-      { name: "vuejs" },
-      { name: "typescript" },
-      { name: "sass" },
-      { name: "vitejs" },
-      { name: "json" },
-      { name: "npm" },
+      { name: "ci ci-vuejs" },
+      { name: "ci ci-typescript" },
+      { name: "ci ci-sass" },
+      { name: "ci ci-vitejs" },
+      { name: "ci ci-json" },
+      { name: "ci ci-npm" },
     ]
   ),
 ];
