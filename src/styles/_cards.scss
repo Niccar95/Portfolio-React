@@ -1,3 +1,5 @@
+@use "/src/styles/breakpoints" as *;
+
 .projectCard {
     position: relative;
     display: flex;
@@ -66,10 +68,14 @@
 
 
 .skillsCard {
-    width: 50%;
+    width: 100%;
     background-color: #1c1c1c;
     border-radius: 2rem;
     padding: 2rem;
+    
+    @include desktop() {
+        width: 50%;
+    }
     
     .stackLabel {
         text-align: center;
@@ -85,9 +91,18 @@
 
 
 .formCard {
-    width: 30%;
+    width: 100%;
     background-color: #1c1c1c;
     border-radius: 2rem;
-    padding: 2rem
+    padding: 2rem;
+    
+    @include desktop() {
+        align-self: center;
+        width: 40%;
+    }
+
+    .contactHeading {
+        margin-bottom: 2rem;
+    }
 
 }

@@ -29,7 +29,7 @@ const Layout = () => {
       <footer>
         <section className="socialLinkSection">
           <h3>Let’s Connect:</h3>
-          <ul>
+          <ul className="socialLinklist">
             <motion.li whileHover={{ scale: 1.3 }}>
               <NavLink to={"https://github.com/Niccar95"} target="_blank">
                 <i className="bi bi-github"></i>
