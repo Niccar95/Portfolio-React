@@ -1,0 +1,43 @@
+@use "breakpoints" as *;
+
+.skillSectionWrapper {
+
+    @include desktop() {
+        flex-direction: row;
+    }
+}
+
+.langSkillsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+
+    .languageItem {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #f4f4f4;
+      border-radius: 5px;
+      
+      .skillName {
+        font-size: 18px;
+        color: #333;
+        margin-right: 15px;
+    }
+    .languageBar {
+        width: 100%;
+        height: 10px;
+        background: linear-gradient(90deg, #00b894, #1dd1a1); 
+        border-radius: 5px;
+    }
+    
+    .percentage {
+        font-size: 14px;
+        color: #333;
+        margin-left: 10px;
+    }
+}
+}
+  
