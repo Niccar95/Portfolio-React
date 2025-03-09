@@ -43,7 +43,7 @@ const Projects = () => {
     <>
       <section className="content">
         <h1>My Projects</h1>
-        <div className="listContainer">
+        <div className="projectsContainer">
           <ProjectList projects={currentProjects} />
         </div>
         <Pagination

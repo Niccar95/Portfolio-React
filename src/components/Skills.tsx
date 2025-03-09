@@ -30,7 +30,11 @@ const Skills = ({ stackList }: ISkillProps) => {
           <h2 className="stackLabel">My Stack</h2>
           <div className="stackIconsWrapper">
             {stackList.map((stack) => (
-              <i key={stack.id} className={`${stack.name} ${iconSize}`}></i>
+              <i
+                key={stack.id}
+                className={`${stack.name} ${iconSize}`}
+                title={stack.name}
+              ></i>
             ))}
           </div>
         </article>

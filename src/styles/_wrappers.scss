@@ -1,16 +1,24 @@
 @use "breakpoints" as *;
 
 .skillSectionWrapper {
-
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
     @include desktop() {
-        flex-direction: row;
+     flex-direction: row;
     }
-}
+   }
+  
 
 .langSkillsWrapper {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1rem;
+
+     @include desktop() {
+        gap: 1.5rem;
+    }
 
 
     .languageItem {

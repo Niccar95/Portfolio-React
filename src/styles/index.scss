@@ -28,13 +28,16 @@ a:hover {
   text-decoration: underline;
 }
 
+h1 {
+  font-size: 25px;
+  line-height: 1.1;
+}
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;     
 }
 
 
@@ -60,11 +63,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-
-  scroll-snap-align: start; 
    
-
-
   @include desktop() {
     padding: 2rem;
     justify-content: start;
@@ -72,11 +71,6 @@ main {
   }
 }
   
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
 button {
   border-radius: 8px;
   border: 2px solid transparent;
@@ -232,25 +226,15 @@ footer {
   }
 }
 
- .listContainer {
+ .projectsContainer {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  gap: 2.5rem;
 
   @include desktop() {
       grid-template-columns: repeat(2, 550px);
       gap: 2.5rem;
     }
- }
-
-
- .skillSectionWrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  
-  @include desktop() {
-    align-items: center;
-  }
  }
 
 

@@ -16,6 +16,7 @@ export const projects: Project[] = [
       { name: "ci ci-nodejs" },
       { name: "ci ci-prisma" },
       { name: "ci ci-mongodb2" },
+      { name: "ci ci-jest" },
     ]
   ),
   new Project(
