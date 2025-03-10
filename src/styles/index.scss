@@ -33,6 +33,21 @@ h1 {
   line-height: 1.1;
 }
 
+.logoContainer {
+  display: none;
+  position: absolute;
+  left: 0;
+  height: 80px;
+  width: 350px;
+
+  .logo {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+
 body {
   display: flex;
   flex-direction: column;
@@ -67,6 +82,7 @@ main {
   @include desktop() {
     padding: 2rem;
     justify-content: start;
+    gap: 5rem;
 
   }
 }
@@ -110,7 +126,7 @@ button:active {
 nav {
   background-color: rgb(22, 22, 22);
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   width: 100%;
   display: flex;
   align-items: center;
@@ -175,32 +191,58 @@ footer {
   flex-direction: column-reverse;
   gap: 1rem;
   width: 100%;
+
   
   @include desktop() {
     margin-top: 20px;
     flex-direction:row;
+    justify-content: center;
     gap: 2rem;
-    width: 50%;
+    width: 70%;
   }
   
   .avatarImageContainer {
+    position: relative;
     width: 200px;
     height: 200px;
   
-   
     @include desktop() {
       width: 250px;
       height: 250px;
       border-radius: 50%;
     }
-    .avatarImage {  
-      border-radius: 50%;  
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      
+  
+    // Add two circles behind the avatar container
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 180px; /* Adjust size as needed */
+      height: 180px;
+      border-radius: 50%;
+      z-index: -1;
+      transform: translate(-50%, -50%); /* Centering the circles */
+    }
+  
+    &:before {
+      background-color: #FF6347; /* First color */
+      left: 40%; /* Slightly shifted left */
+    }
+  
+    &:after {
+      background-color: #4CAF50; /* Second color */
+      left: 60%; /* Slightly shifted right */
     }
   }
+  
+  .avatarImage {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
   .introductionContainer {
     width: 100%;
 
@@ -209,7 +251,7 @@ footer {
     }
 
     .introHeading {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
 
       .nameLabel {
         color: #ff8a00;
@@ -218,10 +260,6 @@ footer {
     }
     .introduction {
       margin-bottom: 2rem;
-    }
-
-    .learnMoreButton {
-      width: 100%;
     }
   }
 }
@@ -232,7 +270,7 @@ footer {
   gap: 2.5rem;
 
   @include desktop() {
-      grid-template-columns: repeat(2, 550px);
+      grid-template-columns: repeat(2, 1fr);
       gap: 2.5rem;
     }
  }

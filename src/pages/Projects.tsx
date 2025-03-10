@@ -5,7 +5,7 @@ import { projects } from "../data/projects";
 import { Pagination } from "../components/Pagination";
 
 const Projects = () => {
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState<number>(1);
   const [projectList] = useState<Project[]>(projects);
   const totalProjects = projectList.length;
   const projectsPerPage = 4;
@@ -21,10 +21,9 @@ const Projects = () => {
   const handlePageChange = (page: number) => {
     if (page >= 1 && page <= totalPages) {
       setCurrentPage(page);
-      window.scroll({
-        top: 0,
-        behavior: "smooth",
-      });
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }, 0);
     }
   };
 

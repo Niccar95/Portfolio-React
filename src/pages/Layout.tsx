@@ -1,12 +1,16 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { motion } from "motion/react";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import logo from "/logo.svg";
 
 const Layout = () => {
   return (
     <div className="layout">
       <header>
         <nav>
+          <div className="logoContainer">
+            <img className="logo" src={logo} alt="logo"></img>
+          </div>
           <ul>
             <motion.li whileHover={{ scale: 1.3 }}>
               <NavLink to={"/"}>Home</NavLink>

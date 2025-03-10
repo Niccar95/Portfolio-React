@@ -20,7 +20,7 @@ const Home = () => {
               efficient user interfaces. Always exploring new technologies, I
               focus on creating seamless digital experiences.
             </p>
-            <button className="learnMoreButton">
+            <button>
               Get my CV
               <i className="bi bi-download"></i>
             </button>

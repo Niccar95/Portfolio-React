@@ -16,8 +16,9 @@ export const stacks = [
   { id: 15, name: "ci ci-github-light" },
   { id: 16, name: "ci ci-vscode" },
   { id: 17, name: "ci ci-figma" },
-  { id: 18, name: "ci ci-postman" },
-  { id: 19, name: "ci ci-sanity" },
-  { id: 20, name: "ci ci-jest" },
-  { id: 21, name: "ci ci-cypress-horizontal-light" },
+  { id: 18, name: "ci ci-trello" },
+  { id: 19, name: "ci ci-postman" },
+  { id: 20, name: "ci ci-sanity" },
+  { id: 21, name: "ci ci-jest" },
+  { id: 22, name: "ci ci-cypress-horizontal-light" },
 ];
