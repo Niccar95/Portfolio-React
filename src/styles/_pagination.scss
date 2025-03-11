@@ -1,7 +1,18 @@
+@use "/src/styles/breakpoints" as *;
+
 .pagination {
     margin-top: 40px;
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 1em;
+
+
+    .paginationButton {
+        padding: 0.8rem 1rem;
+
+        @include desktop() {
+            padding: 0.8rem 1.5rem;
+        }
+    }
 }

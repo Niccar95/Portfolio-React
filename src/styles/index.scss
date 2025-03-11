@@ -34,11 +34,17 @@ h1 {
 }
 
 .logoContainer {
-  display: none;
   position: absolute;
   left: 0;
   height: 80px;
-  width: 350px;
+  width: 250px;
+  
+  @include desktop() {
+    height: 80px;
+    width: 350px;
+  }
+
+
 
   .logo {
     object-fit: cover;
@@ -102,7 +108,6 @@ button {
   position: relative;
   overflow: hidden;
   border-image: linear-gradient(to right, #ff8a00, #e52e71) 1;
-  
 }
 
 button:hover {
@@ -121,8 +126,6 @@ button:active {
   border-color: #e52e71;
 }
 
-
-
 nav {
   background-color: rgb(22, 22, 22);
   position: fixed;
@@ -134,30 +137,95 @@ nav {
   height: 100px;
   border-bottom: solid;
   border-image: linear-gradient(to right, #ff8a00, #e52e71) 1;
-  
+  justify-content: flex-end;
+
+  .hamburgerMenu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .mobileMenu {
+    position: absolute;
+    top: 100px;
+    right: -200px;
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    z-index: 999;
+    transition: right 0.4s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s;
+    opacity: 0;
+    visibility: hidden; 
+
+    &.visible {
+      right: 0;
+      opacity: 1;
+      visibility: visible;
+      border-bottom: solid;
+      border-image: linear-gradient(to right, #ff8a00, #e52e71) 1;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      text-align: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      border-image: linear-gradient(to right, #ff8a00, #e52e71) 1;
+    }
+  }
+
+  .desktopMenu {
+    display: none;
+  }
+
   @include desktop() {
-    justify-content: flex-end;
+    .hamburgerMenu {
+      display: none;
+    }
+
+    .mobileMenu {
+      display: none; 
+    }
+
+    .desktopMenu {
+      display: flex;
+      position: unset;
+      flex-direction: row;
+      background: none;
+      width: unset;
+      padding: 0;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        width: unset;
+        gap: 2rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+    }
   }
 }
 
-ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  
-  @include desktop() {
-    width: unset;
-    gap: 2rem; 
-    }
-}
-
 footer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
   padding: 2rem;
   border-top: solid;
   border-image: linear-gradient(to right, #ff8a00, #e52e71) 1;
+  font-size: 14px;
+  
+  @include desktop() {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    }
+  
 
   .socialLinkSection {
     display: flex; 
@@ -168,6 +236,8 @@ footer {
       display: flex;
       justify-content: flex-start;
       gap: 2rem;
+      list-style: none;
+
 
       @include desktop() {
         gap: 3rem; 
@@ -188,7 +258,7 @@ footer {
 .heroSection {
   margin-top: 20px;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   gap: 1rem;
   width: 100%;
 
@@ -212,35 +282,34 @@ footer {
       border-radius: 50%;
     }
   
-    // Add two circles behind the avatar container
     &:before, &:after {
       content: '';
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 180px; /* Adjust size as needed */
+      width: 180px; 
       height: 180px;
       border-radius: 50%;
       z-index: -1;
-      transform: translate(-50%, -50%); /* Centering the circles */
+      transform: translate(-50%, -50%); 
     }
   
     &:before {
-      background-color: #FF6347; /* First color */
-      left: 40%; /* Slightly shifted left */
+      background-color: #FF6347; 
+      left: 40%; 
     }
   
     &:after {
-      background-color: #4CAF50; /* Second color */
-      left: 60%; /* Slightly shifted right */
+      background-color: #4CAF50; 
+      left: 60%; 
     }
-  }
-  
-  .avatarImage {
-    border-radius: 50%;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+    .avatarImage {
+      border-radius: 50%;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    
   }
   
   .introductionContainer {

@@ -9,6 +9,9 @@ const Home = () => {
     <>
       <section className="content">
         <section className="heroSection">
+          <div className="avatarImageContainer">
+            <img className="avatarImage" src="/myPic.jpg" alt="My image"></img>
+          </div>
           <div className="introductionContainer">
             <h2 className="introHeading">
               {" "}
@@ -24,9 +27,6 @@ const Home = () => {
               Get my CV
               <i className="bi bi-download"></i>
             </button>
-          </div>
-          <div className="avatarImageContainer">
-            <img className="avatarImage" src="/myPic.jpg" alt="My image"></img>
           </div>
         </section>
         <Skills stackList={stackList} />
