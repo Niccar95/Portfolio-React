@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import { useState } from "react";
 import { Project } from "../models/Project";
 
@@ -14,7 +13,7 @@ const ProjectCard = ({ project }: IProjectProps) => {
   };
 
   return (
-    <motion.article
+    <article
       className={`projectCard ${isExpanded ? "expanded" : ""}`}
       key={project.id}
     >
@@ -51,7 +50,7 @@ const ProjectCard = ({ project }: IProjectProps) => {
           <i key={index} className={`${stack.name} ci-lg`}></i>
         ))}
       </section>
-    </motion.article>
+    </article>
   );
 };
 
