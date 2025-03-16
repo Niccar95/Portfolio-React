@@ -3,7 +3,7 @@
 
 :root {
   font-family: "Atkinson Hyperlegible Mono", serif;
-  line-height: 1.5;
+  line-height: 1.7;
   font-weight: 400;
   background-color: rgb(22, 22, 22);
   color: white;
@@ -96,15 +96,13 @@ main {
 button {
   border-radius: 8px;
   border: 2px solid transparent;
-  padding: 0.8rem 1.5rem;
+  padding: 8px 32px;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
   background-color: #222; 
   color: white;
   cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
-  font-weight: bolder;
   position: relative;
   overflow: hidden;
   border-image: linear-gradient(to right, #ff8a00, #e52e71) 1;
@@ -282,27 +280,6 @@ footer {
       border-radius: 50%;
     }
   
-    &:before, &:after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 180px; 
-      height: 180px;
-      border-radius: 50%;
-      z-index: -1;
-      transform: translate(-50%, -50%); 
-    }
-  
-    &:before {
-      background-color: #FF6347; 
-      left: 40%; 
-    }
-  
-    &:after {
-      background-color: #4CAF50; 
-      left: 60%; 
-    }
     .avatarImage {
       border-radius: 50%;
       object-fit: cover;
@@ -330,6 +307,15 @@ footer {
     .introduction {
       margin-bottom: 2rem;
     }
+    .heroButton {
+      width: 100%;
+
+      @include desktop() {
+        width: unset;
+      }
+      
+    }
+
   }
 }
 

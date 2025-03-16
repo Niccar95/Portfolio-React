@@ -57,11 +57,14 @@ export const ContactForm = () => {
             name="message"
             onChange={(e) => setMessage(e.target.value)}
             required
-            placeholder="This is a message..."
+            placeholder="Lorem Ipsum..."
           />
         </label>
 
-        <button type="submit">{isLoading ? "Sending..." : "Send"}</button>
+        <button type="submit">
+          <i className="bi bi-send"></i>
+          {isLoading ? "Sending..." : "Send"}
+        </button>
         {success && <p>Email sent successfully!</p>}
         {error && <p>{error}</p>}
       </form>

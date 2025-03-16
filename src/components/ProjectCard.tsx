@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import { useState } from "react";
 import { Project } from "../models/Project";
 
@@ -13,9 +14,12 @@ const ProjectCard = ({ project }: IProjectProps) => {
   };
 
   return (
-    <article
+    <motion.article
       className={`projectCard ${isExpanded ? "expanded" : ""}`}
       key={project.id}
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <div className="projectImageContainer">
         <img
@@ -50,7 +54,7 @@ const ProjectCard = ({ project }: IProjectProps) => {
           <i key={index} className={`${stack.name} ci-lg`}></i>
         ))}
       </section>
-    </article>
+    </motion.article>
   );
 };
 
