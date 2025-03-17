@@ -4,7 +4,7 @@ export const projects: Project[] = [
   new Project(
     1,
     "TinySaves",
-    "TinySaves is a savings goal application designed for users who are new to saving, encouraging small, regular contributions.",
+    "A savings goal application designed for users who are new to saving, encouraging small, regular contributions.",
     "https://tinysaves.vercel.app/",
     "/tinySaves.png",
     [

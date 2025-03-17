@@ -21,7 +21,7 @@ const ProjectCard = ({ project }: IProjectProps) => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      <div className="projectImageContainer">
+      <div className={`projectImageContainer ${isExpanded ? "expanded" : ""}`}>
         <img
           src={project.image}
           alt={project.title}
