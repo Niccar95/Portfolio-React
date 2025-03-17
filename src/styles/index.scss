@@ -30,7 +30,11 @@ a:hover {
 
 h1 {
   font-size: 25px;
-  line-height: 1.1;
+}
+
+h2 {
+  font-size: 22px;
+  text-transform: uppercase;
 }
 
 .logoContainer {
@@ -43,8 +47,6 @@ h1 {
     height: 80px;
     width: 350px;
   }
-
-
 
   .logo {
     object-fit: cover;
@@ -73,7 +75,11 @@ main {
   flex: 1;
   padding: 2em;
   margin-top: 100px;
- 
+
+  .projectsPageHeading {
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+  }
 }
 
 .content {
@@ -86,7 +92,6 @@ main {
   gap: 2rem;
    
   @include desktop() {
-    padding: 2rem;
     justify-content: start;
     gap: 5rem;
 
