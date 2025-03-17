@@ -76,9 +76,28 @@ main {
   padding: 2em;
   margin-top: 100px;
 
-  .projectsPageHeading {
+  .pageHeading {
     margin-bottom: 1.5rem;
     margin-left: 1.5rem;
+
+  }
+
+  .aboutHeadingMobile {
+    display: block;
+    margin-bottom: 1.5rem;
+
+    @include desktop() {
+      display: none;
+    }
+  }
+
+  .aboutHeadingDesktop {
+    display: none;
+
+    @include desktop() {
+      display: block;
+      margin-bottom: 1.5rem;
+    }
   }
 }
 
@@ -275,7 +294,6 @@ footer {
   }
   
   .avatarImageContainer {
-    position: relative;
     width: 200px;
     height: 200px;
   
