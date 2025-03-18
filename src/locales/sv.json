@@ -1,0 +1,15 @@
+{
+    "navigation": {
+      "home": "Hem",
+      "projects": "Projekt",
+      "about": "Om mig",
+      "contact": "Kontakt"
+    },
+    "footer": {
+      "connect": "Låt oss hålla kontakten:",
+      "github": "Github",
+      "linkedin": "LinkedIn",
+      "copyright": "© {{year}} Nicolas Carrasco"
+    }
+  }
+  

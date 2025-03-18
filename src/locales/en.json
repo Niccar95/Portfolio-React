@@ -1,0 +1,14 @@
+{
+    "navigation": {
+      "home": "Home",
+      "projects": "Projects",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "footer": {
+      "connect": "Let’s Connect:",
+      "github": "Github",
+      "linkedin": "LinkedIn",
+      "copyright": "© {{year}} Nicolas Carrasco"
+    }
+  }

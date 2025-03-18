@@ -2,10 +2,20 @@ import { NavLink, Outlet } from "react-router-dom";
 import { motion } from "motion/react";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import logo from "/logo.svg";
-import { useState } from "react";
+import { FormEvent, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Layout = () => {
+  const { t, i18n } = useTranslation();
+  const [selectedLanguage, setSelectedLanguage] = useState("en");
+
   const [isMenuClicked, setIsMenuClicked] = useState<boolean>(false);
+
+  const handleLangChange = (e: FormEvent<HTMLSelectElement>) => {
+    const newLang = e.currentTarget.value;
+    setSelectedLanguage(newLang);
+    i18n.changeLanguage(newLang);
+  };
 
   const updateMenu = () => {
     setIsMenuClicked(!isMenuClicked);
@@ -29,46 +39,76 @@ const Layout = () => {
             <ul>
               <motion.li whileHover={{ scale: 1.3 }}>
                 <NavLink to={"/"} onClick={closeMenu}>
-                  Home
+                  {t("navigation.home")}
                 </NavLink>
               </motion.li>
               <motion.li whileHover={{ scale: 1.3 }}>
                 <NavLink to={"/projects"} onClick={closeMenu}>
-                  Projects
+                  {t("navigation.projects")}
                 </NavLink>
               </motion.li>
               <motion.li whileHover={{ scale: 1.3 }}>
                 <NavLink to={"/about"} onClick={closeMenu}>
-                  About
+                  {t("navigation.about")}
                 </NavLink>
               </motion.li>
               <motion.li whileHover={{ scale: 1.3 }}>
                 <NavLink to={"/contact"} onClick={closeMenu}>
-                  Contact
+                  {t("navigation.contact")}
                 </NavLink>
               </motion.li>
             </ul>
           </div>
 
           <div className="desktopMenu">
+            <div className="languageSelector desktop">
+              <i className="bi bi-globe"></i>
+              <span className="selectedLang">
+                {selectedLanguage.toUpperCase()}
+              </span>
+
+              <select
+                id="desktopSelect"
+                value={selectedLanguage}
+                onChange={handleLangChange}
+                className="hiddenSelect"
+              >
+                <option value="en">EN</option>
+                <option value="sv">SE</option>
+              </select>
+            </div>
             <ul>
               <motion.li whileHover={{ scale: 1.3 }}>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/">{t("navigation.home")}</NavLink>
               </motion.li>
               <motion.li whileHover={{ scale: 1.3 }}>
-                <NavLink to="/projects">Projects</NavLink>
+                <NavLink to="/projects">{t("navigation.projects")}</NavLink>
               </motion.li>
               <motion.li whileHover={{ scale: 1.3 }}>
-                <NavLink to="/about">About</NavLink>
+                <NavLink to="/about">{t("navigation.about")}</NavLink>
               </motion.li>
               <motion.li whileHover={{ scale: 1.3 }}>
-                <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/contact">{t("navigation.contact")}</NavLink>
               </motion.li>
             </ul>
           </div>
         </nav>
       </header>
       <main>
+        <div className="languageSelector mobile">
+          <i className="bi bi-globe"></i>
+          <span className="selectedLang">{selectedLanguage.toUpperCase()}</span>
+
+          <select
+            id="mobileSelect"
+            value={selectedLanguage}
+            onChange={handleLangChange}
+            className="hiddenSelect"
+          >
+            <option value="en">EN</option>
+            <option value="sv">SE</option>
+          </select>
+        </div>
         <Outlet />
       </main>
       <footer>
