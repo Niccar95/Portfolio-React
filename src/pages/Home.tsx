@@ -3,9 +3,14 @@ import { Stack } from "../models/Stack";
 import { stacks } from "../data/stacks";
 import Skills from "../components/Skills";
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
   const [stackList] = useState<Stack[]>(stacks);
+
+  const { t } = useTranslation();
+
+  console.log(t("home.presentation"));
 
   return (
     <motion.section
@@ -37,21 +42,17 @@ const Home = () => {
           transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
         >
           <h2 className="introHeading">
-            Hello, my name is{" "}
+            {t("home.greeting")}{" "}
             <span className="nameLabel">Nicolas Carrasco</span>
           </h2>
-          <p className="introduction">
-            I'm a Frontend developer that enjoys crafting intuitive and
-            efficient user interfaces. Always exploring new technologies, I
-            focus on creating seamless digital experiences.
-          </p>
+          <p className="introduction">{t("home.presentation")}</p>
           <motion.button
             className="heroButton"
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.2 }}
           >
             <i className="bi bi-download"></i>
-            Get my CV
+            {t("home.cv-button")}
           </motion.button>
         </motion.div>
       </motion.section>

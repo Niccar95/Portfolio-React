@@ -1,4 +1,17 @@
 {
+  "home": {
+    "greeting": "Hej, mitt namn är",
+    "presentation": "Jag är en frontend-utvecklare som gillar att skapa intuitiva och effektiva användargränssnitt. Jag utforskar alltid nya teknologier och fokuserar på att skapa sömlösa digitala upplevelser.",
+    "cv-button": "Ladda ner mitt CV",
+    "stack-heading": "Teknikstack",
+    "lang-skills": {
+      "lang-heading": "Språkkunskaper",
+      "swedish": "Svenska",
+      "english": "Engelska",
+      "spanish": "Spanska"
+}
+
+  },
     "navigation": {
       "home": "Hem",
       "projects": "Projekt",

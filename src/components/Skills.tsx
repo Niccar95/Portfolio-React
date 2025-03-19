@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Stack } from "../models/Stack";
 import { languageSkills } from "../data/languageSkills";
+import { useTranslation } from "react-i18next";
 
 interface ISkillProps {
   stackList: Stack[];
@@ -8,6 +9,8 @@ interface ISkillProps {
 
 const Skills = ({ stackList }: ISkillProps) => {
   const [iconSize, setIconSize] = useState("ci-4x");
+  const { t } = useTranslation();
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
@@ -27,7 +30,7 @@ const Skills = ({ stackList }: ISkillProps) => {
     <>
       <div className="skillSectionWrapper">
         <article className="skillsCard">
-          <h2 className="stackLabel">My Stack</h2>
+          <h2 className="stackLabel">{t("home.stack-heading")}</h2>
           <div className="stackIconsWrapper">
             {stackList.map((stack) => (
               <i
@@ -39,11 +42,13 @@ const Skills = ({ stackList }: ISkillProps) => {
           </div>
         </article>
         <article className="skillsCard">
-          <h2 className="stackLabel">Language Skills</h2>
+          <h2 className="stackLabel">{t("home.lang-skills.lang-heading")}</h2>
           <div className="langSkillsWrapper">
             {languageSkills.map((language) => (
               <div className="languageItem" key={language.id}>
-                <p className="skillName">{language.name}</p>
+                <p className="skillName">
+                  {t(`home.lang-skills.${language.name}`)}
+                </p>
                 <div className="languageBar"></div>
                 <span className="percentage">100%</span>
               </div>

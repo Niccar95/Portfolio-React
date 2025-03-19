@@ -1,4 +1,16 @@
-{
+{  
+    "home": {
+      "greeting": "Hello, my name is",
+      "presentation": "I'm a Frontend developer that enjoys crafting intuitive and efficient user interfaces. Always exploring new technologies, I focus on creating seamless digital experiences.",
+      "cv-button": "Download my CV",
+      "stack-heading": "Tech Stack",
+      "lang-skills": {
+        "lang-heading": "Language Skills",
+        "swedish": "Swedish",
+        "english": "English",
+        "spanish": "Spanish"
+      }
+    },
     "navigation": {
       "home": "Home",
       "projects": "Projects",

@@ -7,13 +7,11 @@ import { useTranslation } from "react-i18next";
 
 const Layout = () => {
   const { t, i18n } = useTranslation();
-  const [selectedLanguage, setSelectedLanguage] = useState("en");
 
   const [isMenuClicked, setIsMenuClicked] = useState<boolean>(false);
 
   const handleLangChange = (e: FormEvent<HTMLSelectElement>) => {
     const newLang = e.currentTarget.value;
-    setSelectedLanguage(newLang);
     i18n.changeLanguage(newLang);
   };
 
@@ -64,12 +62,12 @@ const Layout = () => {
             <div className="languageSelector desktop">
               <i className="bi bi-globe"></i>
               <span className="selectedLang">
-                {selectedLanguage.toUpperCase()}
+                {i18n.language.toUpperCase()}
               </span>
 
               <select
                 id="desktopSelect"
-                value={selectedLanguage}
+                value={i18n.language}
                 onChange={handleLangChange}
                 className="hiddenSelect"
               >
@@ -97,11 +95,11 @@ const Layout = () => {
       <main>
         <div className="languageSelector mobile">
           <i className="bi bi-globe"></i>
-          <span className="selectedLang">{selectedLanguage.toUpperCase()}</span>
+          <span className="selectedLang">{i18n.language.toUpperCase()}</span>
 
           <select
             id="mobileSelect"
-            value={selectedLanguage}
+            value={i18n.language}
             onChange={handleLangChange}
             className="hiddenSelect"
           >
@@ -113,7 +111,7 @@ const Layout = () => {
       </main>
       <footer>
         <section className="socialLinkSection">
-          <h3>Let’s Connect:</h3>
+          <h3>{t("footer.connect")}</h3>
           <ul className="socialLinklist">
             <motion.li whileHover={{ scale: 1.3 }}>
               <NavLink to={"https://github.com/Niccar95"} target="_blank">
