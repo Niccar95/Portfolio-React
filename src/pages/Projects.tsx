@@ -3,8 +3,10 @@ import { ProjectList } from "../components/ProjectList";
 import { Project } from "../models/Project";
 import { projects } from "../data/projects";
 import { Pagination } from "../components/Pagination";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+  const { t } = useTranslation();
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [projectList] = useState<Project[]>(projects);
   const totalProjects = projectList.length;
@@ -31,8 +33,8 @@ const Projects = () => {
     return (
       <>
         <section className="content">
-          <h1>My Projects</h1>
-          <p>No projects available at this moment.</p>
+          <h1>{t("projects.heading")}</h1>
+          <p>{t("projects.no-projects")}</p>
         </section>
       </>
     );
@@ -40,7 +42,7 @@ const Projects = () => {
 
   return (
     <>
-      <h2 className="projectsHeading">My Projects</h2>
+      <h2 className="projectsHeading">{t("projects.heading")}</h2>
       <section className="content">
         <div className="projectsContainer">
           <ProjectList projects={currentProjects} />

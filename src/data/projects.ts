@@ -4,7 +4,7 @@ export const projects: Project[] = [
   new Project(
     1,
     "TinySaves",
-    "A savings goal application designed for users who are new to saving, encouraging small, regular contributions.",
+    "projects.card.TinySaves.description",
     "https://tinysaves.vercel.app/",
     "/tinySaves.png",
     [
@@ -22,7 +22,7 @@ export const projects: Project[] = [
   new Project(
     2,
     "Tic-Tac-Toe",
-    "This is a Tic-tac-toe game I made as a school project. It was also my first Vue project.",
+    "projects.card.TicTacToe.description",
     "https://niccar95.github.io/vue-tic-tac-toe-Niccar95/",
     "/tic-tac-toe.png",
     [
@@ -36,7 +36,7 @@ export const projects: Project[] = [
   new Project(
     3,
     "PokeSearch",
-    "A nerdy little game that tests your knowledge of classic Pokemon. My first ever project created entirely on vanilla Javascript.",
+    "projects.card.PokeSearch.description",
     "https://niccar95.github.io/PokeSearch/",
     "/pokeSearch.png",
     [
@@ -49,8 +49,8 @@ export const projects: Project[] = [
   ),
   new Project(
     4,
-    "To-do list",
-    "Just a simple To-do list I made with vanilla Javascript.",
+    "To-Do",
+    "projects.card.To-Do.description",
     "https://niccar95.github.io/To-Do-List-2.0/",
     "/to-do.png",
     [
@@ -62,8 +62,8 @@ export const projects: Project[] = [
   ),
   new Project(
     5,
-    "The Zoo",
-    "My last individual school project in React. A fictional zoo website with different animals that need to be fed.",
+    "TheZoo",
+    "projects.card.TheZoo.description",
     "https://react-the-zoo-niccar95.vercel.app/",
     "/theZoo.png",
     [
@@ -77,8 +77,8 @@ export const projects: Project[] = [
   ),
   new Project(
     6,
-    "Employee site",
-    "A code test made in Vue for an internship application. It is a fictional employee site for the company I applied for.",
+    "EmployeeSite",
+    "projects.card.EmployeeSite.description",
     "https://niccar95.github.io/EmployeeSite/",
     "/employeeSite.png",
     [

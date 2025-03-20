@@ -49,6 +49,30 @@
           "error": "Det uppstod ett fel vid skickandet av e-post: {{errorMessage}}. Försök igen."
         }
       },
+      "projects": {
+        "heading": "My Projects",
+        "no-projects": "No projects available at this moment.",
+        "card": {
+              "TinySaves": {
+                "description": "En sparmål-applikation utformad för användare som är nya på att spara och uppmuntrar små, regelbundna bidrag."
+              },
+              "Tic-Tac-Toe": {
+                "description": "Detta är ett Tic-tac-toe-spel som jag gjorde som ett skolarbete. Det var också mitt första Vue-projekt."
+              },
+              "PokeSearch": {
+                "description": "Ett nördigt litet spel som testar dina kunskaper om klassiska Pokémon. Mitt första projekt skapat helt i vanlig JavaScript."
+              },
+              "To-Do": {
+                "description": "Bara en enkel att-göra-lista jag gjorde med vanlig JavaScript."
+              },
+              "TheZoo": {
+                "description": "Mitt sista individuella skolarbete i React. En fiktiv djurwebbplats med olika djur som behöver matas."
+              },
+              "EmployeeSite": {
+                "description": "Ett kodtest gjort i Vue för en praktikansökan. Det är en fiktiv anställdasida för företaget jag ansökte till."
+              }
+            }
+          },
         "pagination": {
           "prev": "Förra",
           "next": "Nästa"

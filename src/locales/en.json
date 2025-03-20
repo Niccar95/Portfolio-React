@@ -48,6 +48,30 @@
           "error": "There was an error sending the email: {{errorMessage}}. Please try again."
         }
       },
+      "projects": {
+        "heading": "My Projects",
+        "no-projects": "No projects available at this moment.",
+        "card": {
+              "TinySaves": {
+                "description": "A savings goal application designed for users who are new to saving, encouraging small, regular contributions."
+              },
+              "Tic-Tac-Toe": {
+                "description": "This is a Tic-tac-toe game I made as a school project. It was also my first Vue project."
+              },
+              "PokeSearch": {
+                "description": "A nerdy little game that tests your knowledge of classic Pokemon. My first ever project created entirely on vanilla Javascript."
+              },
+              "To-Do": {
+                "description": "Just a simple To-do list I made with vanilla Javascript."
+              },
+              "TheZoo": {
+                "description": "My last individual school project in React. A fictional zoo website with different animals that need to be fed."
+              },
+              "EmployeeSite": {
+                "description": "A code test made in Vue for an internship application. It is a fictional employee site for the company I applied for."
+              }
+            }
+      },
       "pagination": {
         "prev": "Prev",
         "next": "Next"

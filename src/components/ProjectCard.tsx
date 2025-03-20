@@ -1,12 +1,14 @@
 import { motion } from "motion/react";
 import { useState } from "react";
 import { Project } from "../models/Project";
+import { useTranslation } from "react-i18next";
 
 interface IProjectProps {
   project: Project;
 }
 
 const ProjectCard = ({ project }: IProjectProps) => {
+  const { t } = useTranslation();
   const [isExpanded, setIsExpanded] = useState(false);
 
   const seeProject = (url: string) => {
@@ -34,8 +36,12 @@ const ProjectCard = ({ project }: IProjectProps) => {
 
         <p>
           {isExpanded
-            ? project.description
-            : project.description.slice(0, 50) + "... "}
+            ? t(`projects.card.${project.title}.description`, {
+                defaultValue: project.description,
+              })
+            : t(`projects.card.${project.title}.description`, {
+                defaultValue: project.description,
+              }).slice(0, 50) + "... "}
           <span
             onClick={() => setIsExpanded(!isExpanded)}
             className="expandText"
