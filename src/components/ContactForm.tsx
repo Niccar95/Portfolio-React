@@ -1,7 +1,9 @@
 import { FormEvent, useRef, useState } from "react";
 import emailjs from "../../emailjsConfig";
+import { useTranslation } from "react-i18next";
 
 export const ContactForm = () => {
+  const { t } = useTranslation();
   const [subject, setSubject] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -27,7 +29,10 @@ export const ContactForm = () => {
       }
     } catch (error) {
       console.error(error, "Failed to send message.");
-      setError("There was an error sending the email. Please try again.");
+      const e = error as Error;
+      setError(
+        e.message || "There was an error sending the email. Please try again."
+      );
     } finally {
       setIsLoading(false);
     }
@@ -36,9 +41,9 @@ export const ContactForm = () => {
   return (
     <article className="formCard">
       <form ref={form} onSubmit={handleSubmit}>
-        <h2 className="contactHeading desktop">Contact Me</h2>
+        <h2 className="contactHeading desktop">{t("contact.heading")}</h2>
         <label>
-          Subject:
+          {t("contact.labels.subject")}
           <input
             type="text"
             className="textArea"
@@ -46,27 +51,31 @@ export const ContactForm = () => {
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
             required
-            placeholder="Lorem ipsum..."
+            placeholder={t("contact.placeholders.subject")}
           />
         </label>
 
         <label>
-          Message:
+          {t("contact.labels.message")}
           <textarea
             value={message}
             name="message"
             onChange={(e) => setMessage(e.target.value)}
             required
-            placeholder="Lorem Ipsum..."
+            placeholder={t("contact.placeholders.message")}
           />
         </label>
 
         <button type="submit">
           <i className="bi bi-send"></i>
-          {isLoading ? "Sending..." : "Send"}
+          {isLoading
+            ? `${t("contact.button.sending")}`
+            : `${t("contact.button.send")}`}
         </button>
-        {success && <p>Email sent successfully!</p>}
-        {error && <p>{error}</p>}
+        {success && <p>{t("contact.notifications.success")}</p>}
+        {error && (
+          <p>{t("contact.notifications.error", { errorMessage: error })}</p>
+        )}
       </form>
     </article>
   );

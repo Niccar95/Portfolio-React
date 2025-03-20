@@ -78,14 +78,18 @@ main {
 
   .projectsHeading {
     margin-bottom: 1.5rem;
-    margin-left: 1.5rem;
+    border-bottom: solid white 1px;
+
+    @include desktop() {
+      border: none;
+    }
 
   }
 
   .aboutHeadingMobile {
     display: block;
-    margin-left: 1.5rem;
     margin-bottom: 1.5rem;
+    border-bottom: solid white 1px;
 
     @include desktop() {
       display: none;
@@ -104,8 +108,8 @@ main {
 
 .contactHeading.mobile {
   display: block;
-  margin-left: 1.5rem;
   margin-bottom: 1.5rem;
+  border-bottom: solid white 1px;
 
   @include desktop() {
       display: none;
