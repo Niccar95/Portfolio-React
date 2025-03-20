@@ -46,7 +46,10 @@
         "notifications": {
           "success": "Email sent successfully!",
           "error": "There was an error sending the email: {{errorMessage}}. Please try again."
-
         }
+      },
+      "pagination": {
+        "prev": "Prev",
+        "next": "Next"
       }  
   }

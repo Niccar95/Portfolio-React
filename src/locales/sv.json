@@ -47,9 +47,12 @@
         "notifications": {
           "success": "E-post skickades framgångsrikt!",
           "error": "Det uppstod ett fel vid skickandet av e-post: {{errorMessage}}. Försök igen."
-
         }
-      }
+      },
+        "pagination": {
+          "prev": "Förra",
+          "next": "Nästa"
+        }
 }
 
   

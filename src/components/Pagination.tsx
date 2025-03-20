@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 interface IPaginationProps {
   totalProjects: number;
   projectsPerPage: number;
@@ -11,6 +13,7 @@ export const Pagination = ({
   currentPage,
   onPageChange,
 }: IPaginationProps) => {
+  const { t } = useTranslation();
   const totalPages = Math.ceil(totalProjects / projectsPerPage);
 
   const pageNumbers = [...Array(totalPages)].map((_, index) => index + 1);
@@ -22,7 +25,7 @@ export const Pagination = ({
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
       >
-        Prev
+        {t("pagination.prev")}
       </button>
 
       {pageNumbers.map((page) => (
@@ -42,7 +45,7 @@ export const Pagination = ({
         }}
         disabled={currentPage === totalPages}
       >
-        Next
+        {t("pagination.next")}
       </button>
     </div>
   );
