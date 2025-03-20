@@ -35,8 +35,8 @@ export const ContactForm = () => {
 
   return (
     <article className="formCard">
-      <h2 className="contactHeading">Contact Me</h2>
       <form ref={form} onSubmit={handleSubmit}>
+        <h2 className="contactHeading desktop">Contact Me</h2>
         <label>
           Subject:
           <input

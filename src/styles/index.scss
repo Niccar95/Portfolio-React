@@ -76,7 +76,7 @@ main {
   padding: 2em;
   margin-top: 100px;
 
-  .pageHeading {
+  .projectsHeading {
     margin-bottom: 1.5rem;
     margin-left: 1.5rem;
 
@@ -84,6 +84,7 @@ main {
 
   .aboutHeadingMobile {
     display: block;
+    margin-left: 1.5rem;
     margin-bottom: 1.5rem;
 
     @include desktop() {
@@ -99,6 +100,16 @@ main {
       margin-bottom: 1.5rem;
     }
   }
+}
+
+.contactHeading.mobile {
+  display: block;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  @include desktop() {
+      display: none;
+  } 
 }
 
 .content {

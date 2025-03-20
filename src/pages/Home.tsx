@@ -10,8 +10,6 @@ const Home = () => {
 
   const { t } = useTranslation();
 
-  console.log(t("home.presentation"));
-
   return (
     <motion.section
       className="content"

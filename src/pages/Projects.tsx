@@ -40,7 +40,7 @@ const Projects = () => {
 
   return (
     <>
-      <h2 className="pageHeading">My Projects</h2>
+      <h2 className="projectsHeading">My Projects</h2>
       <section className="content">
         <div className="projectsContainer">
           <ProjectList projects={currentProjects} />

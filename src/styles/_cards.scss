@@ -144,8 +144,11 @@
         width: 40%;
     }
 
-    .contactHeading {
-        margin-bottom: 2rem;
+    .contactHeading.desktop {
+        display: none;
+        @include desktop() {
+            display:block
+        } 
     }
 
 }

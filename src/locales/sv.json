@@ -23,6 +23,13 @@
       "github": "Github",
       "linkedin": "LinkedIn",
       "copyright": "© {{year}} Nicolas Carrasco"
+    },
+    
+      "about": {
+        "heading": "Om Mig",
+        "paragraph1": "Jag är en frontend-utvecklare med en bakgrund inom utbildning. Innan jag gick in i teknikvärlden arbetade jag över åtta år i skolor och förskolor, varav tre år som förskollärare.",
+        "paragraph2": "Den erfarenheten formade min förmåga att kommunicera, anpassa mig, tänka kreativt och samarbeta i team – färdigheter som nu hjälper mig att skapa intuitiva och engagerande webbupplevelser. Jag brinner för design, tillgänglighet och modulär utveckling. Jag älskar att skapa rena, effektiva och dynamiska gränssnitt. Min tekniska stack inkluderar HTML, CSS, JavaScript och TypeScript, och jag har arbetat med React och Vue.js.",
+        "paragraph3": "På senare tid har jag utökat mina kunskaper inom Next.js, Sanity CMS, Headless CMS-lösningar och Node.js för att bli en mer allsidig utvecklare. Jag trivs i teammiljöer där idéer flödar och samarbete leder till fantastiska lösningar. Oavsett om det handlar om att förfina UI/UX, optimera prestanda eller utforska ny teknik, är jag alltid ivrig att lära mig och bidra!"
     }
   }
   
