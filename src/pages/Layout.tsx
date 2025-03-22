@@ -2,7 +2,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import { motion } from "motion/react";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import logo from "/logo.svg";
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const Layout = () => {
@@ -10,9 +10,15 @@ const Layout = () => {
 
   const [isMenuClicked, setIsMenuClicked] = useState<boolean>(false);
 
+  useEffect(() => {
+    const savedLang = localStorage.getItem("language") || "en";
+    i18n.changeLanguage(savedLang);
+  }, [i18n]);
+
   const handleLangChange = (e: FormEvent<HTMLSelectElement>) => {
     const newLang = e.currentTarget.value;
     i18n.changeLanguage(newLang);
+    localStorage.setItem("language", newLang);
   };
 
   const updateMenu = () => {
@@ -72,7 +78,7 @@ const Layout = () => {
                 className="hiddenSelect"
               >
                 <option value="en">EN</option>
-                <option value="sv">SE</option>
+                <option value="sv">SV</option>
               </select>
             </div>
             <ul>
