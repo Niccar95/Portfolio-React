@@ -51,7 +51,7 @@ const ProjectCard = ({ project }: IProjectProps) => {
         </p>
 
         <a className="projectLink" href={project.url} target="_blank">
-          Check it out
+          {t("projects.card.visit")}
           <i className="bi bi-box-arrow-up-right"></i>
         </a>
       </div>
