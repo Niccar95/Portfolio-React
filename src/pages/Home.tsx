@@ -11,51 +11,54 @@ const Home = () => {
   const { t } = useTranslation();
 
   return (
-    <motion.section
-      className="content"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1, ease: "easeOut" }}
-    >
+    <>
+      <h2 className="homeHeading">{t("home.heading")}</h2>
       <motion.section
-        className="heroSection"
-        initial={{ y: -50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+        className="content"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
       >
-        <div className="avatarImageContainer">
-          <motion.img
-            className="avatarImage"
-            src="/myPic.jpg"
-            alt="My image"
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          />
-        </div>
-        <motion.div
-          className="introductionContainer"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+        <motion.section
+          className="heroSection"
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
         >
-          <h2 className="introHeading">
-            {t("home.greeting")}{" "}
-            <span className="nameLabel">Nicolas Carrasco</span>
-          </h2>
-          <p className="introduction">{t("home.presentation")}</p>
-          <motion.button
-            className="heroButton"
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.2 }}
+          <div className="avatarImageContainer">
+            <motion.img
+              className="avatarImage"
+              src="/myPic.jpg"
+              alt="My image"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            />
+          </div>
+          <motion.div
+            className="introductionContainer"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
           >
-            <i className="bi bi-download"></i>
-            {t("home.cv-button")}
-          </motion.button>
-        </motion.div>
+            <h2 className="introHeading">
+              {t("home.greeting")}{" "}
+              <span className="nameLabel">Nicolas Carrasco</span>
+            </h2>
+            <p className="introduction">{t("home.presentation")}</p>
+            <motion.button
+              className="heroButton"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.2 }}
+            >
+              <i className="bi bi-download"></i>
+              {t("home.cv-button")}
+            </motion.button>
+          </motion.div>
+        </motion.section>
+        <Skills stackList={stackList} />
       </motion.section>
-      <Skills stackList={stackList} />
-    </motion.section>
+    </>
   );
 };
 

@@ -1,5 +1,6 @@
 {
   "home": {
+    "heading": "Hem",
     "greeting": "Hej, mitt namn är",
     "presentation": "Jag är en frontend-utvecklare som gillar att skapa intuitiva och effektiva användargränssnitt. Jag utforskar alltid nya teknologier och fokuserar på att skapa sömlösa digitala upplevelser.",
     "cv-button": "Ladda ner mitt CV",

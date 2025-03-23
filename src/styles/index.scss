@@ -74,7 +74,7 @@ main {
   margin-top: 100px;
   padding: 2rem;
 
-  .projectsHeading {
+  .projectsHeading, .homeHeading {
     margin-bottom: 1.5rem;
     border-bottom: solid white 1px;
 
@@ -299,12 +299,11 @@ footer {
   width: 100%;
 
   @include desktop() {
-    margin-top: 60px;
+
     flex-direction:row;
     justify-content: center;
     gap: 2rem;
     width: 70%;
-    height: calc(100vh - 132px)
   }
   
   .avatarImageContainer {
@@ -335,6 +334,7 @@ footer {
 
     .introHeading {
       margin-bottom: 1rem;
+      font-size: 2rem;
 
       .nameLabel {
         color: #ff8a00;
@@ -343,6 +343,9 @@ footer {
     }
     .introduction {
       margin-bottom: 2rem;
+      @include desktop() {
+        margin-bottom: 2.5rem;
+      }
     }
     .heroButton {
       width: 100%;
@@ -363,7 +366,6 @@ footer {
 
   @include desktop() {
       grid-template-columns: repeat(2, 1fr);
-      gap: 2.5rem;
     }
  }
 

@@ -5,7 +5,7 @@
     flex-direction: column;
     gap: 2rem;
     @include desktop() {
-        gap: 5rem; 
+        flex-direction: row;
     }
    }
   
