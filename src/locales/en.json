@@ -70,8 +70,8 @@
               "EmployeeSite": {
                 "description": "A code test made in Vue for an internship application. It is a fictional employee site for the company I applied for."
               },
-              "readMore": "Read More",
-              "readLess": "Read Less",
+              "read-more": "Read More",
+              "read-less": "Read Less",
               "visit": "Visit Project" 
             }
       },

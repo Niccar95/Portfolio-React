@@ -71,8 +71,8 @@
               "EmployeeSite": {
                 "description": "Ett kodtest gjort i Vue för en praktikansökan. Det är en fiktiv anställdasida för företaget jag ansökte till."
               },
-              "readMore": "Läs mer",
-              "readLess": "Läs mindre",
+              "read-more": "Läs mer",
+              "read-less": "Läs mindre",
               "visit": "Besök projektet"
             }
           },

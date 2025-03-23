@@ -46,7 +46,9 @@ const ProjectCard = ({ project }: IProjectProps) => {
             onClick={() => setIsExpanded(!isExpanded)}
             className="expandText"
           >
-            {isExpanded ? "Read Less" : "Read More"}
+            {isExpanded
+              ? t("projects.card.read-less")
+              : t("projects.card.read-more")}
           </span>
         </p>
 
