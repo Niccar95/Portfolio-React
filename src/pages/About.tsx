@@ -8,7 +8,7 @@ const About = () => {
       <section className="content">
         <div className="aboutWrapper">
           <div className="aboutImageContainer">
-            <img src="/public/myPic.jpg" className="aboutImage"></img>
+            <img src="/myPic.jpg" className="aboutImage"></img>
           </div>
           <section className="aboutDescription">
             <h2 className="aboutHeadingDesktop">{t("about.heading")}</h2>

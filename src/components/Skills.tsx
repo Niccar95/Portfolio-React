@@ -29,7 +29,7 @@ const Skills = ({ stackList }: ISkillProps) => {
   return (
     <>
       <div className="skillSectionWrapper">
-        <article className="skillsCard">
+        <article className="skillsCard rigth">
           <h2 className="stackLabel">{t("home.stack-heading")}</h2>
           <div className="stackIconsWrapper">
             {stackList.map((stack) => (
@@ -41,7 +41,7 @@ const Skills = ({ stackList }: ISkillProps) => {
             ))}
           </div>
         </article>
-        <article className="skillsCard">
+        <article className="skillsCard left">
           <h2 className="stackLabel">{t("home.lang-skills.lang-heading")}</h2>
           <div className="langSkillsWrapper">
             {languageSkills.map((language) => (

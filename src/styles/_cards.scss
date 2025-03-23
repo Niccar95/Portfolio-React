@@ -113,6 +113,7 @@
     background-color: #1c1c1c;
     border-radius: 2rem;
     padding: 2rem;
+    height: fit-content;
     
     @include desktop() {
         width: 50%;
@@ -151,6 +152,14 @@
         } 
     }
 
+}
+
+
+
+.skillsCard.left { 
+    @include desktop() {
+        align-self: flex-end;
+    }
 }
 
 
