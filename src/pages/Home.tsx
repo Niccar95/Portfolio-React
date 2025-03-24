@@ -6,9 +6,22 @@ import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
 
 const Home = () => {
-  const [stackList] = useState<Stack[]>(stacks);
-
   const { t } = useTranslation();
+  const [stackList] = useState<Stack[]>(stacks);
+  const currentLang = localStorage.getItem("language") || "en";
+
+  const onButtonClick = () => {
+    const pdfFilename =
+      currentLang === "sv" ? "CV-Svenska.pdf" : "CV-English.pdf";
+
+    const link = document.createElement("a");
+    link.href = `/${pdfFilename}`;
+    link.download = "CV-Nicolas.pdf";
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <>
@@ -50,6 +63,7 @@ const Home = () => {
               className="heroButton"
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.2 }}
+              onClick={onButtonClick}
             >
               <i className="bi bi-download"></i>
               {t("home.cv-button")}
