@@ -79,5 +79,10 @@
       "pagination": {
         "prev": "Prev",
         "next": "Next"
-      }  
+      },
+      
+        "skill-descriptions": {
+          "stack": "I work with JavaScript and TypeScript, using frameworks like Vue.js and Next.js to build web applications. I’m familiar with styling tools like Tailwind CSS and Sass and have experience with databases like MongoDB and MySQL. I have also used tools like Postman, Jest, and Figma to support development and testing.",
+          "languages": "I can confidently communicate in Swedish, Spanish, and English, both spoken and written, adapting my language to suit professional and social settings."
+        }  
   }

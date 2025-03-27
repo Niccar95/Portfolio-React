@@ -25,13 +25,16 @@ const Home = () => {
 
   return (
     <>
-      <h2 className="homeHeading">{t("home.heading")}</h2>
       <motion.section
         className="content"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
+        <motion.div className="headingContainer">
+          <h2 className="homeHeading">{t("home.heading")}</h2>
+        </motion.div>
+
         <motion.section
           className="heroSection"
           initial={{ y: -50, opacity: 0 }}
@@ -59,6 +62,7 @@ const Home = () => {
               <span className="nameLabel">Nicolas Carrasco</span>
             </h2>
             <p className="introduction">{t("home.presentation")}</p>
+
             <motion.button
               className="heroButton"
               whileHover={{ scale: 1.1 }}
@@ -70,6 +74,14 @@ const Home = () => {
             </motion.button>
           </motion.div>
         </motion.section>
+      </motion.section>
+
+      <motion.section
+        className="content"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
         <Skills stackList={stackList} />
       </motion.section>
     </>

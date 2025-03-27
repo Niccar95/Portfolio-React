@@ -69,24 +69,27 @@ body {
 }
 
 
+.headingContainer {
+  width: 100%;
+}
+
+
 main {
   flex: 1;
   margin-top: 100px;
-  padding: 2rem;
 
   .projectsHeading, .homeHeading {
-    margin-bottom: 1.5rem;
     border-bottom: solid white 1px;
-
+    
     @include desktop() {
-      border: none;
+      width: 20%;
+      margin: 0;
     }
 
   }
 
   .aboutHeadingMobile {
     display: block;
-    margin-bottom: 1.5rem;
     border-bottom: solid white 1px;
 
     @include desktop() {
@@ -106,7 +109,6 @@ main {
 
 .contactHeading.mobile {
   display: block;
-  margin-bottom: 1.5rem;
   border-bottom: solid white 1px;
 
   @include desktop() {
@@ -117,11 +119,12 @@ main {
 .content {
   display: flex;
   width: 100%; 
-  min-height: 100vh;
+  min-height: calc(100vh - 100px);
   flex-grow: 1;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  padding: 2rem;
    
   @include desktop() {
     justify-content: start;
@@ -291,15 +294,14 @@ footer {
     }
 
 .heroSection {
-  margin-top: 20px;
-  margin-bottom: 40px;
+  // margin-top: 20px;
+  // margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   width: 100%;
 
   @include desktop() {
-
     flex-direction:row;
     justify-content: center;
     gap: 2rem;

@@ -120,9 +120,12 @@
     
     .stackLabel {
         margin-bottom: 2rem;
+        @include desktop() {
+            display: none;
+        }
     }
 
-    .stackIconsWrapper {
+    .iconContainer {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;

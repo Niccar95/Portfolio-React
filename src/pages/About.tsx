@@ -4,8 +4,10 @@ const About = () => {
   const { t } = useTranslation();
   return (
     <>
-      <h2 className="aboutHeadingMobile">{t("about.heading")}</h2>
       <section className="content">
+        <div className="headingContainer">
+          <h2 className="aboutHeadingMobile">{t("about.heading")}</h2>
+        </div>
         <div className="aboutWrapper">
           <div className="aboutImageContainer">
             <img src="/myPic.jpg" className="aboutImage"></img>

@@ -42,8 +42,10 @@ const Projects = () => {
 
   return (
     <>
-      <h2 className="projectsHeading">{t("projects.heading")}</h2>
       <section className="content">
+        <div className="headingContainer">
+          <h2 className="projectsHeading">{t("projects.heading")}</h2>
+        </div>
         <div className="projectsContainer">
           <ProjectList projects={currentProjects} />
         </div>

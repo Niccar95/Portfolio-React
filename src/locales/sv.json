@@ -80,6 +80,11 @@
         "pagination": {
           "prev": "Förra",
           "next": "Nästa"
+        },
+
+        "skill-descriptions": {
+          "stack": "Jag arbetar med JavaScript och TypeScript och använder ramverk som Vue.js och Next.js för att bygga webbapplikationer. Jag är bekant med stylingverktyg som Tailwind CSS och Sass och har erfarenhet av databaser som MongoDB och MySQL. Jag har även använt verktyg som Postman, Jest och Figma för att stödja utveckling och testning.",
+          "languages": "Jag kan tryggt kommunicera på svenska, spanska och engelska, både i tal och skrift, och anpassar mitt språk efter professionella och sociala sammanhang."
         }
 }
 
