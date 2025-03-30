@@ -6,11 +6,14 @@ const About = () => {
     <>
       <section className="content">
         <div className="headingContainer">
-          <h2 className="aboutHeadingMobile">{t("about.heading")}</h2>
+          <h2 className="aboutHeadingMobile">
+            <i className="bi bi-file-person-fill"></i>
+            {t("about.heading")}
+          </h2>
         </div>
         <div className="aboutWrapper">
           <div className="aboutImageContainer">
-            <img src="/myPic.jpg" className="aboutImage"></img>
+            <img src="/portrait.jpeg" className="aboutImage"></img>
           </div>
           <section className="aboutDescription">
             <h2 className="aboutHeadingDesktop">{t("about.heading")}</h2>

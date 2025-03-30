@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import { ContactForm } from "../components/ContactForm";
-import { motion } from "motion/react";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -10,7 +9,11 @@ const Contact = () => {
     <>
       <section className="content">
         <div className="headingContainer">
-          <h2 className="contactHeading mobile">{t("contact.heading")}</h2>
+          <h2 className="contactHeading mobile">
+            {" "}
+            <i className="bi bi-envelope-fill"></i>
+            {t("contact.heading")}
+          </h2>
         </div>
         <ContactForm />
 

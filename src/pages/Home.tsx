@@ -32,7 +32,11 @@ const Home = () => {
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <motion.div className="headingContainer">
-          <h2 className="homeHeading">{t("home.heading")}</h2>
+          <h2 className="homeHeading">
+            {" "}
+            <i className="bi bi-house-door-fill"></i>
+            {t("home.heading")}
+          </h2>
         </motion.div>
 
         <motion.section
@@ -44,7 +48,7 @@ const Home = () => {
           <div className="avatarImageContainer">
             <motion.img
               className="avatarImage"
-              src="/myPic.jpg"
+              src="/portrait.jpeg"
               alt="My image"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}

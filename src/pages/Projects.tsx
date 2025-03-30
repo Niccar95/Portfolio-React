@@ -44,7 +44,10 @@ const Projects = () => {
     <>
       <section className="content">
         <div className="headingContainer">
-          <h2 className="projectsHeading">{t("projects.heading")}</h2>
+          <h2 className="projectsHeading">
+            <i className="bi bi-laptop-fill"></i>
+            {t("projects.heading")}
+          </h2>
         </div>
         <div className="projectsContainer">
           <ProjectList projects={currentProjects} />
