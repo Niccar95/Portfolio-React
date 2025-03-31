@@ -4,6 +4,7 @@ export const projects: Project[] = [
   new Project(
     1,
     "TinySaves",
+    "TinySaves",
     "projects.card.TinySaves.description",
     "https://tinysaves.vercel.app/",
     "/tinySaves.png",
@@ -22,6 +23,7 @@ export const projects: Project[] = [
   new Project(
     2,
     "Tic-Tac-Toe",
+    "Tic-Tac-Toe",
     "projects.card.TicTacToe.description",
     "https://niccar95.github.io/vue-tic-tac-toe-Niccar95/",
     "/tic-tac-toe.png",
@@ -35,6 +37,7 @@ export const projects: Project[] = [
   ),
   new Project(
     3,
+    "PokeSearch",
     "PokeSearch",
     "projects.card.PokeSearch.description",
     "https://niccar95.github.io/PokeSearch/",
@@ -50,6 +53,7 @@ export const projects: Project[] = [
   new Project(
     4,
     "To-Do",
+    "To-Do List",
     "projects.card.To-Do.description",
     "https://niccar95.github.io/To-Do-List-2.0/",
     "/to-do.png",
@@ -63,6 +67,7 @@ export const projects: Project[] = [
   new Project(
     5,
     "TheZoo",
+    "The Zoo",
     "projects.card.TheZoo.description",
     "https://react-the-zoo-niccar95.vercel.app/",
     "/theZoo.png",
@@ -78,6 +83,7 @@ export const projects: Project[] = [
   new Project(
     6,
     "EmployeeSite",
+    "Employee Site",
     "projects.card.EmployeeSite.description",
     "https://niccar95.github.io/EmployeeSite/",
     "/employeeSite.png",

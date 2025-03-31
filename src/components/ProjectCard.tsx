@@ -32,13 +32,13 @@ const ProjectCard = ({ project }: IProjectProps) => {
         ></img>
       </div>
       <div className="descriptionContainer">
-        <h2>{project.title}</h2>
+        <h2>{project.displayTitle}</h2>
 
         <p>
           {isExpanded
             ? t(`projects.card.${project.title}.description`, {
                 defaultValue: project.description,
-              })
+              }) + " "
             : t(`projects.card.${project.title}.description`, {
                 defaultValue: project.description,
               }).slice(0, 50) + "... "}

@@ -9,10 +9,10 @@
 
 
     .paginationButton {
-        padding: 0.8rem 1rem;
+        padding: 0.4rem 1rem;
 
         @include desktop() {
-            padding: 0.8rem 1.5rem;
+            padding: 0.4rem 1.5rem;
         }
     }
 }

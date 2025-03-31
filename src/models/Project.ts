@@ -2,6 +2,7 @@ import { StackList } from "./IStack";
 export class Project {
   id: number;
   title: string;
+  displayTitle: string;
   description: string;
   url: string;
   image: string;
@@ -10,6 +11,7 @@ export class Project {
   constructor(
     id: number,
     title: string,
+    displayTitle: string,
     description: string,
     url: string,
     image: string,
@@ -17,6 +19,7 @@ export class Project {
   ) {
     this.id = id;
     this.title = title;
+    this.displayTitle = displayTitle;
     this.description = description;
     this.url = url;
     this.image = image;
