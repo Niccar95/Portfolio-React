@@ -1,6 +1,7 @@
 import { FormEvent, useRef, useState } from "react";
 import emailjs from "../../emailjsConfig";
 import { useTranslation } from "react-i18next";
+import { motion } from "motion/react";
 
 export const ContactForm = () => {
   const { t } = useTranslation();
@@ -41,7 +42,6 @@ export const ContactForm = () => {
   return (
     <article className="formCard">
       <form ref={form} onSubmit={handleSubmit}>
-        <h2 className="contactHeading desktop">{t("contact.heading")}</h2>
         <label>
           {t("contact.labels.subject")}
           <input
@@ -66,12 +66,17 @@ export const ContactForm = () => {
           />
         </label>
 
-        <button type="submit">
+        <motion.button
+          type="submit"
+          className="submitButton"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        >
           <i className="bi bi-send"></i>
           {isLoading
             ? `${t("contact.button.sending")}`
             : `${t("contact.button.send")}`}
-        </button>
+        </motion.button>
         {success && <p>{t("contact.notifications.success")}</p>}
         {error && (
           <p>{t("contact.notifications.error", { errorMessage: error })}</p>

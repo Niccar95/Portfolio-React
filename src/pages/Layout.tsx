@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { motion } from "motion/react";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import logo from "/logo.svg";
@@ -7,6 +7,8 @@ import { useTranslation } from "react-i18next";
 
 const Layout = () => {
   const { t, i18n } = useTranslation();
+
+  const location = useLocation();
 
   const [isMenuClicked, setIsMenuClicked] = useState<boolean>(false);
 
@@ -83,16 +85,36 @@ const Layout = () => {
             </div>
             <ul>
               <motion.li whileHover={{ scale: 1.3 }}>
-                <NavLink to="/">{t("navigation.home")}</NavLink>
+                <NavLink
+                  to="/"
+                  className={location.pathname === "/" ? "matched" : ""}
+                >
+                  {t("navigation.home")}
+                </NavLink>
               </motion.li>
               <motion.li whileHover={{ scale: 1.3 }}>
-                <NavLink to="/projects">{t("navigation.projects")}</NavLink>
+                <NavLink
+                  to="/projects"
+                  className={location.pathname === "/projects" ? "matched" : ""}
+                >
+                  {t("navigation.projects")}
+                </NavLink>
               </motion.li>
               <motion.li whileHover={{ scale: 1.3 }}>
-                <NavLink to="/about">{t("navigation.about")}</NavLink>
+                <NavLink
+                  to="/about"
+                  className={location.pathname === "/about" ? "matched" : ""}
+                >
+                  {t("navigation.about")}
+                </NavLink>
               </motion.li>
               <motion.li whileHover={{ scale: 1.3 }}>
-                <NavLink to="/contact">{t("navigation.contact")}</NavLink>
+                <NavLink
+                  to="/contact"
+                  className={location.pathname === "/contact" ? "matched" : ""}
+                >
+                  {t("navigation.contact")}
+                </NavLink>
               </motion.li>
             </ul>
           </div>

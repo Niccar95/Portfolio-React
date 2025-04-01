@@ -26,6 +26,11 @@ a:hover {
   text-decoration: underline;
 }
 
+
+.matched {
+  color: #ff8a00;
+}
+
 h1 {
   font-size: 25px;
 }
@@ -69,24 +74,25 @@ body {
 }
 
 
-.headingContainer {
-  width: 100%;
-}
 
 
 main {
   flex: 1;
   margin-top: 100px;
 
-  .projectsHeading, .homeHeading {
+
+
+.headingContainer {
+  width: 100%;
+  .projectsHeading, .homeHeading, .contactHeading {
     border-bottom: solid white 1px;
     
     @include desktop() {
       width: 20%;
       margin: 0;
     }
-
   }
+}
 
   .aboutHeadingMobile {
     display: block;
@@ -107,15 +113,6 @@ main {
   }
 }
 
-.contactHeading.mobile {
-  display: block;
-  border-bottom: solid white 1px;
-
-  @include desktop() {
-      display: none;
-  } 
-}
-
 .content {
   display: flex;
   width: 100%; 
@@ -125,7 +122,7 @@ main {
   align-items: center;
   gap: 2rem;
   padding: 2rem;
-   
+  position: relative;
   @include desktop() {
     justify-content: start;
     gap: 2rem;
@@ -133,90 +130,7 @@ main {
   }
 }
 
-nav {
-  background-color: rgb(22, 22, 22);
-  position: fixed;
-  z-index: 100;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 2rem;
-  height: 100px;
-  border-bottom: solid;
-  border-image: linear-gradient(to right, #ff8a00, #e52e71) 1;
-  justify-content: flex-end;
 
-  .hamburgerMenu {
-    display: block;
-    cursor: pointer;
-  }
-
-  .mobileMenu {
-    position: absolute;
-    top: 100px;
-    right: -200px;
-    background-color: rgb(22, 22, 22);
-    width: 100%;
-    padding: 1rem;
-    border-radius: 5px;
-    z-index: 999;
-    transition: right 0.4s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s;
-    opacity: 0;
-    visibility: hidden; 
-
-    &.visible {
-      right: 0;
-      opacity: 1;
-      visibility: visible;
-      border-bottom: solid;
-      border-image: linear-gradient(to right, #ff8a00, #e52e71) 1;
-    }
-
-    ul {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      text-align: center;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      border-image: linear-gradient(to right, #ff8a00, #e52e71) 1;
-    }
-  }
-
-  .desktopMenu {
-    display: none;
-  }
-
-  @include desktop() {
-    .hamburgerMenu {
-      display: none;
-    }
-
-    .mobileMenu {
-      display: none; 
-    }
-
-    .desktopMenu {
-      display: flex;
-      position: unset;
-      flex-direction: row;
-      background: none;
-      width: unset;
-      padding: 0;
-
-      ul {
-        display: flex;
-        justify-content: space-between;
-        width: unset;
-        gap: 2rem;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-    }
-  }
-}
 
 footer {
   display: flex;
@@ -318,19 +232,13 @@ footer {
         margin-bottom: 2.5rem;
       }
     }
-    .heroButton {
-      width: 100%;
-
-      @include desktop() {
-        width: unset;
-      }
-      
-    }
+   
 
   }
 }
 
  .projectsContainer {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 2.5rem;

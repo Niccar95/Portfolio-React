@@ -138,9 +138,11 @@
 
 .formCard {
     width: 100%;
-    background-color: #1c1c1c;
     border-radius: 2rem;
     padding: 2rem;
+    background-color: #1c1c1c;
+    position:static;
+    z-index: 1;
     
     @include desktop() {
         align-self: center;

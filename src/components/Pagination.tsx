@@ -32,7 +32,7 @@ export const Pagination = ({
         <button
           key={page}
           onClick={() => onPageChange(page)}
-          className={`${page === currentPage ? "active" : ""} paginationButton`}
+          className={`paginationButton ${page === currentPage ? "active" : ""}`}
         >
           {page}
         </button>

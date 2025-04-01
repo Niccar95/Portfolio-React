@@ -1,42 +1,23 @@
+@use "breakpoints" as *;
+@use "mixins" as *;
+
 button {
-    position: relative;
-    border-radius: 8px;
-    border: none; 
-    padding: 0.4rem 2rem;
-    font-size: 1em;
-    font-weight: 500;
-    background-color: #222; 
-    color: white;
-    cursor: pointer;
-    margin: 2px; 
+   @include button-styles;
   }
+
+
+  .paginationButton {
+    @include button-styles;
   
-  
-  button::after {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(to right, #ff8a00, #e52e71);
-    border-radius: 10px; 
-    z-index: -1; 
+    &:disabled {
+      opacity: 0.5; 
+      cursor: not-allowed;
+      background-color: #333; 
+      box-shadow: none;
+    }
   }
-  
-  
-  button:hover {
-    background-color: #333; 
-    box-shadow: 0 0 8px rgba(255, 138, 0, 0.5);
-  }
-  
-  button:focus {
-    outline: none;
-    box-shadow: 0 0 10px rgba(255, 138, 0, 0.8);
-  }
-  
-  button:active {
-    background-color: #111; 
-  }
-  
+
+
+
+
   
