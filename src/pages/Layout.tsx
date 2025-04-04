@@ -132,7 +132,7 @@ const Layout = () => {
             className="hiddenSelect"
           >
             <option value="en">EN</option>
-            <option value="sv">SE</option>
+            <option value="sv">SV</option>
           </select>
         </div>
         <Outlet />
