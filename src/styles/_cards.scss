@@ -117,6 +117,10 @@
     @include desktop() {
         width: 40%;
     }
+       
+    @include large-desktop() {
+        height: 400px;
+    }
     
     .stackLabel {
         margin-bottom: 2rem;
