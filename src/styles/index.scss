@@ -23,11 +23,12 @@ a {
 }
 a:hover {
   color: #ff8a00;
-  text-decoration: underline;
 }
 
 
 .matched {
+  padding-bottom: 0.2rem;
+  border-bottom: solid 2px #ff8a00;
   color: #ff8a00;
 }
 
