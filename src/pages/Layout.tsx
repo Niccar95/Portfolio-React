@@ -43,22 +43,22 @@ const Layout = () => {
 
           <div className={`mobileMenu ${isMenuClicked ? "visible" : ""}`}>
             <ul>
-              <motion.li whileHover={{ scale: 1.3 }}>
+              <motion.li whileHover={{ scale: 1.2 }}>
                 <NavLink to={"/"} onClick={closeMenu}>
                   {t("navigation.home")}
                 </NavLink>
               </motion.li>
-              <motion.li whileHover={{ scale: 1.3 }}>
+              <motion.li whileHover={{ scale: 1.2 }}>
                 <NavLink to={"/projects"} onClick={closeMenu}>
                   {t("navigation.projects")}
                 </NavLink>
               </motion.li>
-              <motion.li whileHover={{ scale: 1.3 }}>
+              <motion.li whileHover={{ scale: 1.2 }}>
                 <NavLink to={"/about"} onClick={closeMenu}>
                   {t("navigation.about")}
                 </NavLink>
               </motion.li>
-              <motion.li whileHover={{ scale: 1.3 }}>
+              <motion.li whileHover={{ scale: 1.2 }}>
                 <NavLink to={"/contact"} onClick={closeMenu}>
                   {t("navigation.contact")}
                 </NavLink>
@@ -84,7 +84,7 @@ const Layout = () => {
               </select>
             </div>
             <ul>
-              <motion.li whileHover={{ scale: 1.3 }}>
+              <motion.li whileHover={{ scale: 1.2 }}>
                 <NavLink
                   to="/"
                   className={location.pathname === "/" ? "matched" : ""}
@@ -92,7 +92,7 @@ const Layout = () => {
                   {t("navigation.home")}
                 </NavLink>
               </motion.li>
-              <motion.li whileHover={{ scale: 1.3 }}>
+              <motion.li whileHover={{ scale: 1.2 }}>
                 <NavLink
                   to="/projects"
                   className={location.pathname === "/projects" ? "matched" : ""}
@@ -100,7 +100,7 @@ const Layout = () => {
                   {t("navigation.projects")}
                 </NavLink>
               </motion.li>
-              <motion.li whileHover={{ scale: 1.3 }}>
+              <motion.li whileHover={{ scale: 1.2 }}>
                 <NavLink
                   to="/about"
                   className={location.pathname === "/about" ? "matched" : ""}
@@ -108,7 +108,7 @@ const Layout = () => {
                   {t("navigation.about")}
                 </NavLink>
               </motion.li>
-              <motion.li whileHover={{ scale: 1.3 }}>
+              <motion.li whileHover={{ scale: 1.2 }}>
                 <NavLink
                   to="/contact"
                   className={location.pathname === "/contact" ? "matched" : ""}
@@ -141,13 +141,13 @@ const Layout = () => {
         <section className="socialLinkSection">
           <h3>{t("footer.connect")}</h3>
           <ul className="socialLinklist">
-            <motion.li whileHover={{ scale: 1.3 }}>
+            <motion.li whileHover={{ scale: 1.2 }}>
               <NavLink to={"https://github.com/Niccar95"} target="_blank">
                 <i className="bi bi-github"></i>
                 Github
               </NavLink>
             </motion.li>
-            <motion.li whileHover={{ scale: 1.3 }}>
+            <motion.li whileHover={{ scale: 1.2 }}>
               <NavLink
                 to={"https://www.linkedin.com/in/nicolas-carrasco-6882402a5/"}
                 target="_blank"
