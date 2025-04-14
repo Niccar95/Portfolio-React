@@ -62,8 +62,9 @@ const Home = () => {
             transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
           >
             <h2 className="introHeading">
-              {t("home.greeting")}{" "}
-              <span className="nameLabel">Nicolas Carrasco</span>
+              {/* {t("home.greeting")}{" "} */}
+              <span className="nameLabel1">Nicolas</span>{" "}
+              <span className="nameLabel2">Carrasco</span>
             </h2>
             <p className="introduction">{t("home.presentation")}</p>
 
