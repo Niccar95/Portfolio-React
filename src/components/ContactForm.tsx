@@ -5,6 +5,8 @@ import { motion } from "motion/react";
 
 export const ContactForm = () => {
   const { t } = useTranslation();
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
   const [subject, setSubject] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -42,6 +44,30 @@ export const ContactForm = () => {
   return (
     <article className="formCard">
       <form ref={form} onSubmit={handleSubmit}>
+        <label>
+          {t("contact.labels.name")}
+          <input
+            type="text"
+            name="from_name"
+            className="textArea"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+            placeholder={t("contact.placeholders.name")}
+          />
+        </label>
+        <label>
+          {t("contact.labels.email")}
+          <input
+            type="email"
+            name="from_email"
+            className="textArea"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            placeholder={t("contact.placeholders.email")}
+          />
+        </label>
         <label>
           {t("contact.labels.subject")}
           <input
