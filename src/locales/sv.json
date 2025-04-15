@@ -34,10 +34,14 @@
       "contact": {
         "heading": "Kontakta Mig",
         "labels": {
+          "name": "Namn:",
+          "email": "Mejladress:",
           "subject": "Ämne:",
           "message": "Meddelande:"
         },
         "placeholders": {
+          "name": "Ange ditt namn...",
+          "email": "Ange din mejladress..",
           "subject": "Ange ditt ämne...",
           "message": "Ange ditt meddelande..."
         },

@@ -38,6 +38,10 @@ export const ContactForm = () => {
       );
     } finally {
       setIsLoading(false);
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
     }
   };
 
@@ -103,7 +107,9 @@ export const ContactForm = () => {
             ? `${t("contact.button.sending")}`
             : `${t("contact.button.send")}`}
         </motion.button>
-        {success && <p>{t("contact.notifications.success")}</p>}
+        {success && (
+          <p className="success">{t("contact.notifications.success")}</p>
+        )}
         {error && (
           <p>{t("contact.notifications.error", { errorMessage: error })}</p>
         )}

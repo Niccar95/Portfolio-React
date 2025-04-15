@@ -1,3 +1,5 @@
+@use "breakpoints" as *;
+
 form {
     display: flex;
     flex-direction: column;
@@ -31,7 +33,6 @@ form {
 
         textarea {
             width: 100%;
-            max-width: 600px;
             height: 150px;
             padding: 12px;
             border: 2px solid #e0e0e0;
@@ -42,6 +43,7 @@ form {
             background-color: white;
             resize: none;
             outline: none;
+
           }
           
             textarea:focus {
