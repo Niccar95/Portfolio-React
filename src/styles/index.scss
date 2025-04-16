@@ -96,7 +96,7 @@ main {
 
 .headingContainer {
   width: 100%;
-  .projectsHeading, .homeHeading, .contactHeading {
+  .projectsHeading, .homeHeading, .contactHeading, .aboutHeading {
     border-bottom: solid white 1px;
     
     @include desktop() {
@@ -106,23 +106,6 @@ main {
   }
 }
 
-  .aboutHeadingMobile {
-    display: block;
-    border-bottom: solid white 1px;
-
-    @include desktop() {
-      display: none;
-    }
-  }
-
-  .aboutHeadingDesktop {
-    display: none;
-
-    @include desktop() {
-      display: block;
-      margin-bottom: 1.5rem;
-    }
-  }
 }
 
 .content {

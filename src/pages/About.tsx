@@ -6,7 +6,7 @@ const About = () => {
     <>
       <section className="content">
         <div className="headingContainer">
-          <h2 className="aboutHeadingMobile">
+          <h2 className="aboutHeading">
             <i className="bi bi-file-person-fill"></i>
             {t("about.heading")}
           </h2>
@@ -16,10 +16,9 @@ const About = () => {
             <img src="/portrait.jpeg" className="aboutImage"></img>
           </div>
           <section className="aboutDescription">
-            <h2 className="aboutHeadingDesktop">{t("about.heading")}</h2>
+            <h3 className="tagline">{t("about.tagline").toUpperCase()}</h3>
             <p className="aboutParagraph">{t("about.paragraph1")}</p>
             <p className="aboutParagraph">{t("about.paragraph2")}</p>
-
             <p className="aboutParagraph">{t("about.paragraph3")}</p>
           </section>
         </div>
