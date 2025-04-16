@@ -62,7 +62,7 @@
                 "description": "A savings goal application designed for users who are new to saving, encouraging small, regular contributions."
               },
               "Tic-Tac-Toe": {
-                "description": "This is a Tic-tac-toe game I made as a school project. It was also my first Vue project."
+                "description": "This is a Tic-tac-toe game I built as a school project. It was also my first Vue project."
               },
               "PokeSearch": {
                 "description": "A nerdy little game that tests your knowledge of classic Pokemon. My first ever project created entirely on vanilla Javascript."

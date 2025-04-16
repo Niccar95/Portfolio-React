@@ -230,6 +230,10 @@ footer {
   @include desktop() {
       grid-template-columns: repeat(2, 1fr);
     }
+
+    @include large-desktop() {
+      gap: 4rem;
+    }
  }
 
 
