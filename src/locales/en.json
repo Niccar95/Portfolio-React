@@ -19,9 +19,10 @@
       "contact": "Contact"
     },
     "footer": {
-      "connect": "Let’s Connect:",
-      "github": "Github",
-      "linkedin": "LinkedIn",
+      "headings": {
+        "connect": "Connect",
+        "navigation": "Navigation"
+      },
       "copyright": "© {{year}} Nicolas Carrasco"
     },
     "about": {

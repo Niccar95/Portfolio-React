@@ -20,9 +20,11 @@
       "contact": "Kontakt"
     },
     "footer": {
+      "headings": {
+        "connect": "Connecta",
+        "navigation": "Navigering"
+      },
       "connect": "Låt oss hålla kontakten:",
-      "github": "Github",
-      "linkedin": "LinkedIn",
       "copyright": "© {{year}} Nicolas Carrasco"
     },
     "about": {

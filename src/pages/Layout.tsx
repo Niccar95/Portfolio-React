@@ -138,27 +138,56 @@ const Layout = () => {
         <Outlet />
       </main>
       <footer>
-        <section className="socialLinkSection">
-          <h3>{t("footer.connect")}</h3>
-          <ul className="socialLinklist">
-            <motion.li whileHover={{ scale: 1.2 }}>
-              <NavLink to={"https://github.com/Niccar95"} target="_blank">
-                <i className="bi bi-github"></i>
-                Github
-              </NavLink>
-            </motion.li>
-            <motion.li whileHover={{ scale: 1.2 }}>
-              <NavLink
-                to={"https://www.linkedin.com/in/nicolas-carrasco-6882402a5/"}
-                target="_blank"
-              >
-                <i className="bi bi-linkedin"></i>
-                Linkedin
-              </NavLink>
-            </motion.li>
-          </ul>
-        </section>
-        <p>&copy; {new Date().getFullYear()} Nicolas Carrasco</p>
+        <div className="footerContent">
+          <section className="linksSection">
+            <div className="linksContainer">
+              <h3 className="footerHeading">
+                {t("footer.headings.connect").toUpperCase()}
+              </h3>
+              <ul className="linklist">
+                <motion.li whileHover={{ scale: 1.2 }}>
+                  <NavLink to={"https://github.com/Niccar95"} target="_blank">
+                    <i className="bi bi-github"></i>
+                    Github
+                  </NavLink>
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.2 }}>
+                  <NavLink
+                    to={
+                      "https://www.linkedin.com/in/nicolas-carrasco-6882402a5/"
+                    }
+                    target="_blank"
+                  >
+                    <i className="bi bi-linkedin"></i>
+                    Linkedin
+                  </NavLink>
+                </motion.li>
+              </ul>
+            </div>
+            <div className="linksContainer">
+              <h3 className="footerHeading">
+                {t("footer.headings.navigation").toUpperCase()}
+              </h3>
+              <ul className="linklist">
+                <motion.li whileHover={{ scale: 1.2 }}>
+                  <NavLink to={"/"}>{t("navigation.home")}</NavLink>
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.2 }}>
+                  <NavLink to={"/projects"}>{t("navigation.projects")}</NavLink>
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.2 }}>
+                  <NavLink to={"/about"}>{t("navigation.about")}</NavLink>
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.2 }}>
+                  <NavLink to={"/about"}>{t("navigation.contact")}</NavLink>
+                </motion.li>
+              </ul>
+            </div>
+          </section>
+          <p className="copyright">
+            &copy; {new Date().getFullYear()} Nicolas Carrasco
+          </p>
+        </div>
       </footer>
     </div>
   );
