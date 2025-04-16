@@ -13,7 +13,11 @@ const About = () => {
         </div>
         <div className="aboutWrapper">
           <div className="aboutImageContainer">
-            <img src="/portrait.jpeg" className="aboutImage"></img>
+            <img
+              src="/portrait.jpeg"
+              className="aboutImage"
+              loading="lazy"
+            ></img>
           </div>
           <section className="aboutDescription">
             <h3 className="tagline">{t("about.tagline").toUpperCase()}</h3>
