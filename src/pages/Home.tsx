@@ -26,7 +26,7 @@ const Home = () => {
 
   setTimeout(() => {
     setRun(true);
-  }, 3000);
+  }, 2500);
 
   return (
     <>
@@ -78,7 +78,16 @@ const Home = () => {
               </h2>
             )}
 
-            <p className="introduction">{t("home.presentation")}</p>
+            {/* <p className="introduction">{t("home.presentation")}</p> */}
+
+            <motion.p
+              className="introduction"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 5 }}
+            >
+              {t("home.presentation")}
+            </motion.p>
 
             <motion.button
               className="heroButton"
