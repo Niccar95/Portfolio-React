@@ -89,15 +89,21 @@ const Home = () => {
               {t("home.presentation")}
             </motion.p>
 
-            <motion.button
-              className="heroButton"
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.2 }}
-              onClick={onButtonClick}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 5.5 }}
             >
-              <i className="bi bi-download"></i>
-              {t("home.cv-button")}
-            </motion.button>
+              <motion.button
+                className="heroButton"
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.2 }}
+                onClick={onButtonClick}
+              >
+                <i className="bi bi-download"></i>
+                {t("home.cv-button")}
+              </motion.button>
+            </motion.div>
           </motion.div>
         </motion.section>
       </motion.section>
