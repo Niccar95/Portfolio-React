@@ -27,16 +27,39 @@ a:hover {
 
 
 .matched {
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.3rem;
   border-bottom: solid 2px #ff8a00;
   color: #ff8a00;
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 30px;
+  text-transform: uppercase;
+
+   
+  @include desktop() {
+    font-size: 42px;
+  }
+
+  @include large-desktop() {
+    font-size: 64px;
+  }
 }
 
 h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+
+  @include desktop() {
+    font-size: 30px;
+  }
+
+  @include large-desktop() {
+    font-size: 48px;
+  }
+}
+
+h3 {
   font-size: 22px;
   text-transform: uppercase;
 }

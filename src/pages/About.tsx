@@ -6,10 +6,10 @@ const About = () => {
     <>
       <section className="content">
         <div className="headingContainer">
-          <h2 className="aboutHeading">
+          <h3 className="aboutHeading">
             <i className="bi bi-file-person-fill"></i>
             {t("about.heading")}
-          </h2>
+          </h3>
         </div>
         <div className="aboutWrapper">
           <div className="aboutImageContainer">

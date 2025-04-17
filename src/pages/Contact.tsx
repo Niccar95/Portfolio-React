@@ -8,11 +8,11 @@ const Contact = () => {
     <>
       <section className="content">
         <div className="headingContainer">
-          <h2 className="contactHeading">
+          <h3 className="contactHeading">
             {" "}
             <i className="bi bi-envelope-fill"></i>
             {t("contact.heading")}
-          </h2>
+          </h3>
         </div>
         <ContactForm />
       </section>

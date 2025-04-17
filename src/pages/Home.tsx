@@ -9,6 +9,7 @@ const Home = () => {
   const { t } = useTranslation();
   const [stackList] = useState<Stack[]>(stacks);
   const currentLang = localStorage.getItem("language") || "en";
+  const [run, setRun] = useState<boolean>(false);
 
   const onButtonClick = () => {
     const pdfFilename =
@@ -23,6 +24,10 @@ const Home = () => {
     document.body.removeChild(link);
   };
 
+  setTimeout(() => {
+    setRun(true);
+  }, 3000);
+
   return (
     <>
       <motion.section
@@ -32,11 +37,11 @@ const Home = () => {
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <motion.div className="headingContainer">
-          <h2 className="homeHeading">
+          <h3 className="homeHeading">
             {" "}
             <i className="bi bi-house-door-fill"></i>
             {t("home.heading")}
-          </h2>
+          </h3>
         </motion.div>
 
         <motion.section
@@ -61,11 +66,18 @@ const Home = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
           >
-            <h2 className="introHeading">
-              {/* {t("home.greeting")}{" "} */}
+            <h1 className="introHeading">
               <span className="nameLabel1">Nicolas</span>{" "}
               <span className="nameLabel2">Carrasco</span>
-            </h2>
+            </h1>
+
+            {run && (
+              <h2 className="introHeading introSubheading">
+                <span className="nameLabel2">Frontend</span>{" "}
+                <span className="nameLabel1">Developer</span>
+              </h2>
+            )}
+
             <p className="introduction">{t("home.presentation")}</p>
 
             <motion.button
