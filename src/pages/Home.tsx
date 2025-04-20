@@ -91,8 +91,6 @@ const Home = () => {
               </h1>
             )}
 
-            {/* <p className="introduction">{t("home.presentation")}</p> */}
-
             <motion.p
               className="introduction"
               initial={{ opacity: 0, y: 10 }}
@@ -114,7 +112,7 @@ const Home = () => {
                 onClick={onButtonClick}
               >
                 <i className="bi bi-download"></i>
-                {t("home.cv-button")}
+                {t("home.cv-button")} - {currentLang.toLocaleUpperCase()}
               </motion.button>
             </motion.div>
           </motion.div>
