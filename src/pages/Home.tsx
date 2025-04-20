@@ -29,7 +29,7 @@ const Home = () => {
 
     const link = document.createElement("a");
     link.href = `/${pdfFilename}`;
-    link.download = "CV-Nicolas.pdf";
+    link.download = `CV-${currentLang.toLocaleUpperCase()}.pdf`;
 
     document.body.appendChild(link);
     link.click();
