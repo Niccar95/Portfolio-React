@@ -26,7 +26,7 @@ const Home = () => {
 
   setTimeout(() => {
     setRun(true);
-  }, 2500);
+  }, 2000);
 
   return (
     <>
@@ -70,6 +70,7 @@ const Home = () => {
               <span className="nameLabel1">Nicolas</span>{" "}
               <span className="nameLabel2">Carrasco</span>
             </h1>
+            <br />
 
             {run && (
               <h1 className="introHeading introSubheading">
