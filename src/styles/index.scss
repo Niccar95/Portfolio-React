@@ -49,18 +49,10 @@ h1 {
 h2 {
   font-size: 25px;
   text-transform: uppercase;
-
-  @include desktop() {
-    font-size: 30px;
-  }
-
-  @include large-desktop() {
-    font-size: 48px;
-  }
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 18px;
   text-transform: uppercase;
 }
 
