@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Stack } from "../models/Stack";
 import { stacks } from "../data/stacks";
 import Skills from "../components/Skills";
@@ -10,6 +10,18 @@ const Home = () => {
   const [stackList] = useState<Stack[]>(stacks);
   const currentLang = localStorage.getItem("language") || "en";
   const [run, setRun] = useState<boolean>(false);
+
+  const introHeadingRef = useRef<HTMLHeadingElement | null>(null);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (introHeadingRef.current) {
+        introHeadingRef.current.classList.add("doneTyping");
+      }
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const onButtonClick = () => {
     const pdfFilename =
@@ -66,7 +78,7 @@ const Home = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
           >
-            <h1 className="introHeading">
+            <h1 ref={introHeadingRef} className="introHeading">
               <span className="nameLabel1">Nicolas</span>{" "}
               <span className="nameLabel2">Carrasco</span>
             </h1>
