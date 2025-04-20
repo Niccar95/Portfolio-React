@@ -114,6 +114,35 @@ export const ContactForm = () => {
           <p>{t("contact.notifications.error", { errorMessage: error })}</p>
         )}
       </form>
+      <section className="socialLinks">
+        <h3>{t("contact.social.title", "Connect with me:")}</h3>
+        <div>
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <i className="bi bi-github"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <i className="bi bi-linkedin"></i>
+          </a>
+          <a
+            href="mailto:your@email.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Email"
+          >
+            <i className="bi bi-envelope-fill"></i>
+          </a>
+        </div>
+      </section>
     </article>
   );
 };
