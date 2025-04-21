@@ -115,31 +115,28 @@ export const ContactForm = () => {
         )}
       </form>
       <section className="socialLinks">
-        <h3 className="socialHeading">
-          {t("contact.social.title", "Connect with me:")}
-        </h3>
-        <p className="socialText">
-          Find me on the platforms below, or send me a quick message through the
-          contact form.
-        </p>
+        <h3 className="socialHeading">{t("contact.social.title")}</h3>
+        <p className="socialText">{t("contact.social.description")}</p>
         <div className="linkContainer">
           <div className="socialIconLinks">
-            <a
+            <motion.a
+              whileHover={{ scale: 1.2 }}
               href="https://github.com/Niccar95"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
             >
               <i className="bi bi-github"></i>
-            </a>
-            <a
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.2 }}
               href="https://www.linkedin.com/in/nicolas-carrasco-6882402a5/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
               <i className="bi bi-linkedin"></i>
-            </a>
+            </motion.a>
           </div>
           <a
             href="mailto:niccar.95@outlook.com"
@@ -157,7 +154,9 @@ export const ContactForm = () => {
             aria-label="Location"
           >
             <i className="bi bi-geo-alt-fill"></i>{" "}
-            <span className="linkText">Stockholm, Sweden</span>
+            <span className="linkText">
+              Stockholm, {t("contact.social.country")}
+            </span>
           </a>
         </div>
       </section>

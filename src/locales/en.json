@@ -1,7 +1,6 @@
 {  
     "home": {
       "heading": "Home",
-      "greeting": "Hello, my name is",
       "presentation": "I'm a Frontend developer that enjoys crafting intuitive and efficient user interfaces. Always exploring new technologies, I focus on creating seamless digital experiences.",
       "cv-button": "Download my CV",
       "stack-heading": "Tech Stack",
@@ -22,8 +21,7 @@
       "headings": {
         "connect": "Connect",
         "navigation": "Navigation"
-      },
-      "copyright": "© {{year}} Nicolas Carrasco"
+      }
     },
     "about": {
        "heading": "About Me",
@@ -33,7 +31,12 @@
        "paragraph3": "Recently, I’ve been expanding my knowledge in Next.js, Sanity CMS, Headless CMS solutions, and Node.js to become a more well-rounded developer. I thrive in team environments where ideas flow and collaboration leads to great solutions. Whether it’s refining UI/UX, optimizing performance, or exploring new tech, I’m always eager to learn and contribute!"
       },
       "contact": {
-        "heading": "Contact Me",
+        "heading": "Contact",
+        "social": {
+          "title": "Connect with me:",
+          "description": "Feel free to connect with me on the platforms below, reach out via the contact form, or email me directly.",
+          "country": "Sweden"
+        },
         "labels": {
           "name": "Name:",
           "email": "E-Mail:",

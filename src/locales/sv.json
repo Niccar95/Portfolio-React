@@ -35,7 +35,12 @@
       "paragraph3": "På senare tid har jag utökat mina kunskaper inom Next.js, Sanity CMS, Headless CMS-lösningar och Node.js för att bli en mer allsidig utvecklare. Jag trivs i teammiljöer där idéer flödar och samarbete leder till fantastiska lösningar. Oavsett om det handlar om att förfina UI/UX, optimera prestanda eller utforska ny teknik, är jag alltid ivrig att lära mig och bidra!"
     },
       "contact": {
-        "heading": "Kontakta Mig",
+        "heading": "Kontakt",
+        "social": {
+          "title": "Ta kontakt med mig:",
+          "description": "Du är varmt välkommen att kontakta mig via plattformarna nedan, genom kontaktformuläret eller direkt via e-post.",
+          "country": "Sverige"
+        },
         "labels": {
           "name": "Namn:",
           "email": "Mejladress:",
