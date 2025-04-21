@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Stack } from "../models/Stack";
 import { stacks } from "../data/stacks";
 import Skills from "../components/Skills";
-import { motion } from "motion/react";
+import { motion, useInView } from "motion/react";
 import { useTranslation } from "react-i18next";
 
 const Home = () => {
@@ -10,6 +10,9 @@ const Home = () => {
   const [stackList] = useState<Stack[]>(stacks);
   const currentLang = localStorage.getItem("language") || "en";
   const [run, setRun] = useState<boolean>(false);
+
+  const skillsRef = useRef(null);
+  const isInView = useInView(skillsRef, { once: true, margin: "-100px" });
 
   const introHeadingRef = useRef<HTMLHeadingElement | null>(null);
 
@@ -36,9 +39,13 @@ const Home = () => {
     document.body.removeChild(link);
   };
 
-  setTimeout(() => {
-    setRun(true);
-  }, 2000);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setRun(true);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
@@ -95,7 +102,7 @@ const Home = () => {
               className="introduction"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 5 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 4 }}
             >
               {t("home.presentation")}
             </motion.p>
@@ -103,7 +110,7 @@ const Home = () => {
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 5.5 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 5 }}
             >
               <motion.button
                 className="heroButton"
@@ -121,8 +128,9 @@ const Home = () => {
 
       <motion.section
         className="content"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        ref={skillsRef}
+        initial={{ opacity: 0, y: 50 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <Skills stackList={stackList} />
