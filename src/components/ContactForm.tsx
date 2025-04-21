@@ -123,24 +123,24 @@ export const ContactForm = () => {
           contact form.
         </p>
         <div className="linkContainer">
-          <a
-            href="https://github.com/Niccar95"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-          >
-            <i className="bi bi-github"></i>{" "}
-            <span className="linkText">My GitHub profile</span>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/nicolas-carrasco-6882402a5/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            <i className="bi bi-linkedin"></i>{" "}
-            <span className="linkText">My LinkedIn profile</span>
-          </a>
+          <div className="socialIconLinks">
+            <a
+              href="https://github.com/Niccar95"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <i className="bi bi-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/nicolas-carrasco-6882402a5/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i className="bi bi-linkedin"></i>
+            </a>
+          </div>
           <a
             href="mailto:niccar.95@outlook.com"
             target="_blank"
