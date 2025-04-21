@@ -153,9 +153,11 @@
         gap: 8rem;
     }
 
-        .socialLinks {
+        .socialLinks.desktop {
+            display: none;
 
             @include desktop() {
+                display: block;
                 width: 30%;         
             }
           
@@ -174,13 +176,7 @@
               padding: 2rem;
               box-shadow: none;
               background-color: #222222e6;
-              border-radius: 0;
-              margin: 2rem -2rem 0rem -2rem;
-
-
-            @include desktop() {
-                border-radius: 2rem;  
-                margin: 0;   
+              border-radius: 2rem;             
             }
 
 
@@ -203,8 +199,55 @@
               }
             }
           }
-          
-    }
+    
+
+
+
+    .socialLinks.mobile {
+        display: block;
+
+        @include desktop() {
+            display: none;    
+        }
+      
+        .socialHeading {
+          margin-bottom: 2rem;
+        }
+
+        .socialText {
+            margin-bottom: 2rem;
+          }
+      
+        .linkContainer {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          padding: 2rem;
+          box-shadow: none;
+          background-color: #222222e6;
+          border-radius: 2rem;  
+        }
+
+
+        .socialIconLinks {
+            display: flex;
+            gap: 2rem;
+        }
+
+      
+          a {
+            width: fit-content;
+
+      
+            .linkText {
+                font-size: 14px;
+                color: #c5c5c5;
+                transition: color 0.3s ease, transform 0.3s ease;
+            }
+
+          }
+        }
+      
 
 
 
