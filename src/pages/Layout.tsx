@@ -2,7 +2,7 @@ import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { motion } from "motion/react";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import logo from "/logo.svg";
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const Layout = () => {
@@ -11,6 +11,7 @@ const Layout = () => {
   const location = useLocation();
 
   const [isMenuClicked, setIsMenuClicked] = useState<boolean>(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const savedLang = localStorage.getItem("language") || "en";
@@ -30,6 +31,23 @@ const Layout = () => {
   const closeMenu = () => {
     setIsMenuClicked(false);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsMenuClicked(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [dropdownRef]);
+
   return (
     <div className="layout">
       <header>
@@ -41,7 +59,10 @@ const Layout = () => {
             <i className={`bi ${isMenuClicked ? "bi-x" : "bi-list"}`}></i>
           </div>
 
-          <div className={`mobileMenu ${isMenuClicked ? "visible" : ""}`}>
+          <div
+            className={`mobileMenu ${isMenuClicked ? "visible" : ""}`}
+            ref={dropdownRef}
+          >
             <ul>
               <motion.li whileHover={{ scale: 1.2 }}>
                 <NavLink to={"/"} onClick={closeMenu}>
