@@ -115,31 +115,49 @@ export const ContactForm = () => {
         )}
       </form>
       <section className="socialLinks">
-        <h3>{t("contact.social.title", "Connect with me:")}</h3>
-        <div>
+        <h3 className="socialHeading">
+          {t("contact.social.title", "Connect with me:")}
+        </h3>
+        <p className="socialText">
+          Find me on the platforms below, or send me a quick message through the
+          contact form.
+        </p>
+        <div className="linkContainer">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Niccar95"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
           >
-            <i className="bi bi-github"></i>
+            <i className="bi bi-github"></i>{" "}
+            <span className="linkText">My GitHub profile</span>
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/nicolas-carrasco-6882402a5/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
           >
-            <i className="bi bi-linkedin"></i>
+            <i className="bi bi-linkedin"></i>{" "}
+            <span className="linkText">My LinkedIn profile</span>
           </a>
           <a
-            href="mailto:your@email.com"
+            href="mailto:niccar.95@outlook.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Email"
           >
-            <i className="bi bi-envelope-fill"></i>
+            <i className="bi bi-envelope-fill socialEnvelope"></i>{" "}
+            <span className="linkText">niccar.95@outlook.com</span>
+          </a>
+          <a
+            href="https://www.google.se/maps/place/Stockholm/@59.3037671,17.9213502,11z/data=!3m1!4b1!4m6!3m5!1s0x465f763119640bcb:0xa80d27d3679d7766!8m2!3d59.3327036!4d18.0656255!16zL20vMDZteHM?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Location"
+          >
+            <i className="bi bi-geo-alt-fill"></i>{" "}
+            <span className="linkText">Stockholm, Sweden</span>
           </a>
         </div>
       </section>
