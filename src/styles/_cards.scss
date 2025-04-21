@@ -132,11 +132,7 @@
     .iconContainer {
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
-
-        @include desktop() {
-            gap: 1.5rem;
-        }
+        gap: 1.5rem;
     }
 }
 
