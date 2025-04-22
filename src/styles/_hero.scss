@@ -76,7 +76,6 @@
 
         .introSubheading {
           font-size: 22px;
-          animation: typing-sub 1.5s steps(18, end) forwards, blink 1s step-end infinite;
 
   @include desktop() {
     font-size: 30px;
@@ -89,6 +88,16 @@
 }
 }
 
+.introSubheading.sv {
+  animation: typing-sub-sv 1.5s steps(19, end) forwards, blink 1s step-end infinite;
+
+}
+
+.introSubheading.en {
+  animation: typing-sub-en 1.5s steps(18, end) forwards, blink 1s step-end infinite;
+
+}
+
       @keyframes typing {
         from {
           width: 0;
@@ -98,12 +107,21 @@
         }
       }
 
-      @keyframes typing-sub {
+      @keyframes typing-sub-en {
         from {
           width: 0;
         }
         to {
           width: 18ch;
+        }
+      }
+
+      @keyframes typing-sub-sv {
+        from {
+          width: 0;
+        }
+        to {
+          width: 19ch;
         }
       }
 

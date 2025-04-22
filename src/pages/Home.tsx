@@ -92,9 +92,9 @@ const Home = () => {
             <br />
 
             {run && (
-              <h1 className="introHeading introSubheading">
+              <h1 className={`introHeading introSubheading ${currentLang}`}>
                 <span className="nameLabel2">Frontend</span>{" "}
-                <span className="nameLabel1">Developer</span>
+                <span className="nameLabel1">{t("home.occupation")}</span>
               </h1>
             )}
 
