@@ -113,10 +113,10 @@ main {
   width: 100%;
   .projectsHeading, .homeHeading, .contactHeading, .aboutHeading {
     border-bottom: solid white 1px;
+    margin-bottom: 2rem;
     
     @include desktop() {
       width: 20%;
-      margin: 0;
     }
   }
 }

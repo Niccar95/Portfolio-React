@@ -162,9 +162,9 @@ const Layout = () => {
         <div className="footerContent">
           <section className="linksSection">
             <div className="linksContainer">
-              <h3 className="footerHeading">
+              <h4 className="footerHeading">
                 {t("footer.headings.connect").toUpperCase()}
-              </h3>
+              </h4>
               <ul className="linklist">
                 <motion.li whileHover={{ scale: 1.2 }}>
                   <NavLink to={"https://github.com/Niccar95"} target="_blank">
@@ -186,9 +186,9 @@ const Layout = () => {
               </ul>
             </div>
             <div className="linksContainer">
-              <h3 className="footerHeading">
+              <h4 className="footerHeading">
                 {t("footer.headings.navigation").toUpperCase()}
-              </h3>
+              </h4>
               <ul className="linklist">
                 <motion.li whileHover={{ scale: 1.2 }}>
                   <NavLink to={"/"}>{t("navigation.home")}</NavLink>
