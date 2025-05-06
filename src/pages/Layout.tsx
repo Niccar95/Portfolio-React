@@ -58,14 +58,11 @@ const Layout = () => {
           <div className="logoContainer">
             <img className="logo" src={logo} alt="logo"></img>
           </div>
-          <div className="hamburgerMenu" onClick={updateMenu}>
+          <div className="hamburgerMenu" onClick={updateMenu} ref={dropdownRef}>
             <i className={`bi ${isMenuClicked ? "bi-x" : "bi-list"}`}></i>
           </div>
 
-          <div
-            className={`mobileMenu ${isMenuClicked ? "visible" : ""}`}
-            ref={dropdownRef}
-          >
+          <div className={`mobileMenu ${isMenuClicked ? "visible" : ""}`}>
             <ul>
               <motion.li whileHover={{ scale: 1.2 }}>
                 <NavLink to={"/"} onClick={closeMenu}>
