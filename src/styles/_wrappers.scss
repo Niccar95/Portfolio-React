@@ -95,6 +95,9 @@
 
 .aboutWrapper {
     width: 100%;
+    background-color: #1c1c1c;
+    border-radius: 2rem;
+    padding: 2rem;
 
     @include desktop() {
         display: flex;  
@@ -110,6 +113,8 @@
         height: 300px;
         margin-bottom: 1.5rem;
         border-radius: 1rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+
 
         @include desktop() {
             width: 500px;
@@ -126,6 +131,7 @@
     }
 
     .aboutDescription {
+        
         @include desktop() {
             width: 60%;    
         }

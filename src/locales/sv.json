@@ -30,9 +30,9 @@
     "about": {
       "heading": "Om Mig",
       "tagline": "Vem är jag?",
-      "paragraph1": "Jag är en frontend-utvecklare med en bakgrund inom utbildning. Innan jag gick in i teknikvärlden arbetade jag över nio år i skolor och förskolor, varav tre år som förskollärare.",
-      "paragraph2": "Den erfarenheten formade min förmåga att kommunicera, anpassa mig, tänka kreativt och samarbeta i team – färdigheter som nu hjälper mig att skapa intuitiva och engagerande webbupplevelser. Jag brinner för design, tillgänglighet och modulär utveckling. Jag älskar att skapa rena, effektiva och dynamiska gränssnitt. Min tekniska stack inkluderar HTML, CSS, JavaScript och TypeScript, och jag har arbetat med React och Vue.js.",
-      "paragraph3": "På senare tid har jag utökat mina kunskaper inom Next.js, Sanity CMS, Headless CMS-lösningar och Node.js för att bli en mer allsidig utvecklare. Jag trivs i teammiljöer där idéer flödar och samarbete leder till fantastiska lösningar. Oavsett om det handlar om att förfina UI/UX, optimera prestanda eller utforska ny teknik, är jag alltid ivrig att lära mig och bidra!"
+      "paragraph1": "Min bakgrund kanske inte är den mest traditionella för en utvecklare. Jag har nio års erfarenhet av att arbeta i skolor och förskolor, varav över tre år som förskollärare. Under den tiden lärde jag mig att kommunicera effektivt, samarbeta nära med andra och anpassa mig snabbt till nya situationer. De färdigheterna har jag tagit med mig in i utvecklingsvärlden, där problemlösning, kreativitet och lagarbete är minst lika viktiga som att skriva kod.",
+      "paragraph2": "Att koda betyder mycket för mig, eftersom det låter mig tänka djupt, skapa något från ingenting och ständigt lära mig nya saker. Jag kodar nästan varje dag och trivs i miljöer där jag både kan samarbeta och ta egna initiativ. Jag ser feedback som en naturlig del av att utvecklas, och jag strävar alltid efter att förbättra mina färdigheter.",
+      "paragraph3": "Jag ser verkligen fram emot möjligheten att bidra med min energi och mina färdigheter inom frontendutveckling."
     },
       "contact": {
         "heading": "Kontakt",
@@ -98,6 +98,7 @@
           "stack": "Jag arbetar med JavaScript och TypeScript och använder ramverk som Vue.js och Next.js för att bygga webbapplikationer. Jag är bekant med stylingverktyg som Tailwind CSS och Sass och har erfarenhet av databaser som MongoDB och MySQL. Jag har även använt verktyg som Postman, Jest och Figma för att stödja utveckling och testning.",
           "languages": "Jag kan tryggt kommunicera på svenska, spanska och engelska, både i tal och skrift, och anpassar mitt språk efter professionella och sociala sammanhang."
         }
-}
+      }
+
 
   
