@@ -50,9 +50,9 @@ const Layout = () => {
 
   return (
     <div className="layout">
-      {location.pathname === "/about" && (
+      {/* {location.pathname === "/about" && (
         <img className="blob" src="/Ellipse2.svg"></img>
-      )}
+      )} */}
       <header>
         <nav>
           <div className="logoContainer">
@@ -200,7 +200,7 @@ const Layout = () => {
                   <NavLink to={"/about"}>{t("navigation.about")}</NavLink>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.2 }}>
-                  <NavLink to={"/about"}>{t("navigation.contact")}</NavLink>
+                  <NavLink to={"/contact"}>{t("navigation.contact")}</NavLink>
                 </motion.li>
               </ul>
             </div>

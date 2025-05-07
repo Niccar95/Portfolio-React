@@ -93,7 +93,7 @@ export const ContactForm = () => {
           </a>
         </div>
       </section>
-      <article className="formCard">
+      <article className="formWrapper">
         <form ref={form} onSubmit={handleSubmit}>
           <label>
             {t("contact.labels.name")}
