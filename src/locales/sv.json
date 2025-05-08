@@ -69,6 +69,9 @@
               "TinySaves": {
                 "description": "En sparmål-applikation utformad för användare som är nya på att spara och uppmuntrar små, regelbundna bidrag."
               },
+              "Drinkory": {
+                "description": "En webbplats för alla som gillar drycker. Du kan söka efter drinkar, lära dig hur man gör dem steg för steg och spara dina favoriter."
+              },
               "Tic-Tac-Toe": {
                 "description": "Detta är ett Tic-tac-toe-spel som jag gjorde som ett skolarbete. Det var också mitt första Vue-projekt."
               },

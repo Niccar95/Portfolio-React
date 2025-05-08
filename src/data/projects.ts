@@ -22,6 +22,22 @@ export const projects: Project[] = [
   ),
   new Project(
     2,
+    "Drinkory",
+    "Drinkory",
+    "projects.card.Drinkory.description",
+    "https://drinkory.vercel.app/",
+    "/drinkory.png",
+    [
+      { name: "ci ci-react" },
+      { name: "ci ci-typescript" },
+      { name: "ci ci-sass" },
+      { name: "ci ci-vitejs" },
+      { name: "ci ci-json" },
+      { name: "ci ci-npm" },
+    ]
+  ),
+  new Project(
+    3,
     "Tic-Tac-Toe",
     "Tic-Tac-Toe",
     "projects.card.TicTacToe.description",
@@ -36,7 +52,7 @@ export const projects: Project[] = [
     ]
   ),
   new Project(
-    3,
+    4,
     "PokeSearch",
     "PokeSearch",
     "projects.card.PokeSearch.description",
@@ -51,7 +67,7 @@ export const projects: Project[] = [
     ]
   ),
   new Project(
-    4,
+    5,
     "To-Do",
     "To-Do List",
     "projects.card.To-Do.description",
@@ -65,7 +81,7 @@ export const projects: Project[] = [
     ]
   ),
   new Project(
-    5,
+    6,
     "TheZoo",
     "The Zoo",
     "projects.card.TheZoo.description",
@@ -81,7 +97,7 @@ export const projects: Project[] = [
     ]
   ),
   new Project(
-    6,
+    7,
     "EmployeeSite",
     "Employee Site",
     "projects.card.EmployeeSite.description",
