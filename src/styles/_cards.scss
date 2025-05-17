@@ -12,6 +12,7 @@
     overflow-y: hidden;
     height: 550px;
     transition: height 0.4s ease-in-out;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 
     &.expanded {
         height: 650px; 
@@ -113,6 +114,7 @@
     background-color: #222426;
     border-radius: 2rem;
     padding: 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
     
     @include desktop() {
         width: 40%;
@@ -122,17 +124,37 @@
         height: 400px;
     }
     
+    .bi-translate, .bi-code-slash {
+        font-size: 20px;
+        margin-right: 0.5rem;
+        
+        @include desktop() {
+            display: none;
+        }
+    }
+    
     .stackLabel {
+        display: inline-block;
         margin-bottom: 2rem;
+
         @include desktop() {
             display: none;
         }
     }
 
     .iconContainer {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.5rem;
+        // display: flex;
+        // flex-wrap: wrap;
+        // gap: 1.5rem;
+           display: grid;
+           grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
+           gap: 1rem;   
+
+          @include desktop() {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
+            gap: 1.5rem;   
+        }
     }
 }
 
@@ -174,6 +196,7 @@
               padding: 2rem;
               box-shadow: none;
               background-color: #222426;
+              box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
               border-radius: 2rem;  
         
             }

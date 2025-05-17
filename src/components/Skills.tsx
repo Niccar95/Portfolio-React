@@ -37,7 +37,10 @@ const Skills = ({ stackList }: ISkillProps) => {
       >
         <div className="skillsContainer">
           <article className="skillsCard">
-            <h2 className="stackLabel">{t("home.stack-heading")}</h2>
+            <span>
+              <i className="bi bi-code-slash"></i>
+              <h2 className="stackLabel">{t("home.stack-heading")} </h2>
+            </span>
             <div className="iconContainer">
               {stackList.map((stack) => (
                 <i
@@ -50,18 +53,31 @@ const Skills = ({ stackList }: ISkillProps) => {
           </article>
 
           <section className="skillDescription">
-            <h2>{t("home.stack-heading")}</h2>
+            <span>
+              <i className="bi bi-code-slash"></i>
+              <h2 className="stackLabel">{t("home.stack-heading")}</h2>
+            </span>
             <p>{t("skill-descriptions.stack")}</p>
           </section>
         </div>
 
         <div className="skillsContainer">
           <section className="skillDescription">
-            <h2>{t("home.lang-skills.lang-heading")}</h2>
+            <span>
+              <i className="bi bi-translate"></i>
+              <h2 className="stackLabel">
+                {t("home.lang-skills.lang-heading")}
+              </h2>
+            </span>
             <p>{t("skill-descriptions.languages")}</p>
           </section>
           <article className="skillsCard">
-            <h2 className="stackLabel">{t("home.lang-skills.lang-heading")}</h2>
+            <span>
+              <i className="bi bi-translate"></i>
+              <h2 className="stackLabel">
+                {t("home.lang-skills.lang-heading")}
+              </h2>
+            </span>
             <div className="languageContainer">
               {languageSkills.map((language) => (
                 <div className="languageItem" key={language.id}>
