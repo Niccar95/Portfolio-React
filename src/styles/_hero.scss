@@ -24,11 +24,11 @@
       height: 200px;
       transition: box-shadow 0.5s ease-in-out;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
     
       @include desktop() {
         width: 250px;
         height: 250px;
-        border-radius: 50%;
       }
 
       @include large-desktop() {
