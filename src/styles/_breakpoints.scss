@@ -3,13 +3,6 @@ $small-desktop: 1024px;
 $desktop: 1200px;
 $large-desktop: 1600px;
 
-@mixin tablet {
-  @media screen and (min-width: $tablet) {
-    @content;
-  }
-}
-
-
 @mixin small-desktop {
   @media screen and (min-width: $small-desktop) {
     @content;
