@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { motion } from "motion/react";
 
 const About = () => {
   const { t } = useTranslation();
@@ -12,19 +13,29 @@ const About = () => {
           </h3>
         </div>
         <div className="aboutWrapper">
-          <div className="aboutImageContainer">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="aboutImageContainer"
+          >
             <img
               src="/portrait.jpeg"
               className="aboutImage"
               loading="lazy"
             ></img>
-          </div>
-          <section className="aboutDescription">
+          </motion.div>
+          <motion.section
+            className="aboutDescription"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
+          >
             <h3 className="tagline">{t("about.tagline").toUpperCase()}</h3>
             <p className="aboutParagraph">{t("about.paragraph1")}</p>
             <p className="aboutParagraph">{t("about.paragraph2")}</p>
             <p className="aboutParagraph">{t("about.paragraph3")}</p>
-          </section>
+          </motion.section>
         </div>
       </section>
     </>
