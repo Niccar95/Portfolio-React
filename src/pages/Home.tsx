@@ -17,6 +17,12 @@ const Home = () => {
   const introHeadingRef = useRef<HTMLHeadingElement | null>(null);
 
   useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 0);
+  }, []);
+
+  useEffect(() => {
     const timer = setTimeout(() => {
       if (introHeadingRef.current) {
         introHeadingRef.current.classList.add("doneTyping");

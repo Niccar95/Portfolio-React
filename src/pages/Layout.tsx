@@ -50,9 +50,6 @@ const Layout = () => {
 
   return (
     <div className="layout">
-      {/* {location.pathname === "/about" && (
-        <img className="blob" src="/Ellipse2.svg"></img>
-      )} */}
       <header>
         <nav>
           <div className="logoContainer">
