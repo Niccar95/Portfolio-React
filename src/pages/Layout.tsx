@@ -5,25 +5,19 @@ import logo from "/logo.svg";
 import { FormEvent, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useMenuActions } from "../hooks/useMenuActions";
+import { useLanguage } from "../hooks/useLanguage";
 
 const Layout = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+  const { currentLang, changeLanguage } = useLanguage();
   const { updateMenu, closeMenu, isMenuClicked, setIsMenuClicked } =
     useMenuActions();
-
   const location = useLocation();
 
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const savedLang = localStorage.getItem("language") || "en";
-    i18n.changeLanguage(savedLang);
-  }, [i18n]);
-
   const handleLangChange = (e: FormEvent<HTMLSelectElement>) => {
-    const newLang = e.currentTarget.value;
-    i18n.changeLanguage(newLang);
-    localStorage.setItem("language", newLang);
+    changeLanguage(e.currentTarget.value);
   };
 
   useEffect(() => {
@@ -81,13 +75,11 @@ const Layout = () => {
           <div className="desktopMenu">
             <div className="languageSelector desktop">
               <i className="bi bi-globe"></i>
-              <span className="selectedLang">
-                {i18n.language.toUpperCase()}
-              </span>
+              <span className="selectedLang">{currentLang.toUpperCase()}</span>
 
               <select
                 id="desktopSelect"
-                value={i18n.language}
+                value={currentLang}
                 onChange={handleLangChange}
                 className="hiddenSelect"
               >
@@ -135,11 +127,11 @@ const Layout = () => {
       <main>
         <div className="languageSelector mobile">
           <i className="bi bi-globe"></i>
-          <span className="selectedLang">{i18n.language.toUpperCase()}</span>
+          <span className="selectedLang">{currentLang.toUpperCase()}</span>
 
           <select
             id="mobileSelect"
-            value={i18n.language}
+            value={currentLang}
             onChange={handleLangChange}
             className="hiddenSelect"
           >
