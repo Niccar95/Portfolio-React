@@ -2,7 +2,7 @@ import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { motion } from "motion/react";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import logo from "/logo.svg";
-import { FormEvent, useEffect, useRef } from "react";
+import { FormEvent } from "react";
 import { useTranslation } from "react-i18next";
 import { useMenuActions } from "../hooks/useMenuActions";
 import { useLanguage } from "../hooks/useLanguage";
@@ -10,31 +10,13 @@ import { useLanguage } from "../hooks/useLanguage";
 const Layout = () => {
   const { t } = useTranslation();
   const { currentLang, changeLanguage } = useLanguage();
-  const { updateMenu, closeMenu, isMenuClicked, setIsMenuClicked } =
+  const { updateMenu, closeMenu, isMenuClicked, dropdownRef } =
     useMenuActions();
   const location = useLocation();
-
-  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const handleLangChange = (e: FormEvent<HTMLSelectElement>) => {
     changeLanguage(e.currentTarget.value);
   };
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target as Node)
-      ) {
-        setIsMenuClicked(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [setIsMenuClicked]);
 
   return (
     <div className="layout">
