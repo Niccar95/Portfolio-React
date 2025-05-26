@@ -4,9 +4,11 @@ import { stacks } from "../data/stacks";
 import Skills from "../components/Skills";
 import { motion, useInView } from "motion/react";
 import { useTranslation } from "react-i18next";
+import { useScrollTop } from "../hooks/useScrollTop";
 
 const Home = () => {
   const { t } = useTranslation();
+  useScrollTop();
   const [stackList] = useState<Stack[]>(stacks);
   const currentLang = localStorage.getItem("language") || "en";
   const [run, setRun] = useState<boolean>(false);
@@ -15,12 +17,6 @@ const Home = () => {
   const isInView = useInView(skillsRef, { once: true, margin: "-100px" });
 
   const introHeadingRef = useRef<HTMLHeadingElement | null>(null);
-
-  useEffect(() => {
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }, 0);
-  }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {

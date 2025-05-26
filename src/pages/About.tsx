@@ -1,8 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
+import { useScrollTop } from "../hooks/useScrollTop";
 
 const About = () => {
   const { t } = useTranslation();
+  useScrollTop();
   return (
     <>
       <section className="content">

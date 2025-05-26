@@ -4,9 +4,12 @@ import { Project } from "../models/Project";
 import { projects } from "../data/projects";
 import { Pagination } from "../components/Pagination";
 import { useTranslation } from "react-i18next";
+import { useScrollTop } from "../hooks/useScrollTop";
 
 const Projects = () => {
   const { t } = useTranslation();
+  useScrollTop();
+
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [projectList] = useState<Project[]>(projects);
   const totalProjects = projectList.length;

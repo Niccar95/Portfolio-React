@@ -1,8 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { ContactForm } from "../components/ContactForm";
+import { useScrollTop } from "../hooks/useScrollTop";
 
 const Contact = () => {
   const { t } = useTranslation();
+  useScrollTop();
 
   return (
     <>
