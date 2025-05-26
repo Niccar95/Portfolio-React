@@ -170,6 +170,13 @@ const Layout = () => {
               </ul>
             </div>
           </section>
+          <NavLink
+            className="loadingLink"
+            to={"https://loading.io/"}
+            target="_blank"
+          >
+            The Spinner was provided by loading.io
+          </NavLink>
           <p className="copyright">
             &copy; {new Date().getFullYear()} Nicolas Carrasco
           </p>

@@ -162,15 +162,13 @@ footer {
   .footerContent {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 3rem;
     padding: 3rem 2rem 2rem 2rem;
-    height: 370px;
     font-size: 14px;
 
     @include desktop() {
       justify-content: space-between;
       padding: 3rem 6rem 2rem 6rem;  
-      height: 400px;
     }
   
     @include large-desktop() {
@@ -213,6 +211,10 @@ footer {
               }
             }
           }
+    }
+
+    .loadingLink {
+      width: fit-content;
     }
     .copyright {
       align-self: flex-start;
