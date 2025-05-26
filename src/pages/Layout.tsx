@@ -2,15 +2,17 @@ import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { motion } from "motion/react";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import logo from "/logo.svg";
-import { FormEvent, useEffect, useRef, useState } from "react";
+import { FormEvent, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
+import { useMenuActions } from "../hooks/useMenuActions";
 
 const Layout = () => {
   const { t, i18n } = useTranslation();
+  const { updateMenu, closeMenu, isMenuClicked, setIsMenuClicked } =
+    useMenuActions();
 
   const location = useLocation();
 
-  const [isMenuClicked, setIsMenuClicked] = useState<boolean>(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -22,14 +24,6 @@ const Layout = () => {
     const newLang = e.currentTarget.value;
     i18n.changeLanguage(newLang);
     localStorage.setItem("language", newLang);
-  };
-
-  const updateMenu = () => {
-    setIsMenuClicked(!isMenuClicked);
-  };
-
-  const closeMenu = () => {
-    setIsMenuClicked(false);
   };
 
   useEffect(() => {
@@ -46,7 +40,7 @@ const Layout = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [dropdownRef]);
+  }, [setIsMenuClicked]);
 
   return (
     <div className="layout">
