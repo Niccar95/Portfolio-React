@@ -2,7 +2,7 @@
   "home": {
     "heading": "Hem",
     "occupation": "Utvecklare",
-    "presentation": "Jag är en frontend-utvecklare som gillar att skapa intuitiva och effektiva användargränssnitt. Jag utforskar alltid nya teknologier och fokuserar på att skapa sömlösa digitala upplevelser.",
+    "presentation": "Jag är en fullstack utvecklare som gillar att skapa intuitiva och effektiva användargränssnitt. Jag utforskar alltid nya teknologier och fokuserar på att skapa sömlösa digitala upplevelser.",
     "cv-button": "Ladda ner mitt CV",
     "stack-heading": "Teknikstack",
     "lang-skills": {
@@ -32,7 +32,7 @@
       "tagline": "Vem är jag?",
       "paragraph1": "Min bakgrund kanske inte är den mest traditionella för en utvecklare. Jag har nio års erfarenhet av att arbeta i skolor och förskolor, varav över tre år som förskollärare. Under den tiden lärde jag mig att kommunicera effektivt, samarbeta nära med andra och anpassa mig snabbt till nya situationer. De färdigheterna har jag tagit med mig in i utvecklingsvärlden, där problemlösning, kreativitet och lagarbete är minst lika viktiga som att skriva kod.",
       "paragraph2": "Att koda betyder mycket för mig, eftersom det låter mig tänka djupt, skapa något från ingenting och ständigt lära mig nya saker. Jag kodar nästan varje dag och trivs i miljöer där jag både kan samarbeta och ta egna initiativ. Jag ser feedback som en naturlig del av att utvecklas, och jag strävar alltid efter att förbättra mina färdigheter.",
-      "paragraph3": "Jag ser verkligen fram emot möjligheten att bidra med min energi och mina färdigheter inom frontendutveckling."
+      "paragraph3": "Jag ser verkligen fram emot möjligheten att bidra med min energi och mina färdigheter."
     },
       "contact": {
         "heading": "Kontakt",

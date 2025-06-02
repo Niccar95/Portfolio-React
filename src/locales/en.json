@@ -2,7 +2,7 @@
     "home": {
       "heading": "Home",
       "occupation": "Developer",
-      "presentation": "I'm a Frontend developer that enjoys crafting intuitive and efficient user interfaces. Always exploring new technologies, I focus on creating seamless digital experiences.",
+      "presentation": "I'm a fullstack developer that enjoys crafting intuitive and efficient user interfaces. Always exploring new technologies, I focus on creating seamless digital experiences.",
       "cv-button": "Download my CV",
       "stack-heading": "Tech Stack",
       "lang-skills": {
@@ -29,7 +29,7 @@
        "tagline": "Who am I?",
        "paragraph1": "My background might not be the most traditional for a developer. I have nine years of experience working in schools and preschools, including over three years as a preschool teacher. During that time, I learned how to communicate effectively, collaborate closely, and adapt quickly to new situations. I’ve carried those skills with me into development, where problem-solving, creativity, and teamwork are just as important as writing code.",
        "paragraph2": "Coding means a lot to me, because it allows me to think deeply, build things from nothing, and constantly learn. I code almost every day and enjoy working in environments where I can both collaborate and take initiative. I see feedback as a natural part of growing, and I’m always striving to improve my skills.",
-       "paragraph3": "I'm really looking forward to the opportunity to contribute with my energy and frontend development skills."
+       "paragraph3": "I'm really looking forward to the opportunity to contribute with my energy and skills."
       },
       "contact": {
         "heading": "Contact",
