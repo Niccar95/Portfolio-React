@@ -66,6 +66,9 @@
         "heading": "Mina Projekt",
         "no-projects": "Inga projekt tillgängliga just nu.",
         "card": {
+              "React-Oddball-Icons": {
+                "description": "Ett lekfullt ikonbibliotek för React med knasiga ikoner i corporate-stil."
+              },
               "TinySaves": {
                 "description": "En sparmål-applikation utformad för användare som är nya på att spara och uppmuntrar små, regelbundna bidrag."
               },

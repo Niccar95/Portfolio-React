@@ -1,3 +1,4 @@
+import { Category } from "./ICategory";
 import { StackList } from "./IStack";
 export class Project {
   id: number;
@@ -7,6 +8,7 @@ export class Project {
   url: string;
   image: string;
   stacks: StackList[];
+  category: Category;
 
   constructor(
     id: number,
@@ -15,7 +17,8 @@ export class Project {
     description: string,
     url: string,
     image: string,
-    stacks: StackList[] = []
+    stacks: StackList[] = [],
+    category: Category
   ) {
     this.id = id;
     this.title = title;
@@ -24,5 +27,6 @@ export class Project {
     this.url = url;
     this.image = image;
     this.stacks = stacks;
+    this.category = category;
   }
 }

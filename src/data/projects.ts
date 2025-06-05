@@ -3,6 +3,20 @@ import { Project } from "../models/Project";
 export const projects: Project[] = [
   new Project(
     1,
+    "React-Oddball-Icons",
+    "React Oddball Icons",
+    "projects.card.React-Oddball-Icons.description",
+    "https://www.npmjs.com/package/react-oddball-icons?activeTab=readme",
+    "/react-oddball-icons.png",
+    [
+      { name: "ci ci-react" },
+      { name: "ci ci-typescript" },
+      { name: "ci ci-npm" },
+    ],
+    "Library"
+  ),
+  new Project(
+    2,
     "TinySaves",
     "TinySaves",
     "projects.card.TinySaves.description",
@@ -18,10 +32,27 @@ export const projects: Project[] = [
       { name: "ci ci-prisma" },
       { name: "ci ci-mongodb2" },
       { name: "ci ci-jest" },
-    ]
+    ],
+    "Fullstack"
   ),
   new Project(
-    2,
+    3,
+    "PokeSearch",
+    "PokeSearch",
+    "projects.card.PokeSearch.description",
+    "https://niccar95.github.io/PokeSearch/",
+    "/pokeSearch.png",
+    [
+      { name: "ci ci-javascript" },
+      { name: "ci ci-sass" },
+      { name: "ci ci-json" },
+      { name: "ci ci-npm" },
+      { name: "ci ci-vitejs" },
+    ],
+    "Frontend"
+  ),
+  new Project(
+    4,
     "Drinkory",
     "Drinkory",
     "projects.card.Drinkory.description",
@@ -34,10 +65,11 @@ export const projects: Project[] = [
       { name: "ci ci-vitejs" },
       { name: "ci ci-json" },
       { name: "ci ci-npm" },
-    ]
+    ],
+    "Frontend"
   ),
   new Project(
-    3,
+    5,
     "Tic-Tac-Toe",
     "Tic-Tac-Toe",
     "projects.card.TicTacToe.description",
@@ -49,25 +81,12 @@ export const projects: Project[] = [
       { name: "ci ci-sass" },
       { name: "ci ci-npm" },
       { name: "ci ci-vitejs" },
-    ]
+    ],
+    "Frontend"
   ),
+
   new Project(
-    4,
-    "PokeSearch",
-    "PokeSearch",
-    "projects.card.PokeSearch.description",
-    "https://niccar95.github.io/PokeSearch/",
-    "/pokeSearch.png",
-    [
-      { name: "ci ci-javascript" },
-      { name: "ci ci-sass" },
-      { name: "ci ci-json" },
-      { name: "ci ci-npm" },
-      { name: "ci ci-vitejs" },
-    ]
-  ),
-  new Project(
-    5,
+    6,
     "To-Do",
     "To-Do List",
     "projects.card.To-Do.description",
@@ -78,10 +97,11 @@ export const projects: Project[] = [
       { name: "ci ci-sass" },
       { name: "ci ci-npm" },
       { name: "ci ci-vitejs" },
-    ]
+    ],
+    "Frontend"
   ),
   new Project(
-    6,
+    7,
     "TheZoo",
     "The Zoo",
     "projects.card.TheZoo.description",
@@ -94,10 +114,11 @@ export const projects: Project[] = [
       { name: "ci ci-vitejs" },
       { name: "ci ci-json" },
       { name: "ci ci-npm" },
-    ]
+    ],
+    "Frontend"
   ),
   new Project(
-    7,
+    8,
     "EmployeeSite",
     "Employee Site",
     "projects.card.EmployeeSite.description",
@@ -110,6 +131,7 @@ export const projects: Project[] = [
       { name: "ci ci-vitejs" },
       { name: "ci ci-json" },
       { name: "ci ci-npm" },
-    ]
+    ],
+    "Frontend"
   ),
 ];
