@@ -2,6 +2,8 @@ import { motion } from "motion/react";
 import { useState } from "react";
 import { Project } from "../models/Project";
 import { useTranslation } from "react-i18next";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { tomorrow } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 interface IProjectProps {
   project: Project;
@@ -14,6 +16,8 @@ const ProjectCard = ({ project }: IProjectProps) => {
   const seeProject = (url: string) => {
     window.open(url, "_blank");
   };
+
+  const codeString = "npm install react-oddball-icons";
 
   return (
     <motion.article
@@ -32,8 +36,7 @@ const ProjectCard = ({ project }: IProjectProps) => {
         ></img>
       </div>
       <div className="descriptionContainer">
-        <h2>{project.displayTitle}</h2>
-
+        <h3 className="projectTitle">{project.displayTitle}</h3>
         <p>
           {isExpanded
             ? t(`projects.card.${project.title}.description`, {
@@ -51,7 +54,11 @@ const ProjectCard = ({ project }: IProjectProps) => {
               : t("projects.card.read-more")}
           </span>
         </p>
-
+        {project.category === "Library" && isExpanded === true && (
+          <SyntaxHighlighter language="bash" style={tomorrow}>
+            {codeString}
+          </SyntaxHighlighter>
+        )}
         <a className="projectLink" href={project.url} target="_blank">
           {t("projects.card.visit")}
           <i className="bi bi-box-arrow-up-right"></i>
