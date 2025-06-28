@@ -130,11 +130,10 @@ const Layout = () => {
               <h4 className="footerHeading">
                 {t("footer.headings.connect").toUpperCase()}
               </h4>
-              <ul className="linklist">
+              <ul className="linkList">
                 <motion.li whileHover={{ scale: 1.2 }}>
                   <NavLink to={"https://github.com/Niccar95"} target="_blank">
                     <i className="bi bi-github"></i>
-                    Github
                   </NavLink>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.2 }}>
@@ -145,7 +144,6 @@ const Layout = () => {
                     target="_blank"
                   >
                     <i className="bi bi-linkedin"></i>
-                    Linkedin
                   </NavLink>
                 </motion.li>
               </ul>
@@ -154,7 +152,7 @@ const Layout = () => {
               <h4 className="footerHeading">
                 {t("footer.headings.navigation").toUpperCase()}
               </h4>
-              <ul className="linklist">
+              <ul className="linkList navigation">
                 <motion.li whileHover={{ scale: 1.2 }}>
                   <NavLink to={"/"}>{t("navigation.home")}</NavLink>
                 </motion.li>
@@ -175,7 +173,8 @@ const Layout = () => {
             to={"https://loading.io/"}
             target="_blank"
           >
-            The Spinner was provided by loading.io
+            Loading spinner from loading.io{" "}
+            <i className="bi bi-box-arrow-up-right"></i>
           </NavLink>
           <p className="copyright">
             &copy; {new Date().getFullYear()} Nicolas Carrasco
