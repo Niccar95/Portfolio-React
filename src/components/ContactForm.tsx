@@ -72,13 +72,13 @@ export const ContactForm = () => {
             </motion.a>
           </div>
           <a
-            href="mailto:niccar.95@outlook.com"
+            href="mailto:carrasco.nicolas1995@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Email"
           >
             <i className="bi bi-envelope-fill socialEnvelope"></i>{" "}
-            <span className="linkText">niccar.95@outlook.com</span>
+            <span className="linkText">carrasco.nicolas1995@gmail.com</span>
           </a>
           <a
             href="https://www.google.se/maps/place/Stockholm/@59.3037671,17.9213502,11z/data=!3m1!4b1!4m6!3m5!1s0x465f763119640bcb:0xa80d27d3679d7766!8m2!3d59.3327036!4d18.0656255!16zL20vMDZteHM?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D"
@@ -186,13 +186,13 @@ export const ContactForm = () => {
               </motion.a>
             </div>
             <a
-              href="mailto:niccar.95@outlook.com"
+              href="mailto:carrasco.nicolas1995@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Email"
             >
               <i className="bi bi-envelope-fill socialEnvelope"></i>{" "}
-              <span className="linkText">niccar.95@outlook.com</span>
+              <span className="linkText">carrasco.nicolas1995@gmail.com</span>
             </a>
             <a
               href="https://www.google.se/maps/place/Stockholm/@59.3037671,17.9213502,11z/data=!3m1!4b1!4m6!3m5!1s0x465f763119640bcb:0xa80d27d3679d7766!8m2!3d59.3327036!4d18.0656255!16zL20vMDZteHM?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D"
