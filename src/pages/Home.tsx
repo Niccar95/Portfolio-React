@@ -95,7 +95,7 @@ const Home = () => {
 
             {run && (
               <h1 className={`introHeading introSubheading ${currentLang}`}>
-                <span className="nameLabel2">Fullstack</span>{" "}
+                <span className="nameLabel2">Frontend</span>{" "}
                 <span className="nameLabel1">{t("home.occupation")}</span>
               </h1>
             )}

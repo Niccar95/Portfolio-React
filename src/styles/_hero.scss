@@ -108,7 +108,7 @@
 }
 
 .introSubheading.en {
-  animation: typing-sub-en 1.5s steps(20, end) forwards, blink 1s step-end infinite;
+  animation: typing-sub-en 1.5s steps(18, end) forwards, blink 1s step-end infinite;
 
 }
 
@@ -126,7 +126,7 @@
           width: 0;
         }
         to {
-          width: 19ch;
+          width: 18ch;
         }
       }
 
@@ -135,7 +135,7 @@
           width: 0;
         }
         to {
-          width: 20ch;
+          width: 19ch;
         }
       }
 
