@@ -201,6 +201,7 @@ export const ContactForm = () => {
                 <i className="bi bi-linkedin"></i>
               </motion.a>
             </div>
+
             <a
               href="mailto:carrasco.nicolas1995@gmail.com"
               target="_blank"
