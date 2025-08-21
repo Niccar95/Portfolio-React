@@ -47,7 +47,12 @@ export const ContactForm = () => {
 
   return (
     <>
-      <section className="socialLinks mobile">
+      <motion.section
+        className="socialLinks mobile"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
         <h3 className="socialHeading">{t("contact.social.title")}</h3>
         <p className="socialText">{t("contact.social.description")}</p>
         <div className="linkContainer">
@@ -92,8 +97,14 @@ export const ContactForm = () => {
             </span>
           </a>
         </div>
-      </section>
-      <article className="formWrapper">
+      </motion.section>
+
+      <motion.div
+        className="formWrapper"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
         <form ref={form} onSubmit={handleSubmit}>
           <label>
             {t("contact.labels.name")}
@@ -161,7 +172,12 @@ export const ContactForm = () => {
             <p>{t("contact.notifications.error", { errorMessage: error })}</p>
           )}
         </form>
-        <section className="socialLinks desktop">
+        <motion.section
+          className="socialLinks desktop"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
+        >
           <h3 className="socialHeading">{t("contact.social.title")}</h3>
           <p className="socialText">{t("contact.social.description")}</p>
           <div className="linkContainer">
@@ -206,8 +222,8 @@ export const ContactForm = () => {
               </span>
             </a>
           </div>
-        </section>
-      </article>
+        </motion.section>
+      </motion.div>
     </>
   );
 };
