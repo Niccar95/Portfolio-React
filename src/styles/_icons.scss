@@ -1,9 +1,6 @@
 @use "/src/styles/breakpoints" as *;
 
-.ci {
-   align-self: center;
-}
- 
+
 .bi-send, .bi-download, .bi-house-door-fill, .bi-laptop-fill, .bi-envelope-fill, .bi-file-person-fill {
    margin-right: 10px;
 }
@@ -20,8 +17,22 @@
 
 .bi-list, .bi-x {
    font-size: 2rem;
-   color: white;
  }
+
+
+.stackIcons {
+  width : 2rem; 
+
+  @include desktop {
+    width: 3rem;
+  }
+
+}
+
+
+.projectStackIcons {
+   width: 1.5rem;
+}
 
 
 

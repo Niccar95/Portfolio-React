@@ -1,9 +1,9 @@
 export class Stack {
   id: number;
-  name: string;
+  src: string;
 
-  constructor(id: number, name: string) {
+  constructor(id: number, src: string) {
     this.id = id;
-    this.name = name;
+    this.src = src;
   }
 }

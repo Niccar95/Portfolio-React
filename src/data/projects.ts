@@ -9,9 +9,15 @@ export const projects: Project[] = [
     "https://www.npmjs.com/package/react-oddball-icons?activeTab=readme",
     "/react-oddball-icons.png",
     [
-      { name: "ci ci-react" },
-      { name: "ci ci-typescript" },
-      { name: "ci ci-npm" },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg",
+      },
     ],
     "Library"
   ),
@@ -23,15 +29,33 @@ export const projects: Project[] = [
     "https://tinysaves.vercel.app/",
     "/tinySaves.png",
     [
-      { name: "ci ci-nextjs-light" },
-      { name: "ci ci-typescript" },
-      { name: "ci ci-sass" },
-      { name: "ci ci-json" },
-      { name: "ci ci-npm" },
-      { name: "ci ci-nodejs" },
-      { name: "ci ci-prisma" },
-      { name: "ci ci-mongodb2" },
-      { name: "ci ci-jest" },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg",
+      },
     ],
     "Fullstack"
   ),
@@ -43,11 +67,21 @@ export const projects: Project[] = [
     "https://niccar95.github.io/PokeSearch/",
     "/pokeSearch.png",
     [
-      { name: "ci ci-javascript" },
-      { name: "ci ci-sass" },
-      { name: "ci ci-json" },
-      { name: "ci ci-npm" },
-      { name: "ci ci-vitejs" },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
+      },
     ],
     "Frontend"
   ),
@@ -59,12 +93,24 @@ export const projects: Project[] = [
     "https://drinkory.vercel.app/",
     "/drinkory.png",
     [
-      { name: "ci ci-react" },
-      { name: "ci ci-typescript" },
-      { name: "ci ci-sass" },
-      { name: "ci ci-vitejs" },
-      { name: "ci ci-json" },
-      { name: "ci ci-npm" },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg",
+      },
     ],
     "Frontend"
   ),
@@ -76,15 +122,24 @@ export const projects: Project[] = [
     "https://niccar95.github.io/vue-tic-tac-toe-Niccar95/",
     "/tic-tac-toe.png",
     [
-      { name: "ci ci-vuejs" },
-      { name: "ci ci-typescript" },
-      { name: "ci ci-sass" },
-      { name: "ci ci-npm" },
-      { name: "ci ci-vitejs" },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
+      },
     ],
     "Frontend"
   ),
-
   new Project(
     6,
     "To-Do",
@@ -93,10 +148,18 @@ export const projects: Project[] = [
     "https://niccar95.github.io/To-Do-List-2.0/",
     "/to-do.png",
     [
-      { name: "ci ci-javascript" },
-      { name: "ci ci-sass" },
-      { name: "ci ci-npm" },
-      { name: "ci ci-vitejs" },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
+      },
     ],
     "Frontend"
   ),
@@ -108,12 +171,24 @@ export const projects: Project[] = [
     "https://react-the-zoo-niccar95.vercel.app/",
     "/theZoo.png",
     [
-      { name: "ci ci-react" },
-      { name: "ci ci-typescript" },
-      { name: "ci ci-sass" },
-      { name: "ci ci-vitejs" },
-      { name: "ci ci-json" },
-      { name: "ci ci-npm" },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg",
+      },
     ],
     "Frontend"
   ),
@@ -125,12 +200,24 @@ export const projects: Project[] = [
     "https://niccar95.github.io/EmployeeSite/",
     "/employeeSite.png",
     [
-      { name: "ci ci-vuejs" },
-      { name: "ci ci-typescript" },
-      { name: "ci ci-sass" },
-      { name: "ci ci-vitejs" },
-      { name: "ci ci-json" },
-      { name: "ci ci-npm" },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg",
+      },
     ],
     "Frontend"
   ),

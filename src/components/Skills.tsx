@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { Stack } from "../models/Stack";
 import { languageSkills } from "../data/languageSkills";
 import { useTranslation } from "react-i18next";
@@ -9,23 +9,7 @@ interface ISkillProps {
 }
 
 const Skills = ({ stackList }: ISkillProps) => {
-  const [iconSize, setIconSize] = useState("ci-4x");
   const { t } = useTranslation();
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setIconSize("ci-2x");
-      } else {
-        setIconSize("ci-3x");
-      }
-    };
-
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <>
@@ -43,11 +27,7 @@ const Skills = ({ stackList }: ISkillProps) => {
             </span>
             <div className="iconContainer">
               {stackList.map((stack) => (
-                <i
-                  key={stack.id}
-                  className={`${stack.name} ${iconSize}`}
-                  title={stack.name}
-                ></i>
+                <img className="stackIcons" key={stack.id} src={stack.src} />
               ))}
             </div>
           </article>

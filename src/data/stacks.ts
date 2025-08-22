@@ -1,24 +1,94 @@
 export const stacks = [
-  { id: 1, name: "ci ci-javascript" },
-  { id: 2, name: "ci ci-typescript" },
-  { id: 3, name: "ci ci-vuejs" },
-  { id: 4, name: "ci ci-nextjs-light" },
-  { id: 5, name: "ci ci-vitejs" },
-  { id: 6, name: "ci ci-git" },
-  { id: 7, name: "ci ci-nodejs" },
-  { id: 8, name: "ci ci-css" },
-  { id: 9, name: "ci ci-sass" },
-  { id: 10, name: "ci ci-tailwindcss" },
-  { id: 11, name: "ci ci-mongodb2" },
-  { id: 12, name: "ci ci-mysql" },
-  { id: 13, name: "ci ci-prisma" },
-  { id: 14, name: "ci ci-mongoose" },
-  { id: 15, name: "ci ci-github-light" },
-  { id: 16, name: "ci ci-vscode" },
-  { id: 17, name: "ci ci-figma" },
-  { id: 18, name: "ci ci-trello" },
-  { id: 19, name: "ci ci-postman" },
-  { id: 20, name: "ci ci-sanity" },
-  { id: 21, name: "ci ci-jest" },
-  { id: 22, name: "ci ci-cypress-horizontal-light" },
+  {
+    id: 1,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+  },
+  {
+    id: 2,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+  },
+  {
+    id: 3,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
+  },
+  {
+    id: 4,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+  },
+  {
+    id: 5,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+  },
+  {
+    id: 6,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
+  },
+  {
+    id: 7,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+  },
+  {
+    id: 8,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg",
+  },
+  {
+    id: 9,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+  },
+  {
+    id: 10,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+  },
+  {
+    id: 11,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+  },
+  {
+    id: 12,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+  },
+  {
+    id: 13,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+  },
+  {
+    id: 14,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
+  },
+  {
+    id: 15,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg",
+  },
+  {
+    id: 16,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+  },
+  {
+    id: 17,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+  },
+  {
+    id: 18,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
+  },
+  {
+    id: 19,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original.svg",
+  },
+  {
+    id: 20,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+  },
+  {
+    id: 21,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sanity/sanity-original.svg",
+  },
+  {
+    id: 22,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg",
+  },
+  {
+    id: 23,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypressio/cypressio-original.svg",
+  },
 ];

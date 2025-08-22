@@ -1,3 +1,4 @@
-export interface StackList {
-  name: string;
+export interface IStack {
+  id?: number;
+  src: string;
 }

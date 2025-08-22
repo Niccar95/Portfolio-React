@@ -1,5 +1,5 @@
 import { Category } from "./ICategory";
-import { StackList } from "./IStack";
+import { IStack } from "./IStack";
 export class Project {
   id: number;
   title: string;
@@ -7,7 +7,7 @@ export class Project {
   description: string;
   url: string;
   image: string;
-  stacks: StackList[];
+  stacks: IStack[];
   category: Category;
 
   constructor(
@@ -17,7 +17,7 @@ export class Project {
     description: string,
     url: string,
     image: string,
-    stacks: StackList[] = [],
+    stacks: IStack[] = [],
     category: Category
   ) {
     this.id = id;

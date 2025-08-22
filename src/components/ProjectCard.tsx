@@ -66,7 +66,7 @@ const ProjectCard = ({ project }: IProjectProps) => {
       </div>
       <section className="stackContainer">
         {project.stacks.map((stack, index) => (
-          <i key={index} className={`${stack.name} ci-lg`}></i>
+          <img className="projectStackIcons" key={index} src={stack.src}></img>
         ))}
       </section>
     </motion.article>
