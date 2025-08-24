@@ -18,6 +18,9 @@ export const projects: Project[] = [
       {
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg",
       },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      },
     ],
     "Library"
   ),

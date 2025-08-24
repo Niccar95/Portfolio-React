@@ -157,7 +157,7 @@ export const ContactForm = () => {
           <motion.button
             type="submit"
             className="submitButton"
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.2 }}
           >
             <i className="bi bi-send"></i>

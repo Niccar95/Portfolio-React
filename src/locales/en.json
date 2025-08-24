@@ -63,33 +63,34 @@
         "heading": "My Projects",
         "no-projects": "No projects available at this moment.",
         "card": {
-              "React-Oddball-Icons": {
-                "description": "A playful React icon library featuring quirky corporate-style icons."
-              },
-              "TinySaves": {
-                "description": "A savings goal application designed for users who are new to saving, encouraging small, regular contributions."
-              },
-               "Drinkory": {
-                "description": "A website for anyone who loves drinks. You can look up drinks, learn how to make them step by step, and save your favorites."
-              },
-              "Tic-Tac-Toe": {
-                "description": "This is a Tic-tac-toe game I built as a school project. It was also my first Vue project."
-              },
-              "PokeSearch": {
-                "description": "A nerdy little game that tests your knowledge of classic Pokemon. My first ever project created entirely on vanilla Javascript."
-              },
-              "To-Do": {
-                "description": "Just a simple To-do list I made with vanilla Javascript."
-              },
-              "TheZoo": {
-                "description": "My last individual school project in React. A fictional zoo website with different animals that need to be fed."
-              },
-              "EmployeeSite": {
-                "description": "A code test made in Vue for an internship application. It is a fictional employee site for the company I applied for."
-              },
+            "React-Oddball-Icons": {
+               "description": "A playful React icon library featuring quirky corporate-style icons. It’s fully typed for TypeScript and easy to install and use. You can also check out the library’s official website, built with React and Tailwind, for a full preview of all the icons."
+            },
+            "TinySaves": {
+               "description": "A savings goal application designed for users who are new to saving, encouraging small, regular contributions. You can save in different currencies, customize your profile, earn milestone awards, and track your full saving history on a statistics page."
+            },
+            "Drinkory": {
+              "description": "A website for anyone who loves drinks. You can look up drinks, learn how to make them step by step, and save your favorites. You can also search by alcoholic or non-alcoholic drinks, or roll the dice to get a random suggestion if you're in the mood for something new."
+            },
+            "Tic-Tac-Toe": {
+              "description": "This is a Tic-tac-toe game I built as a school project, and also my first project with Vue. The game is simple: Just enter each player’s name and just press play to begin. you can challenge a friend to see who scores the most points."
+            },
+            "PokeSearch": {
+                "description": "A nerdy little game that tests your knowledge of classic Pokémon. The premise is simple: type as many of the original 151 Pokémon as you can within a time limit to put your knowledge to the test. It was also my very first project built entirely with vanilla JavaScript."
+            },
+             "To-Do": {
+              "description": "Just a simple To-do list I made with vanilla JavaScript. You can mark tasks as done and even sort them by completed or pending."
+            },
+            "TheZoo": {
+              "description": "My last individual school project in React. A fictional zoo website with different animals that need to be fed every couple of hours. Each animal has its own bio with information about its respective species."
+            }, 
+            "EmployeeSite": {
+              "description": "A code test made in Vue for an internship application. It is a fictional employee site that showcases a list of employees for the company. The site uses mock API data."
+            },
               "read-more": "Read More",
-              "read-less": "Read Less",
-              "visit": "Visit Project" 
+              "close": "Close",
+              "visit": "Visit Project",
+              "visitAlt": "Visit Official Website"
             }
       },
       "pagination": {

@@ -1,7 +1,7 @@
 @use "/src/styles/breakpoints" as *;
 
 
-.bi-send, .bi-download, .bi-house-door-fill, .bi-laptop-fill, .bi-envelope-fill, .bi-file-person-fill {
+.bi-send, .bi-download, .bi-house-door-fill, .bi-laptop-fill, .bi-envelope-fill, .bi-file-person-fill, .bi-x-circle {
    margin-right: 10px;
 }
 
@@ -13,12 +13,6 @@
 .socialEnvelope {
    margin-right: 0;
 }
-
-
-.bi-list, .bi-x {
-   font-size: 2rem;
- }
-
 
 .stackIcon {
   width : 2rem; 

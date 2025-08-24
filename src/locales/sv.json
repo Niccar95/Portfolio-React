@@ -67,32 +67,33 @@
         "no-projects": "Inga projekt tillgängliga just nu.",
         "card": {
               "React-Oddball-Icons": {
-                "description": "Ett lekfullt ikonbibliotek för React med knasiga ikoner i corporate-stil."
-              },
+                "description": "Ett lekfullt React-ikonbibliotek med udda ikoner i företagsstil. Det är fullständigt typat för TypeScript och enkelt att installera och använda. Du kan även kolla in bibliotekets officiella webbplats, byggd med React och Tailwind, för en fullständig förhandsvisning av alla ikoner."
+              }, 
               "TinySaves": {
-                "description": "En sparmål-applikation utformad för användare som är nya på att spara och uppmuntrar små, regelbundna bidrag."
+                "description": "En sparmålsapp utformad för användare som är nya på sparande, och som uppmuntrar små, regelbundna bidrag. Du kan spara i olika valutor, anpassa din profil, vinna milstolpeutmärkelser och följa hela din sparhistorik på en statistiksida."
               },
               "Drinkory": {
-                "description": "En webbplats för alla som gillar drycker. Du kan söka efter drinkar, lära dig hur man gör dem steg för steg och spara dina favoriter."
+               "description": "En webbplats för alla som älskar drinkar. Du kan söka upp drinkar, lära dig att göra dem steg för steg och spara dina favoriter. Du kan också söka efter alkoholhaltiga eller alkoholfria alternativ, eller slå tärningen för att få ett slumpmässigt förslag när du vill prova något nytt."
               },
               "Tic-Tac-Toe": {
-                "description": "Detta är ett Tic-tac-toe-spel som jag gjorde som ett skolarbete. Det var också mitt första Vue-projekt."
+               "description": "Detta är ett Tic-tac-toe-spel som jag byggde som ett skolprojekt, och även mitt första projekt med Vue. Spelet är enkelt: Ange varje spelares namn och tryck på Spela för att börja. Du kan utmana en vän för att se vem som får flest poäng."
               },
               "PokeSearch": {
-                "description": "Ett nördigt litet spel som testar dina kunskaper om klassiska Pokémon. Mitt första projekt skapat helt i vanlig JavaScript."
+               "description": "Ett nördigt litet spel som testar dina kunskaper om klassiska Pokémon. Premissen är enkel: skriv in så många som möjligt av de ursprungliga 151 Pokémon inom en tidsgräns för att sätta dina kunskaper på prov. Det var dessutom mitt allra första projekt byggt helt och hållet med vanilla JavaScript."
               },
               "To-Do": {
-                "description": "Bara en enkel att-göra-lista jag gjorde med vanlig JavaScript."
+                "description": "Bara en enkel To-do-lista jag byggde i vanilla JavaScript. Du kan markera uppgifter som klara och även sortera dem efter utförda eller ej utförda."
               },
               "TheZoo": {
-                "description": "Mitt sista individuella skolarbete i React. En fiktiv djurwebbplats med olika djur som behöver matas."
+                "description": "Mitt sista individuella skolprojekt i React. En fiktiv djurparkswebbplats med olika djur som behöver matas varannan timme. Varje djur har en egen profil med information om sin art."
               },
               "EmployeeSite": {
-                "description": "Ett kodtest gjort i Vue för en praktikansökan. Det är en fiktiv anställdasida för företaget jag ansökte till."
+                "description": "Ett kodtest gjort i Vue för en praktikansökan. Det är en fiktiv webbplats som visar en lista över anställda för företaget. Webbplatsen använder mock API data."
               },
               "read-more": "Läs mer",
-              "read-less": "Läs mindre",
-              "visit": "Besök projektet"
+              "close": "Stäng",
+              "visit": "Besök projektet",
+               "visitAlt": "Besök officiell webbplats"
             }
           },
         "pagination": {
