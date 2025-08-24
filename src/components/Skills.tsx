@@ -26,9 +26,27 @@ const Skills = ({ stackList }: ISkillProps) => {
               <h2 className="stackLabel">{t("home.stack-heading")} </h2>
             </span>
             <div className="iconContainer">
-              {stackList.map((stack) => (
-                <img className="stackIcons" key={stack.id} src={stack.src} />
-              ))}
+              {stackList.map((stack) => {
+                if (stack.src.toLowerCase().includes("github")) {
+                  return (
+                    <i
+                      key={stack.id}
+                      className="devicon-github-plain stackIcon"
+                    />
+                  );
+                } else if (stack.src.toLowerCase().includes("cypressio")) {
+                  return (
+                    <i
+                      key={stack.id}
+                      className="devicon-cypressio-plain stackIcon"
+                    />
+                  );
+                } else {
+                  return (
+                    <img key={stack.id} className="stackIcon" src={stack.src} />
+                  );
+                }
+              })}
             </div>
           </article>
 

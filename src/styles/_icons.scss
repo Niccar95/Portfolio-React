@@ -20,11 +20,13 @@
  }
 
 
-.stackIcons {
+.stackIcon {
   width : 2rem; 
+  font-size: 2rem; // only for i element stack icons
 
   @include desktop {
     width: 3rem;
+    font-size: 3rem; // only for i element stack icons
   }
 
 }
