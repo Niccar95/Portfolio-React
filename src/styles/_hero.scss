@@ -3,24 +3,24 @@
 .heroSection {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
     width: 100%;
     height: 100%;
     
     @include small-desktop() {
-      flex-direction:row;
+      flex-direction: row;
       justify-content: center;
       gap: 2rem;
-      width: 70%;
+      width: 100%;
     }
   
     @include desktop() {
-      width: 70%;
+      width: 100%;
     }
 
     @include large-desktop() {
         margin-top: 0;
-        width: 100%;
       }
     
     .avatarImageContainer {
@@ -32,14 +32,15 @@
 
           
     @include small-desktop() {
-        width: 300px;
-        height: 200px;
+      align-self: flex-start;
+      width: 220px;
+      height: 220px;
     }
-  
     
-      @include desktop() {
-        width: 250px;
-        height: 250px;
+    
+    @include desktop() {
+        width: 270px;
+        height: 270px;
       }
 
       @include large-desktop() {
@@ -58,15 +59,26 @@
     }
     
     .introductionContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 100%;
+      min-height: 300px;
+
+       @include small-desktop() {
+        display: initial;
+        text-align: start;
+        width: 70%;
+      }
+  
 
       @include desktop() {
         width: 50%;
       }
   
       .introHeading {
-        display: inline-block;
-        margin-inline: auto;
+        display: block;
+        margin: 0;
         overflow: hidden;
         white-space: nowrap;
         border-right: 1px solid;
@@ -146,15 +158,17 @@
       }
 
       .introduction {
-        margin-bottom: 2rem;
+        text-align: center;
+        margin: 0.5rem 0rem 2rem 0rem;
 
-        @include desktop() {
-          margin-bottom: 2.5rem;
+        @include small-desktop() {
+            text-align: start;
+            margin: 0.5rem 0rem 2.5rem 0rem;
         }
 
         @include large-desktop() {
             line-height: 2.2;
-            margin-bottom: 3.5rem;
+               margin: 0.5rem 0rem 3.5rem 0rem;
           }
       }
      
