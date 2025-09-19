@@ -2,6 +2,7 @@ import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { motion } from "motion/react";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import logo from "/logo.svg";
+import simpleLogo from "/simple-logo.svg";
 import { FormEvent } from "react";
 import { useTranslation } from "react-i18next";
 import { useMenuActions } from "../hooks/useMenuActions";
@@ -125,6 +126,7 @@ const Layout = () => {
       </main>
       <footer>
         <div className="footerContent">
+          <img className="simpleLogo" src={simpleLogo} alt="simple-logo"></img>
           <section className="linksSection">
             <div className="linksContainer">
               <h4 className="footerHeading">
@@ -176,10 +178,10 @@ const Layout = () => {
             Loading spinner from loading.io{" "}
             <i className="bi bi-box-arrow-up-right"></i>
           </NavLink>
-          <p className="copyright">
-            &copy; {new Date().getFullYear()} Nicolas Carrasco
-          </p>
         </div>
+        <p className="copyright">
+          &copy; {new Date().getFullYear()} Nicolas Carrasco
+        </p>
       </footer>
     </div>
   );
