@@ -1,3 +1,5 @@
+import { motion } from "motion/react";
+
 interface ILanguageModalProps {
   currentLang: string;
   onSelectLanguage: (lang: string) => void;
@@ -13,9 +15,13 @@ const LanguageModal = ({
   onSelectLanguage,
 }: ILanguageModalProps) => {
   return (
-    <div
+    <motion.div
       className="languageDropdown"
       onMouseDown={(e) => e.stopPropagation()}
+      initial={{ opacity: 0, y: -10, x: "-50%" }}
+      animate={{ opacity: 1, y: 0, x: "-50%" }}
+      exit={{ opacity: 0, y: -10, x: "-50%" }}
+      transition={{ duration: 0.2 }}
     >
       {languages.map((lang) => (
         <div
@@ -34,7 +40,7 @@ const LanguageModal = ({
           {currentLang === lang.code && <i className="bi bi-check2"></i>}
         </div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 

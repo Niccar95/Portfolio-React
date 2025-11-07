@@ -1,5 +1,5 @@
 import { NavLink, Outlet, useLocation } from "react-router-dom";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import logo from "/logo.svg";
 import simpleLogo from "/simple-logo.svg";
@@ -68,15 +68,17 @@ const Layout = () => {
                 <i className="bi bi-globe"></i>
                 <p className="selectedLang">{currentLang.toUpperCase()}</p>
               </div>
-              {isLanguageOpen && (
-                <LanguageModal
-                  currentLang={currentLang}
-                  onSelectLanguage={(lang) => {
-                    changeLanguage(lang);
-                    toggleLanguageMenu();
-                  }}
-                />
-              )}
+              <AnimatePresence>
+                {isLanguageOpen && (
+                  <LanguageModal
+                    currentLang={currentLang}
+                    onSelectLanguage={(lang) => {
+                      changeLanguage(lang);
+                      toggleLanguageMenu();
+                    }}
+                  />
+                )}
+              </AnimatePresence>
             </div>
             <ul>
               <motion.li whileHover={{ scale: 1.2 }}>
@@ -127,15 +129,17 @@ const Layout = () => {
             <i className="bi bi-globe"></i>
             <p className="selectedLang">{currentLang.toUpperCase()}</p>
           </div>
-          {isLanguageOpen && (
-            <LanguageModal
-              currentLang={currentLang}
-              onSelectLanguage={(lang) => {
-                changeLanguage(lang);
-                toggleLanguageMenu();
-              }}
-            />
-          )}
+          <AnimatePresence>
+            {isLanguageOpen && (
+              <LanguageModal
+                currentLang={currentLang}
+                onSelectLanguage={(lang) => {
+                  changeLanguage(lang);
+                  toggleLanguageMenu();
+                }}
+              />
+            )}
+          </AnimatePresence>
         </div>
         <Outlet />
       </main>
