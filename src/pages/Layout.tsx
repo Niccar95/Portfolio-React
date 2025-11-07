@@ -60,7 +60,10 @@ const Layout = () => {
             <div className="languageSelectorWrapper desktop" ref={languageRef}>
               <div
                 className="languageSelector"
-                onClick={toggleLanguageMenu}
+                onMouseDown={(e) => {
+                  e.stopPropagation();
+                  toggleLanguageMenu();
+                }}
               >
                 <i className="bi bi-globe"></i>
                 <p className="selectedLang">{currentLang.toUpperCase()}</p>
@@ -116,7 +119,10 @@ const Layout = () => {
         <div className="languageSelectorWrapper mobile" ref={languageRef}>
           <div
             className="languageSelector"
-            onClick={toggleLanguageMenu}
+            onMouseDown={(e) => {
+              e.stopPropagation();
+              toggleLanguageMenu();
+            }}
           >
             <i className="bi bi-globe"></i>
             <p className="selectedLang">{currentLang.toUpperCase()}</p>

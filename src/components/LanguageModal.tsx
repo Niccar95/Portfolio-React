@@ -13,7 +13,10 @@ const LanguageModal = ({
   onSelectLanguage,
 }: ILanguageModalProps) => {
   return (
-    <div className="languageDropdown" onMouseDown={(e) => e.stopPropagation()}>
+    <div
+      className="languageDropdown"
+      onMouseDown={(e) => e.stopPropagation()}
+    >
       {languages.map((lang) => (
         <div
           key={lang.code}
