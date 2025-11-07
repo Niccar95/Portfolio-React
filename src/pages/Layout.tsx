@@ -175,15 +175,19 @@ const Layout = () => {
               </h4>
               <ul className="linkList navigation">
                 <motion.li whileHover={{ scale: 1.2 }}>
+                  <i className="bi bi-house-door-fill"></i>
                   <NavLink to={"/"}>{t("navigation.home")}</NavLink>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.2 }}>
+                  <i className="bi bi-laptop-fill"></i>
                   <NavLink to={"/projects"}>{t("navigation.projects")}</NavLink>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.2 }}>
+                  <i className="bi bi-file-person-fill"></i>
                   <NavLink to={"/about"}>{t("navigation.about")}</NavLink>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.2 }}>
+                  <i className="bi bi-envelope-fill"></i>
                   <NavLink to={"/contact"}>{t("navigation.contact")}</NavLink>
                 </motion.li>
               </ul>

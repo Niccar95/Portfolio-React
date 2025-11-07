@@ -227,7 +227,12 @@ footer {
       .linksContainer {
         display: flex; 
         flex-direction: column;
+        align-items: center;
         gap: 1rem;
+        
+        @include desktop() {
+          align-items: flex-start;
+        }
 
         .footerHeading {
           margin-bottom: 0.5rem;
@@ -252,8 +257,13 @@ footer {
 
           .navigation {
             flex-direction: column;
+            align-items: center;
+
+            @include desktop() {
+              align-items: flex-start;
+            }
           }
-    }
+        }
 
     .loadingLink {
       width: fit-content;
