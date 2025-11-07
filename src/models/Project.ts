@@ -9,6 +9,7 @@ export class Project {
   image: string;
   stacks: IStack[];
   category: Category;
+  beforeImage?: string;
 
   constructor(
     id: number,
@@ -18,7 +19,8 @@ export class Project {
     url: string,
     image: string,
     stacks: IStack[] = [],
-    category: Category
+    category: Category,
+    beforeImage?: string
   ) {
     this.id = id;
     this.title = title;
@@ -28,5 +30,6 @@ export class Project {
     this.image = image;
     this.stacks = stacks;
     this.category = category;
+    this.beforeImage = beforeImage;
   }
 }

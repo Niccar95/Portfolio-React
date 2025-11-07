@@ -3,6 +3,24 @@ import { Project } from "../models/Project";
 export const projects: Project[] = [
   new Project(
     1,
+    "3D-Print-&-Konsult",
+    "3D Print & Konsult",
+    "projects.card.3D-Print-&-Konsult.description",
+    "https://3dprintkonsult.se/",
+    "/3dPrintKonsult.png",
+    [
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+      },
+    ],
+    "Frontend",
+    "/3dPrintKonsult-before.png"
+  ),
+  new Project(
+    2,
     "React-Oddball-Icons",
     "React Oddball Icons",
     "projects.card.React-Oddball-Icons.description",
@@ -25,7 +43,7 @@ export const projects: Project[] = [
     "Library"
   ),
   new Project(
-    2,
+    3,
     "TinySaves",
     "TinySaves",
     "projects.card.TinySaves.description",
@@ -63,7 +81,7 @@ export const projects: Project[] = [
     "Fullstack"
   ),
   new Project(
-    3,
+    4,
     "PokeSearch",
     "PokeSearch",
     "projects.card.PokeSearch.description",
@@ -89,7 +107,7 @@ export const projects: Project[] = [
     "Frontend"
   ),
   new Project(
-    4,
+    5,
     "Drinkory",
     "Drinkory",
     "projects.card.Drinkory.description",
@@ -118,7 +136,7 @@ export const projects: Project[] = [
     "Frontend"
   ),
   new Project(
-    5,
+    6,
     "Tic-Tac-Toe",
     "Tic-Tac-Toe",
     "projects.card.TicTacToe.description",
@@ -144,7 +162,7 @@ export const projects: Project[] = [
     "Frontend"
   ),
   new Project(
-    6,
+    7,
     "To-Do",
     "To-Do List",
     "projects.card.To-Do.description",
@@ -167,7 +185,7 @@ export const projects: Project[] = [
     "Frontend"
   ),
   new Project(
-    7,
+    8,
     "TheZoo",
     "The Zoo",
     "projects.card.TheZoo.description",
@@ -196,7 +214,7 @@ export const projects: Project[] = [
     "Frontend"
   ),
   new Project(
-    8,
+    9,
     "EmployeeSite",
     "Employee Site",
     "projects.card.EmployeeSite.description",

@@ -71,33 +71,64 @@ const ProjectCard = ({ project }: IProjectProps) => {
       {isExpanded && (
         <div className="modalBackdrop" onClick={() => setIsExpanded(false)}>
           <div className="projectModal" onClick={(e) => e.stopPropagation()}>
-            <h3>{project.displayTitle}</h3>
-            <div className="projectImageContainer">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="projectImage"
-                onClick={() => project.url && seeProject(project.url)}
-              ></img>
+            <div className="modalHeader">
+              <h3>{project.displayTitle}</h3>
+              <span className="categoryTag">{project.category}</span>
             </div>
-            <p>{t(`projects.card.${project.title}.description`)}</p>
-            {project.category === "Library" && (
-              <>
-                <a
-                  className="projectLink"
-                  href="https://react-oddball-icons.vercel.app/"
-                  target="_blank"
-                >
-                  {t("projects.card.visitAlt")}{" "}
-                  <i className="bi bi-box-arrow-up-right"></i>
-                </a>
-                <div className="syntaxContainer">
-                  <SyntaxHighlighter language="bash" style={tomorrow}>
-                    {codeString}
-                  </SyntaxHighlighter>
+            <div className="modalContent">
+              {project.beforeImage ? (
+                <div className="beforeAfterContainer">
+                  <div className="beforeAfterImage">
+                    <h4>Before:</h4>
+                    <img
+                      src={project.beforeImage}
+                      alt={`${project.title} - Before`}
+                      className="projectImage"
+                    ></img>
+                  </div>
+                  <div className="beforeAfterImage">
+                    <h4>After:</h4>
+                    <img
+                      src={project.image}
+                      alt={`${project.title} - After`}
+                      className="projectImage"
+                    ></img>
+                  </div>
                 </div>
-              </>
-            )}
+              ) : (
+                <div className="projectImageContainer">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="projectImage"
+                  ></img>
+                </div>
+              )}
+              <p className="projectDescription">
+                {t(`projects.card.${project.title}.description`)}
+              </p>
+              {project.category === "Library" && (
+                <>
+                  <a
+                    className="projectLink"
+                    href="https://react-oddball-icons.vercel.app/"
+                    target="_blank"
+                  >
+                    {t("projects.card.visitAlt")}{" "}
+                    <i className="bi bi-box-arrow-up-right"></i>
+                  </a>
+                  <div className="syntaxContainer">
+                    <SyntaxHighlighter language="bash" style={tomorrow}>
+                      {codeString}
+                    </SyntaxHighlighter>
+                  </div>
+                </>
+              )}
+              <a className="projectLink" href={project.url} target="_blank">
+                {t("projects.card.visit")}{" "}
+                <i className="bi bi-box-arrow-up-right"></i>
+              </a>
+            </div>
             <motion.button
               onClick={() => setIsExpanded(false)}
               whileHover={{ scale: 1.1 }}
