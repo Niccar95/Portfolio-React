@@ -1,36 +1,31 @@
 @use "/src/styles/breakpoints" as *;
 
+.languageSelectorWrapper {
+  position: relative;
 
-.languageSelector.mobile {
-    position: absolute;
-    right: 50px;
-    top: 95px;
-    
-    .hiddenSelect {
-        position: absolute;
-        opacity: 0; 
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
-
-        
-        cursor: pointer;
-      }
-
-    @include desktop() {
-        display: none;
-    }
-}
-
-
-.languageSelector.desktop {
+  &.desktop {
     position: absolute;
     right: 500px;
     align-self: center;
   }
-  
+
+  &.mobile {
+    position: absolute;
+    right: 50px;
+    top: 95px;
+    z-index: 100;
+
+    @include desktop() {
+      display: none;
+    }
+  }
+}
+
+.languageSelector {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
   .bi-globe {
     font-size: 20px;
   }
@@ -38,19 +33,4 @@
   .selectedLang {
     margin-left: 8px;
   }
-  
-
-  .hiddenSelect {
-    position: absolute;
-    opacity: 0; 
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    cursor: pointer;
-  }
-
-
-
-  
+}

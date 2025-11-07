@@ -3,21 +3,22 @@ import { motion } from "motion/react";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import logo from "/logo.svg";
 import simpleLogo from "/simple-logo.svg";
-import { FormEvent } from "react";
 import { useTranslation } from "react-i18next";
 import { useMenuActions } from "../hooks/useMenuActions";
 import { useLanguage } from "../hooks/useLanguage";
+import LanguageModal from "../components/LanguageModal";
 
 const Layout = () => {
   const { t } = useTranslation();
   const { currentLang, changeLanguage } = useLanguage();
   const { updateMenu, closeMenu, isMenuClicked, dropdownRef } =
     useMenuActions();
+  const {
+    updateMenu: toggleLanguageMenu,
+    isMenuClicked: isLanguageOpen,
+    dropdownRef: languageRef,
+  } = useMenuActions();
   const location = useLocation();
-
-  const handleLangChange = (e: FormEvent<HTMLSelectElement>) => {
-    changeLanguage(e.currentTarget.value);
-  };
 
   return (
     <div className="layout">
@@ -56,19 +57,23 @@ const Layout = () => {
           </div>
 
           <div className="desktopMenu">
-            <div className="languageSelector desktop">
-              <i className="bi bi-globe"></i>
-              <span className="selectedLang">{currentLang.toUpperCase()}</span>
-
-              <select
-                id="desktopSelect"
-                value={currentLang}
-                onChange={handleLangChange}
-                className="hiddenSelect"
+            <div className="languageSelectorWrapper desktop" ref={languageRef}>
+              <div
+                className="languageSelector"
+                onClick={toggleLanguageMenu}
               >
-                <option value="en">EN</option>
-                <option value="sv">SV</option>
-              </select>
+                <i className="bi bi-globe"></i>
+                <p className="selectedLang">{currentLang.toUpperCase()}</p>
+              </div>
+              {isLanguageOpen && (
+                <LanguageModal
+                  currentLang={currentLang}
+                  onSelectLanguage={(lang) => {
+                    changeLanguage(lang);
+                    toggleLanguageMenu();
+                  }}
+                />
+              )}
             </div>
             <ul>
               <motion.li whileHover={{ scale: 1.2 }}>
@@ -108,19 +113,23 @@ const Layout = () => {
         </nav>
       </header>
       <main>
-        <div className="languageSelector mobile">
-          <i className="bi bi-globe"></i>
-          <span className="selectedLang">{currentLang.toUpperCase()}</span>
-
-          <select
-            id="mobileSelect"
-            value={currentLang}
-            onChange={handleLangChange}
-            className="hiddenSelect"
+        <div className="languageSelectorWrapper mobile" ref={languageRef}>
+          <div
+            className="languageSelector"
+            onClick={toggleLanguageMenu}
           >
-            <option value="en">EN</option>
-            <option value="sv">SV</option>
-          </select>
+            <i className="bi bi-globe"></i>
+            <p className="selectedLang">{currentLang.toUpperCase()}</p>
+          </div>
+          {isLanguageOpen && (
+            <LanguageModal
+              currentLang={currentLang}
+              onSelectLanguage={(lang) => {
+                changeLanguage(lang);
+                toggleLanguageMenu();
+              }}
+            />
+          )}
         </div>
         <Outlet />
       </main>
