@@ -8,12 +8,17 @@ button {
 
   .paginationButton {
     @include button-styles;
-  
+
     &:disabled {
-      opacity: 0.5; 
+      opacity: 0.5;
       cursor: not-allowed;
-      background-color: #333; 
+      background-color: #333;
       box-shadow: none;
+    }
+
+    &.active {
+      background-color: transparent;
+      box-shadow: 0 0 10px rgba(255, 138, 0, 0.8);
     }
   }
 

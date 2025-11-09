@@ -5,6 +5,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     gap: 1em;
 
 
@@ -14,5 +15,12 @@
         @include desktop() {
             padding: 0.4rem 1.5rem;
         }
+    }
+
+    .paginationEllipsis {
+        color: #f5f5f5;
+        line-height: 1;
+        margin: 0;
+        padding: 0;
     }
 }

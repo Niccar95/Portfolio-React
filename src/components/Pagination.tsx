@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useState, useEffect } from "react";
 
 interface IPaginationProps {
   totalProjects: number;
@@ -13,10 +13,32 @@ export const Pagination = ({
   currentPage,
   onPageChange,
 }: IPaginationProps) => {
-  const { t } = useTranslation();
   const totalPages = Math.ceil(totalProjects / projectsPerPage);
+  const [mobile, setMobile] = useState(window.innerWidth < 768);
 
-  const pageNumbers = [...Array(totalPages)].map((_, index) => index + 1);
+  useEffect(() => {
+    const handleResize = () => setMobile(window.innerWidth < 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const maxVisible = mobile ? 2 : 7;
+
+  const getPageNumbers = () => {
+    if (totalPages <= maxVisible) {
+      return [...Array(totalPages)].map((_, i) => i + 1);
+    }
+
+    const start = Math.max(
+      1,
+      Math.min(currentPage, totalPages - maxVisible + 1)
+    );
+    return [...Array(maxVisible)].map((_, i) => start + i);
+  };
+
+  const pageNumbers = getPageNumbers();
+  const showLeftEllipsis = pageNumbers[0] > 1;
+  const showRightEllipsis = pageNumbers[pageNumbers.length - 1] < totalPages;
 
   return (
     <div className="pagination">
@@ -25,8 +47,10 @@ export const Pagination = ({
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
       >
-        {t("pagination.prev")}
+        <i className="bi bi-caret-left-fill"></i>
       </button>
+
+      {showLeftEllipsis && <p className="paginationEllipsis">...</p>}
 
       {pageNumbers.map((page) => (
         <button
@@ -38,6 +62,8 @@ export const Pagination = ({
         </button>
       ))}
 
+      {showRightEllipsis && <p className="paginationEllipsis">...</p>}
+
       <button
         className="paginationButton"
         onClick={() => {
@@ -45,7 +71,7 @@ export const Pagination = ({
         }}
         disabled={currentPage === totalPages}
       >
-        {t("pagination.next")}
+        <i className="bi bi-caret-right-fill"></i>
       </button>
     </div>
   );
