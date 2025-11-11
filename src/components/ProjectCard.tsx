@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
 import { Project } from "../models/Project";
 import { useTranslation } from "react-i18next";
@@ -68,78 +68,94 @@ const ProjectCard = ({ project }: IProjectProps) => {
         </section>
       </motion.article>
 
-      {isExpanded && (
-        <div className="modalBackdrop" onClick={() => setIsExpanded(false)}>
-          <div className="projectModal" onClick={(e) => e.stopPropagation()}>
-            <div className="modalHeader">
-              <h3>{project.displayTitle}</h3>
-              <span className="categoryTag">{project.category}</span>
-            </div>
-            <div className="modalContent">
-              {project.beforeImage ? (
-                <div className="beforeAfterContainer">
-                  <div className="beforeAfterImage">
-                    <h4>{t("projects.before")}</h4>
-                    <img
-                      src={project.beforeImage}
-                      alt={`${project.title} - ${t("projects.before")}`}
-                      className="projectImage"
-                    ></img>
+      <AnimatePresence>
+        {isExpanded && (
+          <motion.div
+            className="modalBackdrop"
+            onClick={() => setIsExpanded(false)}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <motion.div
+              className="projectModal"
+              onClick={(e) => e.stopPropagation()}
+              initial={{ scale: 0.8, opacity: 0, y: 50 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.8, opacity: 0, y: 50 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+            >
+              <div className="modalHeader">
+                <h3>{project.displayTitle}</h3>
+                <span className="categoryTag">{project.category}</span>
+              </div>
+              <div className="modalContent">
+                {project.beforeImage ? (
+                  <div className="beforeAfterContainer">
+                    <div className="beforeAfterImage">
+                      <h4>{t("projects.before")}</h4>
+                      <img
+                        src={project.beforeImage}
+                        alt={`${project.title} - ${t("projects.before")}`}
+                        className="projectImage"
+                      ></img>
+                    </div>
+                    <div className="beforeAfterImage">
+                      <h4>{t("projects.after")}</h4>
+                      <img
+                        src={project.image}
+                        alt={`${project.title} - ${t("projects.after")}`}
+                        className="projectImage"
+                      ></img>
+                    </div>
                   </div>
-                  <div className="beforeAfterImage">
-                    <h4>{t("projects.after")}</h4>
+                ) : (
+                  <div className="projectImageContainer">
                     <img
                       src={project.image}
-                      alt={`${project.title} - ${t("projects.after")}`}
+                      alt={project.title}
                       className="projectImage"
                     ></img>
                   </div>
-                </div>
-              ) : (
-                <div className="projectImageContainer">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="projectImage"
-                  ></img>
-                </div>
-              )}
-              <p className="projectDescription">
-                {t(`projects.card.${project.title}.description`)}
-              </p>
-              {project.category === "Library" && (
-                <>
-                  <a
-                    className="projectLink"
-                    href="https://react-oddball-icons.vercel.app/"
-                    target="_blank"
-                  >
-                    {t("projects.card.visitAlt")}{" "}
-                    <i className="bi bi-box-arrow-up-right"></i>
-                  </a>
-                  <div className="syntaxContainer">
-                    <SyntaxHighlighter language="bash" style={tomorrow}>
-                      {codeString}
-                    </SyntaxHighlighter>
-                  </div>
-                </>
-              )}
-              <a className="projectLink" href={project.url} target="_blank">
-                {t("projects.card.visit")}{" "}
-                <i className="bi bi-box-arrow-up-right"></i>
-              </a>
-            </div>
-            <motion.button
-              onClick={() => setIsExpanded(false)}
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.2 }}
-            >
-              <i className="bi bi-x-circle"></i>
-              {t("projects.card.close")}
-            </motion.button>
-          </div>
-        </div>
-      )}
+                )}
+                <p className="projectDescription">
+                  {t(`projects.card.${project.title}.description`)}
+                </p>
+                {project.category === "Library" && (
+                  <>
+                    <a
+                      className="projectLink"
+                      href="https://react-oddball-icons.vercel.app/"
+                      target="_blank"
+                    >
+                      {t("projects.card.visitAlt")}{" "}
+                      <i className="bi bi-box-arrow-up-right"></i>
+                    </a>
+                    <div className="syntaxContainer">
+                      <SyntaxHighlighter language="bash" style={tomorrow}>
+                        {codeString}
+                      </SyntaxHighlighter>
+                    </div>
+                  </>
+                )}
+                <a className="projectLink" href={project.url} target="_blank">
+                  {t("projects.card.visit")}{" "}
+                  <i className="bi bi-box-arrow-up-right"></i>
+                </a>
+              </div>
+              <motion.button
+                onClick={() => setIsExpanded(false)}
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.2 }}
+              >
+                <i className="bi bi-x-circle"></i>
+                {t("projects.card.close")}
+              </motion.button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 };

@@ -21,10 +21,10 @@ const Skills = ({ stackList }: ISkillProps) => {
       >
         <div className="skillsContainer">
           <article className="skillsCard">
-            <span>
+            <div>
               <i className="bi bi-code-slash"></i>
               <h2 className="stackLabel">{t("home.stack-heading")} </h2>
-            </span>
+            </div>
             <div className="iconContainer">
               {stackList.map((stack) => {
                 if (stack.src.toLowerCase().includes("github")) {
@@ -51,39 +51,40 @@ const Skills = ({ stackList }: ISkillProps) => {
           </article>
 
           <section className="skillDescription">
-            <span>
+            <div>
               <i className="bi bi-code-slash"></i>
               <h2 className="stackLabel">{t("home.stack-heading")}</h2>
-            </span>
+            </div>
             <p>{t("skill-descriptions.stack")}</p>
           </section>
         </div>
 
         <div className="skillsContainer">
           <section className="skillDescription">
-            <span>
+            <div>
               <i className="bi bi-translate"></i>
               <h2 className="stackLabel">
                 {t("home.lang-skills.lang-heading")}
               </h2>
-            </span>
+            </div>
             <p>{t("skill-descriptions.languages")}</p>
           </section>
           <article className="skillsCard">
-            <span>
+            <div>
               <i className="bi bi-translate"></i>
               <h2 className="stackLabel">
                 {t("home.lang-skills.lang-heading")}
               </h2>
-            </span>
+            </div>
             <div className="languageContainer">
               {languageSkills.map((language) => (
                 <div className="languageItem" key={language.id}>
-                  <p className="skillName">
-                    {t(`home.lang-skills.${language.name}`)}
-                  </p>
+                  <div className="skillName">
+                    <p className="languageFlag">{language.flag}</p>
+                    <p className="languageName">{t(`home.lang-skills.${language.name}`)}</p>
+                  </div>
                   <div className="languageBar"></div>
-                  <span className="percentage">100%</span>
+                  <p className="percentage">100%</p>
                 </div>
               ))}
             </div>

@@ -57,9 +57,21 @@
           }
             
             .skillName {
-              font-size: 18px;
-              color: #333;
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
               margin-right: 15px;
+
+              .languageFlag {
+                font-size: 24px;
+                margin: 0;
+              }
+
+              .languageName {
+                font-size: 18px;
+                color: #333;
+                margin: 0;
+              }
           }
           .languageBar {
               width: 100%;
