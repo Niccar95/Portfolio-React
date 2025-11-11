@@ -20,13 +20,17 @@
   gap: 1.5rem;
   background-color: #222426;
   border-radius: 2rem;
-  padding: 2rem;
+  padding: 1.5rem;
   width: 90%;
   max-width: 700px;
   max-height: 90vh;
   overflow: hidden;
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6), 0 24px 48px rgba(0, 0, 0, 0.4);
   z-index: 1001;
+
+  @include desktop() {
+    padding: 2rem;
+  }
 
   .modalContent {
     display: flex;
