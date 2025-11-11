@@ -65,6 +65,8 @@
       "projects": {
         "heading": "Mina Projekt",
         "no-projects": "Inga projekt tillgängliga just nu.",
+        "before": "Före:",
+        "after": "Efter:",
         "card": {
               "3D-Print-&-Konsult": {
                 "description": "3D Print Konsult är ett 3D-printföretag som drivs av Vadim Artemenkov, en skicklig och passionerad person som erbjuder professionella 3D-printingtjänster. Vadim kontaktade mig för att hjälpa till att modernisera och vidareutveckla hans webbplats.\n\nNär jag började arbeta med projektet hade jag väldigt lite erfarenhet av WordPress, men det blev snabbt en värdefull inlärningsupplevelse. Sedan dess har jag förbättrat webbplatsens design, implementerat anpassad CSS och arbetat med att optimera prestanda och användarvänlighet.\n\nDet har varit ett roligt och givande projekt som har lärt mig mycket om webbutveckling och WordPress. Jag fortsätter att förbättra sidan och utforska nya sätt att optimera den ytterligare. Ta gärna en titt på webbplatsen via länken nedan eller kontakta Vadim direkt om du är intresserad av hans 3D-printingtjänster."

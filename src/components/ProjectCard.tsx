@@ -79,18 +79,18 @@ const ProjectCard = ({ project }: IProjectProps) => {
               {project.beforeImage ? (
                 <div className="beforeAfterContainer">
                   <div className="beforeAfterImage">
-                    <h4>Before:</h4>
+                    <h4>{t("projects.before")}</h4>
                     <img
                       src={project.beforeImage}
-                      alt={`${project.title} - Before`}
+                      alt={`${project.title} - ${t("projects.before")}`}
                       className="projectImage"
                     ></img>
                   </div>
                   <div className="beforeAfterImage">
-                    <h4>After:</h4>
+                    <h4>{t("projects.after")}</h4>
                     <img
                       src={project.image}
-                      alt={`${project.title} - After`}
+                      alt={`${project.title} - ${t("projects.after")}`}
                       className="projectImage"
                     ></img>
                   </div>

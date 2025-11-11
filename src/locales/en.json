@@ -62,6 +62,8 @@
       "projects": {
         "heading": "My Projects",
         "no-projects": "No projects available at this moment.",
+        "before": "Before:",
+        "after": "After:",
         "card": {
           "3D-Print-&-Konsult": {
               "description": "3D Print Konsult is a 3D printing business run by Vadim Artemenkov, a skilled and passionate individual who offers professional 3D printing services. Vadim reached out to me to help modernize and continue developing his website.\n\nWhen I started working on this project, I had very little experience with WordPress, but it quickly turned into an excellent learning opportunity. Since then, I've refined the site's design, implemented custom CSS, and improved its overall performance and usability.\n\nIt's been a fun and rewarding project that has taught me a lot about web development and WordPress. I continue to enhance the website and explore new ways to optimize it further. Feel free to check out the website through the link below or contact Vadim directly if you're interested in his 3D printing services."
