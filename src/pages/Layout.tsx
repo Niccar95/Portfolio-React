@@ -31,31 +31,6 @@ const Layout = () => {
             <i className={`bi ${isMenuClicked ? "bi-x" : "bi-list"}`}></i>
           </div>
 
-          <div className={`mobileMenu ${isMenuClicked ? "visible" : ""}`}>
-            <ul>
-              <motion.li whileHover={{ scale: 1.2 }}>
-                <NavLink to={"/"} onClick={closeMenu}>
-                  {t("navigation.home")}
-                </NavLink>
-              </motion.li>
-              <motion.li whileHover={{ scale: 1.2 }}>
-                <NavLink to={"/projects"} onClick={closeMenu}>
-                  {t("navigation.projects")}
-                </NavLink>
-              </motion.li>
-              <motion.li whileHover={{ scale: 1.2 }}>
-                <NavLink to={"/about"} onClick={closeMenu}>
-                  {t("navigation.about")}
-                </NavLink>
-              </motion.li>
-              <motion.li whileHover={{ scale: 1.2 }}>
-                <NavLink to={"/contact"} onClick={closeMenu}>
-                  {t("navigation.contact")}
-                </NavLink>
-              </motion.li>
-            </ul>
-          </div>
-
           <div className="desktopMenu">
             <div className="languageSelectorWrapper desktop" ref={languageRef}>
               <div
@@ -116,6 +91,36 @@ const Layout = () => {
             </ul>
           </div>
         </nav>
+
+        <div className={`mobileMenu ${isMenuClicked ? "visible" : ""}`}>
+          <img className="simpleLogo" src={simpleLogo} alt="simple-logo"></img>
+          <ul>
+            <motion.li whileHover={{ scale: 1.2 }}>
+              <i className="bi bi-house-door-fill"></i>
+              <NavLink to={"/"} onClick={closeMenu}>
+                {t("navigation.home")}
+              </NavLink>
+            </motion.li>
+            <motion.li whileHover={{ scale: 1.2 }}>
+              <i className="bi bi-laptop-fill"></i>
+              <NavLink to={"/projects"} onClick={closeMenu}>
+                {t("navigation.projects")}
+              </NavLink>
+            </motion.li>
+            <motion.li whileHover={{ scale: 1.2 }}>
+              <i className="bi bi-file-person-fill"></i>
+              <NavLink to={"/about"} onClick={closeMenu}>
+                {t("navigation.about")}
+              </NavLink>
+            </motion.li>
+            <motion.li whileHover={{ scale: 1.2 }}>
+              <i className="bi bi-envelope-fill"></i>
+              <NavLink to={"/contact"} onClick={closeMenu}>
+                {t("navigation.contact")}
+              </NavLink>
+            </motion.li>
+          </ul>
+        </div>
       </header>
       <main>
         <div className="languageSelectorWrapper mobile" ref={languageRef}>
