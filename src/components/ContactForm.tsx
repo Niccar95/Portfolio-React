@@ -17,7 +17,7 @@ export const ContactForm = () => {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    const serviceId = "service_xdvf47n";
+    const serviceId = "service_6vz097q";
     const templateId = "template_vsz1eiq";
 
     try {
