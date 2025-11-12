@@ -1,7 +1,7 @@
-import { FormEvent, useRef, useState } from "react";
+import { FormEvent, useRef, useState, useEffect } from "react";
 import emailjs from "../../emailjsConfig";
 import { useTranslation } from "react-i18next";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 
 export const ContactForm = () => {
   const { t } = useTranslation();
@@ -13,6 +13,24 @@ export const ContactForm = () => {
   const [success, setSuccess] = useState<boolean>(false);
   const [error, setError] = useState<string>("");
   const form = useRef<HTMLFormElement | null>(null);
+
+  useEffect(() => {
+    if (success) {
+      const timer = setTimeout(() => {
+        setSuccess(false);
+      }, 4000);
+      return () => clearTimeout(timer);
+    }
+  }, [success]);
+
+  useEffect(() => {
+    if (error) {
+      const timer = setTimeout(() => {
+        setError("");
+      }, 4000);
+      return () => clearTimeout(timer);
+    }
+  }, [error]);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -165,12 +183,98 @@ export const ContactForm = () => {
               ? `${t("contact.button.sending")}`
               : `${t("contact.button.send")}`}
           </motion.button>
-          {success && (
-            <p className="success">{t("contact.notifications.success")}</p>
-          )}
-          {error && (
-            <p>{t("contact.notifications.error", { errorMessage: error })}</p>
-          )}
+          <AnimatePresence>
+            {success && (
+              <>
+                <motion.div
+                  className="messageBackdrop"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.4 }}
+                />
+                <motion.p
+                  className="success"
+                  initial={{
+                    opacity: 0,
+                    scale: 0.5,
+                    x: "-50%",
+                    y: "-50%",
+                    rotate: -10,
+                  }}
+                  animate={{
+                    opacity: 1,
+                    scale: 1,
+                    x: "-50%",
+                    y: "-50%",
+                    rotate: 0,
+                  }}
+                  exit={{
+                    opacity: 0,
+                    scale: 0.5,
+                    x: "-50%",
+                    y: "-50%",
+                    rotate: 10,
+                  }}
+                  transition={{
+                    duration: 0.5,
+                    type: "spring",
+                    stiffness: 200,
+                    damping: 15,
+                  }}
+                >
+                  <i className="bi bi-check-circle-fill"></i>{" "}
+                  {t("contact.notifications.success")}
+                </motion.p>
+              </>
+            )}
+          </AnimatePresence>
+          <AnimatePresence>
+            {error && (
+              <>
+                <motion.div
+                  className="messageBackdrop"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.4 }}
+                />
+                <motion.p
+                  className="error"
+                  initial={{
+                    opacity: 0,
+                    scale: 0.5,
+                    x: "-50%",
+                    y: "-50%",
+                    rotate: -10,
+                  }}
+                  animate={{
+                    opacity: 1,
+                    scale: 1,
+                    x: "-50%",
+                    y: "-50%",
+                    rotate: 0,
+                  }}
+                  exit={{
+                    opacity: 0,
+                    scale: 0.5,
+                    x: "-50%",
+                    y: "-50%",
+                    rotate: 10,
+                  }}
+                  transition={{
+                    duration: 0.5,
+                    type: "spring",
+                    stiffness: 200,
+                    damping: 15,
+                  }}
+                >
+                  <i className="bi bi-exclamation-circle-fill"></i>{" "}
+                  {t("contact.notifications.error", { errorMessage: error })}
+                </motion.p>
+              </>
+            )}
+          </AnimatePresence>
         </form>
         <motion.section
           className="socialLinks desktop"
