@@ -150,31 +150,11 @@ const Layout = () => {
       </main>
       <footer>
         <div className="footerContent">
-          <img className="simpleLogo" src={simpleLogo} alt="simple-logo"></img>
+          <div className="footerLeft">
+            <img className="simpleLogo" src={simpleLogo} alt="simple-logo"></img>
+          </div>
           <section className="linksSection">
-            <div className="linksContainer">
-              <h4 className="footerHeading">
-                {t("footer.headings.connect").toUpperCase()}
-              </h4>
-              <ul className="linkList">
-                <motion.li whileHover={{ scale: 1.2 }}>
-                  <NavLink to={"https://github.com/Niccar95"} target="_blank">
-                    <i className="bi bi-github"></i>
-                  </NavLink>
-                </motion.li>
-                <motion.li whileHover={{ scale: 1.2 }}>
-                  <NavLink
-                    to={
-                      "https://www.linkedin.com/in/nicolas-carrasco-6882402a5/"
-                    }
-                    target="_blank"
-                  >
-                    <i className="bi bi-linkedin"></i>
-                  </NavLink>
-                </motion.li>
-              </ul>
-            </div>
-            <div className="linksContainer">
+            <section className="linksContainer">
               <h4 className="footerHeading">
                 {t("footer.headings.navigation").toUpperCase()}
               </h4>
@@ -196,8 +176,35 @@ const Layout = () => {
                   <NavLink to={"/contact"}>{t("navigation.contact")}</NavLink>
                 </motion.li>
               </ul>
-            </div>
+            </section>
+            <section className="linksContainer">
+              <h4 className="footerHeading">
+                {t("footer.headings.connect").toUpperCase()}
+              </h4>
+              <ul className="linkList">
+                <motion.li whileHover={{ scale: 1.2 }}>
+                  <NavLink to={"https://github.com/Niccar95"} target="_blank">
+                    <i className="bi bi-github"></i>
+                  </NavLink>
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.2 }}>
+                  <NavLink
+                    to={
+                      "https://www.linkedin.com/in/nicolas-carrasco-6882402a5/"
+                    }
+                    target="_blank"
+                  >
+                    <i className="bi bi-linkedin"></i>
+                  </NavLink>
+                </motion.li>
+              </ul>
+            </section>
           </section>
+        </div>
+        <div className="footerBottom">
+          <p className="copyright">
+            &copy; {new Date().getFullYear()} Nicolas Carrasco
+          </p>
           <NavLink
             className="loadingLink"
             to={"https://loading.io/"}
@@ -207,9 +214,6 @@ const Layout = () => {
             <i className="bi bi-box-arrow-up-right"></i>
           </NavLink>
         </div>
-        <p className="copyright">
-          &copy; {new Date().getFullYear()} Nicolas Carrasco
-        </p>
       </footer>
     </div>
   );

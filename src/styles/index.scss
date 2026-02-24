@@ -169,45 +169,50 @@ main {
 footer {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
   width: 100%;
   background-color: #222426;
-  padding: 1.2rem 1.2rem 4rem 1.2rem;
+  padding: 3rem 1.2rem 1.5rem 1.2rem;
   font-size: 14px;
 
-       
-     @include small-desktop() {
-      padding: 4rem 6rem 2rem 6rem;  
-    }
+  @include small-desktop() {
+    padding: 4rem 6rem 2rem 6rem;
+  }
 
-    @include desktop() {
-      padding: 4rem 6rem 2rem 6rem;  
-    }
-  
-     @include large-desktop() { 
-      padding: 4rem 0rem 2rem 0rem;  
-    }
-  
+  @include large-desktop() {
+    padding: 4rem 0rem 2rem 0rem;
+  }
+
   .footerContent {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
-    
-    .simpleLogo {
-      width: 100px;
-      height: 100px;
-    }
-      
-     @include small-desktop() {
+
+    @include small-desktop() {
       flex-direction: row;
       align-items: flex-start;
       justify-content: space-between;
     }
-    
+
     @include large-desktop() {
       width: 1440px;
-      margin: 0 auto; 
+      margin: 0 auto;
+    }
+
+    .footerLeft {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include small-desktop() {
+        align-items: flex-start;
+      }
+
+      .simpleLogo {
+        width: 100px;
+        height: 100px;
+      }
     }
 
     .linksSection {
@@ -216,56 +221,81 @@ footer {
       align-items: center;
       gap: 3.5rem;
 
-      @include desktop() {
+      @include small-desktop() {
         flex-direction: row;
         align-items: flex-start;
-        gap: 8rem;
+        gap: 6rem;
       }
-    
-      
+
       .linksContainer {
-        display: flex; 
+        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        
-        @include desktop() {
+
+        @include small-desktop() {
           align-items: flex-start;
         }
 
         .footerHeading {
           margin-bottom: 0.5rem;
         }
-        
+
         .linkList {
           display: flex;
           gap: 1rem;
           list-style: none;
           width: fit-content;
-          
-              .bi-linkedin, .bi-github {
-                font-size: 20px;
-                margin-right: 8px;
-          
-                &:hover {
-                  color: #ff8a00;
-                }
-              }
-            }
-          }
 
-          .navigation {
-            flex-direction: column;
+          .bi-linkedin,
+          .bi-github {
+            font-size: 20px;
+            margin-right: 8px;
+
+            &:hover {
+              color: #ff8a00;
+            }
           }
         }
 
-    .loadingLink {
-      width: fit-content;
+        .navigation {
+          flex-direction: column;
+        }
+      }
     }
   }
-.copyright {
-  align-self: center;
-}
+
+  .footerBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    @include small-desktop() {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @include large-desktop() {
+      width: 1440px;
+      margin: 0 auto;
+    }
+  }
+
+  .copyright {
+    opacity: 0.6;
+  }
+
+  .loadingLink {
+    opacity: 0.6;
+    width: fit-content;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
  .projectsContainer {

@@ -23,7 +23,7 @@ const Skills = ({ stackList }: ISkillProps) => {
           <article className="skillsCard">
             <div>
               <i className="bi bi-code-slash"></i>
-              <h2 className="stackLabel">{t("home.stack-heading")} </h2>
+              <h2 className="stackLabel">{t("home.stack-heading")}</h2>
             </div>
             <div className="iconContainer">
               {stackList.map((stack) => {
@@ -81,7 +81,9 @@ const Skills = ({ stackList }: ISkillProps) => {
                 <div className="languageItem" key={language.id}>
                   <div className="skillName">
                     <p className="languageFlag">{language.flag}</p>
-                    <p className="languageName">{t(`home.lang-skills.${language.name}`)}</p>
+                    <p className="languageName">
+                      {t(`home.lang-skills.${language.name}`)}
+                    </p>
                   </div>
                   <div className="languageBar"></div>
                   <p className="percentage">100%</p>
