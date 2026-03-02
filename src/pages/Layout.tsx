@@ -31,30 +31,31 @@ const Layout = () => {
             <i className={`bi ${isMenuClicked ? "bi-x" : "bi-list"}`}></i>
           </div>
 
-          <div className="desktopMenu">
-            <div className="languageSelectorWrapper desktop" ref={languageRef}>
-              <div
-                className="languageSelector"
-                onMouseDown={(e) => {
-                  e.stopPropagation();
-                  toggleLanguageMenu();
-                }}
-              >
-                <i className="bi bi-globe"></i>
-                <p className="selectedLang">{currentLang.toUpperCase()}</p>
-              </div>
-              <AnimatePresence>
-                {isLanguageOpen && (
-                  <LanguageModal
-                    currentLang={currentLang}
-                    onSelectLanguage={(lang) => {
-                      changeLanguage(lang);
-                      toggleLanguageMenu();
-                    }}
-                  />
-                )}
-              </AnimatePresence>
+          <div className="languageSelectorWrapper desktop" ref={languageRef}>
+            <div
+              className="languageSelector"
+              onMouseDown={(e) => {
+                e.stopPropagation();
+                toggleLanguageMenu();
+              }}
+            >
+              <i className="bi bi-globe"></i>
+              <p className="selectedLang">{currentLang.toUpperCase()}</p>
             </div>
+            <AnimatePresence>
+              {isLanguageOpen && (
+                <LanguageModal
+                  currentLang={currentLang}
+                  onSelectLanguage={(lang) => {
+                    changeLanguage(lang);
+                    toggleLanguageMenu();
+                  }}
+                />
+              )}
+            </AnimatePresence>
+          </div>
+
+          <div className="desktopMenu">
             <ul>
               <motion.li whileHover={{ scale: 1.2 }}>
                 <NavLink
@@ -66,10 +67,18 @@ const Layout = () => {
               </motion.li>
               <motion.li whileHover={{ scale: 1.2 }}>
                 <NavLink
-                  to="/projects"
-                  className={location.pathname === "/projects" ? "matched" : ""}
+                  to="/portfolio"
+                  className={location.pathname === "/portfolio" ? "matched" : ""}
                 >
-                  {t("navigation.projects")}
+                  {t("navigation.portfolio")}
+                </NavLink>
+              </motion.li>
+              <motion.li whileHover={{ scale: 1.2 }}>
+                <NavLink
+                  to="/in-progress"
+                  className={location.pathname === "/in-progress" ? "matched" : ""}
+                >
+                  {t("navigation.inProgress")}
                 </NavLink>
               </motion.li>
               <motion.li whileHover={{ scale: 1.2 }}>
@@ -102,9 +111,15 @@ const Layout = () => {
               </NavLink>
             </motion.li>
             <motion.li whileHover={{ scale: 1.2 }}>
+              <i className="bi bi-briefcase-fill"></i>
+              <NavLink to={"/portfolio"} onClick={closeMenu}>
+                {t("navigation.portfolio")}
+              </NavLink>
+            </motion.li>
+            <motion.li whileHover={{ scale: 1.2 }}>
               <i className="bi bi-laptop-fill"></i>
-              <NavLink to={"/projects"} onClick={closeMenu}>
-                {t("navigation.projects")}
+              <NavLink to={"/in-progress"} onClick={closeMenu}>
+                {t("navigation.inProgress")}
               </NavLink>
             </motion.li>
             <motion.li whileHover={{ scale: 1.2 }}>
@@ -164,8 +179,12 @@ const Layout = () => {
                   <NavLink to={"/"}>{t("navigation.home")}</NavLink>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.2 }}>
+                  <i className="bi bi-briefcase-fill"></i>
+                  <NavLink to={"/portfolio"}>{t("navigation.portfolio")}</NavLink>
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.2 }}>
                   <i className="bi bi-laptop-fill"></i>
-                  <NavLink to={"/projects"}>{t("navigation.projects")}</NavLink>
+                  <NavLink to={"/in-progress"}>{t("navigation.inProgress")}</NavLink>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.2 }}>
                   <i className="bi bi-file-person-fill"></i>

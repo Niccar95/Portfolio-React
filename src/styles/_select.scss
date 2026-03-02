@@ -4,9 +4,12 @@
   position: relative;
 
   &.desktop {
-    position: absolute;
-    right: 500px;
-    align-self: center;
+    display: none;
+
+    @include desktop() {
+      display: flex;
+      align-self: center;
+    }
   }
 
   &.mobile {

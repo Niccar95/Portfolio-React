@@ -15,7 +15,8 @@
   },
     "navigation": {
       "home": "Hem",
-      "projects": "Projekt",
+      "portfolio": "Portfölj",
+      "inProgress": "Pågående",
       "about": "Om mig",
       "contact": "Kontakt"
     },
@@ -35,7 +36,7 @@
       "paragraph3": "Jag ser verkligen fram emot möjligheten att bidra med min energi och mina färdigheter."
     },
       "contact": {
-        "heading": "Kontakt",
+        "heading": "Kontakta Mig",
         "social": {
           "title": "Ta kontakt med mig:",
           "description": "Du är varmt välkommen att kontakta mig via plattformarna nedan, direkt via e-post eller genom kontaktformuläret.",
@@ -63,7 +64,7 @@
         }
       },
       "projects": {
-        "heading": "Mina Projekt",
+        "heading": "Min Portfölj",
         "no-projects": "Inga projekt tillgängliga just nu.",
         "before": "Före:",
         "after": "Efter:",
@@ -106,6 +107,14 @@
           "next": "Nästa"
         },
 
+        "inProgress": {
+          "entries": {
+            "welcome": {
+              "title": "Välkommen!",
+              "description": "Den här sidan är dedikerad till att ge uppdateringar om mitt pågående arbete. Här får du en inblick i vad jag för tillfället bygger, lär mig eller experimenterar med."
+            }
+          }
+        },
         "skill-descriptions": {
           "stack": "Jag arbetar med JavaScript och TypeScript och använder ramverk som Vue.js och Next.js för att bygga webbapplikationer. Jag är bekant med stylingverktyg som Tailwind CSS och Sass och har erfarenhet av databaser som MongoDB och MySQL. Jag har även använt verktyg som Postman, Jest och Figma för att stödja utveckling och testning.",
           "languages": "Jag kan tryggt kommunicera på svenska, spanska och engelska, både i tal och skrift, och anpassar mitt språk efter professionella och sociala sammanhang."

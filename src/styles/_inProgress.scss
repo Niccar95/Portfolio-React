@@ -1,0 +1,103 @@
+@use "breakpoints" as *;
+
+.workEntriesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+
+  @include desktop() {
+    gap: 2rem;
+  }
+}
+
+.workEntry {
+  position: relative;
+  background-color: #222426;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid #e52e71;
+    border-left: 5px solid #e52e71;
+    border-radius: 1rem 0 0 0;
+  }
+
+  @include desktop() {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .workEntryImage {
+    width: 100%;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    @include desktop() {
+      width: 280px;
+      height: 180px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .workEntryImagePlaceholder {
+    width: 100%;
+    height: 100%;
+    background-color: #2e3135;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+
+    i {
+      font-size: 48px;
+      color: #555;
+    }
+  }
+
+  .workEntryContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+  }
+
+  .workEntryTitle {
+    font-size: 20px;
+    color: #ff8a00;
+    text-transform: none;
+
+    @include desktop() {
+      font-size: 24px;
+    }
+  }
+
+  .workEntryDate {
+    font-size: 13px;
+    color: #c5c5c5;
+  }
+
+  .workEntryDescription {
+    color: #f5f5f5;
+    line-height: 1.8;
+  }
+}

@@ -1,0 +1,41 @@
+import { useTranslation } from "react-i18next";
+import { useScrollTop } from "../hooks/useScrollTop";
+import { workEntries } from "../data/workEntries";
+
+const InProgress = () => {
+  const { t } = useTranslation();
+  useScrollTop();
+
+  return (
+    <section className="content">
+      <div className="headingContainer">
+        <h3 className="projectsHeading">
+          <i className="bi bi-laptop-fill"></i>
+          {t("navigation.inProgress")}
+        </h3>
+      </div>
+      <div className="workEntriesContainer">
+        {workEntries.map((entry) => (
+          <article className="workEntry" key={entry.id}>
+            <div className="workEntryImage">
+              {entry.image ? (
+                <img src={entry.image} alt={entry.title} />
+              ) : (
+                <div className="workEntryImagePlaceholder">
+                  <i className="bi bi-image"></i>
+                </div>
+              )}
+            </div>
+            <div className="workEntryContent">
+              <h3 className="workEntryTitle">{t(entry.title)}</h3>
+              <p className="workEntryDate">{entry.date}</p>
+              <p className="workEntryDescription">{t(entry.descrition)}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default InProgress;

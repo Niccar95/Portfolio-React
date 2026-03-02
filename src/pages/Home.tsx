@@ -23,7 +23,7 @@ const Home = () => {
       if (introHeadingRef.current) {
         introHeadingRef.current.classList.add("doneTyping");
       }
-    }, 2000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -44,7 +44,7 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setRun(true);
-    }, 2000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -69,7 +69,7 @@ const Home = () => {
           className="heroSection"
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         >
           <div className="avatarImageContainer">
             <motion.img
@@ -85,7 +85,7 @@ const Home = () => {
             className="introductionContainer"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
           >
             <h1 ref={introHeadingRef} className="introHeading">
               <span className="nameLabel1">Nicolas</span>{" "}
@@ -103,7 +103,7 @@ const Home = () => {
               className="introduction"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 4 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 2.1 }}
             >
               {t("home.presentation")}
             </motion.p>
@@ -111,7 +111,7 @@ const Home = () => {
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 5 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 2.5 }}
             >
               <motion.button
                 className="heroButton"

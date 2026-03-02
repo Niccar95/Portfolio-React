@@ -6,7 +6,7 @@ import { Pagination } from "../components/Pagination";
 import { useTranslation } from "react-i18next";
 import { useScrollTop } from "../hooks/useScrollTop";
 
-const Projects = () => {
+const Portfolio = () => {
   const { t } = useTranslation();
   useScrollTop();
 
@@ -48,7 +48,7 @@ const Projects = () => {
       <section className="content">
         <div className="headingContainer">
           <h3 className="projectsHeading">
-            <i className="bi bi-laptop-fill"></i>
+            <i className="bi bi-briefcase-fill"></i>
             {t("projects.heading")}
           </h3>
         </div>
@@ -66,4 +66,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Portfolio;

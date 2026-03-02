@@ -14,7 +14,8 @@
     },
     "navigation": {
       "home": "Home",
-      "projects": "Projects",
+      "portfolio": "Portfolio",
+      "inProgress": "In Progress",
       "about": "About",
       "contact": "Contact"
     },
@@ -32,7 +33,7 @@
        "paragraph3": "I'm really looking forward to the opportunity to contribute with my energy and skills."
       },
       "contact": {
-        "heading": "Contact",
+        "heading": "Contact Me",
         "social": {
           "title": "Connect with me:",
           "description": "Feel free to connect with me on the platforms below, by emailing me directly or reach out via the contact form.",
@@ -60,7 +61,7 @@
         }
       },
       "projects": {
-        "heading": "My Projects",
+        "heading": "My Portfolio",
         "no-projects": "No projects available at this moment.",
         "before": "Before:",
         "after": "After:",
@@ -103,7 +104,15 @@
         "next": "Next"
       },
       
-        "skill-descriptions": {
+        "inProgress": {
+        "entries": {
+          "welcome": {
+            "title": "Welcome!",
+            "description": "This page is dedicated to giving updates on my current work. Here, I will give you a look at what I'm currently building, learning, or experimenting with."
+          }
+        }
+      },
+      "skill-descriptions": {
           "stack": "I work with JavaScript and TypeScript, using frameworks like Vue.js and Next.js to build web applications. I’m familiar with styling tools like Tailwind CSS and Sass and have experience with databases like MongoDB and MySQL. I have also used tools like Postman, Jest, and Figma to support development and testing.",
           "languages": "I can confidently communicate in Swedish, Spanish, and English, both spoken and written, adapting my language to suit professional and social settings."
         }  
