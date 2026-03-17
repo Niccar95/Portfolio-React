@@ -17,20 +17,18 @@ const InProgress = () => {
       <div className="workEntriesContainer">
         {workEntries.map((entry) => (
           <article className="workEntry" key={entry.id}>
-            <div className="workEntryImage">
-              {entry.image ? (
-                <img src={entry.image} alt={entry.title} />
-              ) : (
-                <div className="workEntryImagePlaceholder">
-                  <i className="bi bi-image"></i>
-                </div>
-              )}
-            </div>
             <div className="workEntryContent">
               <h3 className="workEntryTitle">{t(entry.title)}</h3>
               <p className="workEntryDate">{entry.date}</p>
               <p className="workEntryDescription">{t(entry.descrition)}</p>
             </div>
+            {entry.images.length > 0 && (
+              <div className="workEntryImages">
+                {entry.images.map((src, i) => (
+                  <img key={i} src={src} alt={`${entry.title} screenshot ${i + 1}`} />
+                ))}
+              </div>
+            )}
           </article>
         ))}
       </div>

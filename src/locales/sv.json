@@ -109,6 +109,10 @@
 
         "inProgress": {
           "entries": {
+            "areYouComing": {
+              "title": "Are You Coming?",
+              "description": "En enkel app för eventplanering där du kan skapa evenemang, dela dem med vänner och låta dem tacka ja eller nej, utan att gäster behöver ett konto. Den har en live-nedräkning, en deltagarlista med påminnelser via e-post, en kalendervy och en Spotify-inbäddning för att sätta stämningen. Byggd med Next.js App Router, TypeScript, PostgreSQL via Neon, NextAuth v5 för Google-inloggning och Tailwind CSS. Fler funktioner är på väg!"
+            },
             "welcome": {
               "title": "Välkommen!",
               "description": "Den här sidan är dedikerad till att ge uppdateringar om mitt pågående arbete. Här får du en inblick i vad jag för tillfället bygger, lär mig eller experimenterar med."

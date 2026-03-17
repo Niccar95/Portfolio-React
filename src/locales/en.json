@@ -106,6 +106,10 @@
       
         "inProgress": {
         "entries": {
+          "areYouComing": {
+            "title": "Are You Coming?",
+            "description": "A simple event planning app where you can create events, share them with friends, and let them RSVP, no account required for guests. It comes with a live countdown, an attendee list with email reminders, a calendar view, and a Spotify playlist embed to set the vibe for your event. Built with Next.js App Router, TypeScript, PostgreSQL via Neon, NextAuth v5 for Google sign-in, and Tailwind CSS. More features to come!"
+          },
           "welcome": {
             "title": "Welcome!",
             "description": "This page is dedicated to giving updates on my current work. Here, I will give you a look at what I'm currently building, learning, or experimenting with."
