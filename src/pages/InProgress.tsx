@@ -20,7 +20,9 @@ const InProgress = () => {
             <div className="workEntryContent">
               <h3 className="workEntryTitle">{t(entry.title)}</h3>
               <p className="workEntryDate">{entry.date}</p>
-              <p className="workEntryDescription">{t(entry.descrition)}</p>
+              {t(entry.descrition).split("\n\n").map((p, i) => (
+                <p className="workEntryDescription" key={i}>{p}</p>
+              ))}
             </div>
             {entry.images.length > 0 && (
               <div className="workEntryImages">
