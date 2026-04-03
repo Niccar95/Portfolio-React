@@ -106,6 +106,10 @@
       
         "inProgress": {
         "entries": {
+          "ariaAI": {
+            "title": "Aria AI",
+            "description": "My latest feature for Are You Coming? is Aria AI, an AI assistant built to help users understand and navigate the application.\n\nI am also working on another AI feature that will suggest titles and descriptions for planned events based on context.\n\nThis is my first real dive into AI integration and it has been very productive so far."
+          },
           "areYouComing": {
             "title": "Are You Coming?",
             "description": "A simple event planning app where you can create events, share them with friends, and let them RSVP, no account required for guests.\n\nIt comes with a live countdown, an attendee list with email reminders, a calendar view, and a Spotify playlist embed to set the vibe for your event.\n\nBuilt with Next.js App Router, TypeScript, PostgreSQL via Neon, NextAuth v5 for Google sign-in, and Tailwind CSS. More features to come!"
