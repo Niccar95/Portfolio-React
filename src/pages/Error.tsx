@@ -16,7 +16,7 @@ const Error = () => {
     >
       <h1 className="notFound">404 Page not found!</h1>
       <motion.button
-        whileHover={{ scale: 1.1 }}
+        whileHover={{ scale: 1.05 }}
         transition={{ duration: 0.2 }}
         onClick={returnHome}
         className="returnButton"

@@ -76,7 +76,7 @@ export const ContactForm = () => {
         <div className="linkContainer">
           <div className="socialIconLinks">
             <motion.a
-              whileHover={{ scale: 1.2 }}
+              whileHover={{ scale: 1.08 }}
               href="https://github.com/Niccar95"
               target="_blank"
               rel="noopener noreferrer"
@@ -85,7 +85,7 @@ export const ContactForm = () => {
               <i className="bi bi-github"></i>
             </motion.a>
             <motion.a
-              whileHover={{ scale: 1.2 }}
+              whileHover={{ scale: 1.08 }}
               href="https://www.linkedin.com/in/nicolas-carrasco-6882402a5/"
               target="_blank"
               rel="noopener noreferrer"
@@ -175,7 +175,7 @@ export const ContactForm = () => {
           <motion.button
             type="submit"
             className="submitButton"
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
           >
             <i className="bi bi-send"></i>
@@ -287,7 +287,7 @@ export const ContactForm = () => {
           <div className="linkContainer">
             <div className="socialIconLinks">
               <motion.a
-                whileHover={{ scale: 1.2 }}
+                whileHover={{ scale: 1.08 }}
                 href="https://github.com/Niccar95"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -296,7 +296,7 @@ export const ContactForm = () => {
                 <i className="bi bi-github"></i>
               </motion.a>
               <motion.a
-                whileHover={{ scale: 1.2 }}
+                whileHover={{ scale: 1.08 }}
                 href="https://www.linkedin.com/in/nicolas-carrasco-6882402a5/"
                 target="_blank"
                 rel="noopener noreferrer"

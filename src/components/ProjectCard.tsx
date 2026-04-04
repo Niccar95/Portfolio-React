@@ -146,7 +146,7 @@ const ProjectCard = ({ project }: IProjectProps) => {
               </div>
               <motion.button
                 onClick={() => setIsExpanded(false)}
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
                 <i className="bi bi-x-circle"></i>
