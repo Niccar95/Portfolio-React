@@ -24,11 +24,15 @@ const InProgress = () => {
                 <p className="workEntryDescription" key={i}>{p}</p>
               ))}
             </div>
-            {entry.images.length > 0 && (
+            {entry.images.length > 0 ? (
               <div className="workEntryImages">
                 {entry.images.map((src, i) => (
                   <img key={i} src={src} alt={`${entry.title} screenshot ${i + 1}`} />
                 ))}
+              </div>
+            ) : (
+              <div className="workEntryImagePlaceholder">
+                <i className="bi bi-image"></i>
               </div>
             )}
           </article>

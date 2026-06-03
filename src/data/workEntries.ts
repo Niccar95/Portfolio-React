@@ -1,5 +1,12 @@
 export const workEntries = [
   {
+    id: 4,
+    title: "inProgress.entries.slowProgress.title",
+    descrition: "inProgress.entries.slowProgress.description",
+    date: "03/06/2026",
+    images: ["/work-entries/aria-ai-2.png"],
+  },
+  {
     id: 3,
     title: "inProgress.entries.ariaAI.title",
     descrition: "inProgress.entries.ariaAI.description",

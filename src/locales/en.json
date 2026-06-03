@@ -106,6 +106,10 @@
       
         "inProgress": {
         "entries": {
+          "slowProgress": {
+            "title": "Aria AI Mini Assistant Progress",
+            "description": "Progress on Are You Coming? has been slower lately. Between side work and life in general, there has not been much time to sit down and build.\n\nThat said, the mini AI assistant is working well. It generates writing suggestions for users who are not sure what to put as a title or description for their event.\n\nImprovements to the AI features are planned for the future, but for now it is a solid foundation to build on."
+          },
           "ariaAI": {
             "title": "Aria AI",
             "description": "My latest feature for Are You Coming? is Aria AI, an AI assistant built to help users understand and navigate the application.\n\nI am also working on another AI feature that will suggest titles and descriptions for planned events based on context.\n\nThis is my first real dive into AI integration and it has been very productive so far."

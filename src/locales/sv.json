@@ -109,6 +109,10 @@
 
         "inProgress": {
           "entries": {
+            "slowProgress": {
+              "title": "Framsteg med Aria AI miniassistenten",
+              "description": "Arbetet med Are You Coming? har gått lite långsammare på sistone. Mellan sidojobb och livet i allmänhet har det inte funnits så mycket tid att sätta sig ner och bygga.\n\nMed det sagt så fungerar den lilla AI-assistenten bra. Den genererar skrivförslag åt användare som inte vet vad de ska skriva som titel eller beskrivning för sitt evenemang.\n\nFörbättringar av AI-funktionerna är planerade inför framtiden, men för tillfället är det en stabil grund att bygga vidare på."
+            },
             "ariaAI": {
               "title": "Aria AI",
               "description": "Min senaste funktion i Are You Coming? är Aria AI, en AI-assistent som hjälper användare att förstå och navigera i applikationen.\n\nJag jobbar också på en annan AI-funktion som ska föreslå titlar och beskrivningar till planerade evenemang baserat på kontext.\n\nDet här är mitt första riktiga steg in i AI-integrering och det har gått väldigt bra hittills."
