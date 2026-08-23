@@ -106,13 +106,17 @@
       
         "inProgress": {
         "entries": {
+           "emailRemindersAndMore": {
+            "title": "Important new feature and more",
+            "description": "I recently added a new event reminder feature for event creators in the 'Are You Coming?' project. This has been a feature I've waited too long to implement, but now it's finally here. The feature makes use of EmailJS as a third party service for sending out emails to event attendees and works great so far (at least for the current scale of the project).\n\nThe other improvement to the project has been a proper popup modal for calendar days that displays the date, events and a button to add events without having to navigate away from the calendar page, ensuring accessibility."
+          },
           "slowProgress": {
             "title": "Aria AI Mini Assistant Progress",
-            "description": "Progress on Are You Coming? has been slower lately. Between side work and life in general, there has not been much time to sit down and build.\n\nThat said, the mini AI assistant is working well. It generates writing suggestions for users who are not sure what to put as a title or description for their event.\n\nImprovements to the AI features are planned for the future, but for now it is a solid foundation to build on."
+            "description": "Progress on 'Are You Coming?' has been slower lately. Between side work and life in general, there has not been much time to sit down and build.\n\nThat said, the mini AI assistant is working well. It generates writing suggestions for users who are not sure what to put as a title or description for their event.\n\nImprovements to the AI features are planned for the future, but for now it is a solid foundation to build on."
           },
           "ariaAI": {
             "title": "Aria AI",
-            "description": "My latest feature for Are You Coming? is Aria AI, an AI assistant built to help users understand and navigate the application.\n\nI am also working on another AI feature that will suggest titles and descriptions for planned events based on context.\n\nThis is my first real dive into AI integration and it has been very productive so far."
+            "description": "My latest feature for 'Are You Coming?' is Aria AI, an AI assistant built to help users understand and navigate the application.\n\nI am also working on another AI feature that will suggest titles and descriptions for planned events based on context.\n\nThis is my first real dive into AI integration and it has been very productive so far."
           },
           "areYouComing": {
             "title": "Are You Coming?",

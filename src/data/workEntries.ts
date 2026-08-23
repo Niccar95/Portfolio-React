@@ -1,5 +1,17 @@
 export const workEntries = [
   {
+    id: 5,
+    title: "inProgress.entries.emailRemindersAndMore.title",
+    descrition: "inProgress.entries.emailRemindersAndMore.description",
+    date: "23/08/2026",
+    images: [
+      "/work-entries/are-you-coming-8.png",
+      "/work-entries/are-you-coming-9.png",
+      "/work-entries/are-you-coming-10.png",
+      "/work-entries/are-you-coming-11.png",
+    ],
+  },
+  {
     id: 4,
     title: "inProgress.entries.slowProgress.title",
     descrition: "inProgress.entries.slowProgress.description",

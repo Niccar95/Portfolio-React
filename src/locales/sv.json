@@ -109,13 +109,17 @@
 
         "inProgress": {
           "entries": {
+            "emailRemindersAndMore": {
+              "title": "Viktig ny funktion och mer",
+              "description": "Jag har nyligen lagt till en ny påminnelsefunktion för evenemangsskapare i projektet 'Are You Coming?'. Det här är en funktion som jag har väntat alldeles för länge med att implementera, men nu är den äntligen här. Funktionen använder EmailJS som en tredjepartstjänst för att skicka ut e-post till evenemangsdeltagare och fungerar riktigt bra hittills (åtminstone i projektets nuvarande skala).\n\nDen andra förbättringen i projektet är en ordentlig popup-modal för kalenderdagar som visar datum, evenemang och en knapp för att lägga till evenemang utan att behöva navigera bort från kalendersidan, vilket förbättrar tillgängligheten."
+            },
             "slowProgress": {
               "title": "Framsteg med Aria AI miniassistenten",
-              "description": "Arbetet med Are You Coming? har gått lite långsammare på sistone. Mellan sidojobb och livet i allmänhet har det inte funnits så mycket tid att sätta sig ner och bygga.\n\nMed det sagt så fungerar den lilla AI-assistenten bra. Den genererar skrivförslag åt användare som inte vet vad de ska skriva som titel eller beskrivning för sitt evenemang.\n\nFörbättringar av AI-funktionerna är planerade inför framtiden, men för tillfället är det en stabil grund att bygga vidare på."
+              "description": "Arbetet med Are 'You Coming?' har gått lite långsammare på sistone. Mellan sidojobb och livet i allmänhet har det inte funnits så mycket tid att sätta sig ner och bygga.\n\nMed det sagt så fungerar den lilla AI-assistenten bra. Den genererar skrivförslag åt användare som inte vet vad de ska skriva som titel eller beskrivning för sitt evenemang.\n\nFörbättringar av AI-funktionerna är planerade inför framtiden, men för tillfället är det en stabil grund att bygga vidare på."
             },
             "ariaAI": {
               "title": "Aria AI",
-              "description": "Min senaste funktion i Are You Coming? är Aria AI, en AI-assistent som hjälper användare att förstå och navigera i applikationen.\n\nJag jobbar också på en annan AI-funktion som ska föreslå titlar och beskrivningar till planerade evenemang baserat på kontext.\n\nDet här är mitt första riktiga steg in i AI-integrering och det har gått väldigt bra hittills."
+              "description": "Min senaste funktion i 'Are You Coming?' är Aria AI, en AI-assistent som hjälper användare att förstå och navigera i applikationen.\n\nJag jobbar också på en annan AI-funktion som ska föreslå titlar och beskrivningar till planerade evenemang baserat på kontext.\n\nDet här är mitt första riktiga steg in i AI-integrering och det har gått väldigt bra hittills."
             },
             "areYouComing": {
               "title": "Are You Coming?",
