@@ -109,6 +109,10 @@
 
         "inProgress": {
           "entries": {
+           "QoLImprovements": {
+             "title": "Plattformsförbättringar & Navigeringsfunktioner",
+             "description": "Det senaste arbetet på 'Are You Coming?' plattformen har varit en del Quality of Life förbättringar, som ett deltagarantal på eventsidorna, ett nytt meddelande som talar om för deltagarna när eventet är pågående (när timern löper ut) och ett meddelande för när eventet har passerat. Detta är för närvarande inställt på att visas dagen efter eventet, eftersom jag fortfarande inte har gjort det möjligt att lägga till sluttider för event.\n\nPlattformen är nu också en PWA (Progressive Web App) vilket innebär att den kan installeras på både dator och mobil, och jag kommer att försöka lägga till stöd för iOS inom kort. Jag lade också till en ny inbäddad Google karta som visar den valda eventplatsen, vilket jag kände var ett mycket välbehövligt tillägg. Slutligen finns det nu en knapp för att lägga till eventdata i en användares Google Calendar, vilket innebär fler alternativ för användare som vill hantera sina eventinbjudningar."
+            },
             "emailRemindersAndMore": {
               "title": "Viktig ny funktion och mer",
               "description": "Jag har nyligen lagt till en ny påminnelsefunktion för evenemangsskapare i projektet 'Are You Coming?'. Det här är en funktion som jag har väntat alldeles för länge med att implementera, men nu är den äntligen här. Funktionen använder EmailJS som en tredjepartstjänst för att skicka ut e-post till evenemangsdeltagare och fungerar riktigt bra hittills (åtminstone i projektets nuvarande skala).\n\nDen andra förbättringen i projektet är en ordentlig popup-modal för kalenderdagar som visar datum, evenemang och en knapp för att lägga till evenemang utan att behöva navigera bort från kalendersidan, vilket förbättrar tillgängligheten."

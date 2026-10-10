@@ -1,8 +1,20 @@
 export const workEntries = [
   {
+    id: 6,
+    title: "inProgress.entries.QoLImprovements.title",
+    description: "inProgress.entries.QoLImprovements.description",
+    date: "10/10/2026",
+    images: [
+      "/work-entries/are-you-coming-12.png",
+      "/work-entries/are-you-coming-13.png",
+      "/work-entries/are-you-coming-14.png",
+      "/work-entries/are-you-coming-15.png",
+    ],
+  },
+  {
     id: 5,
     title: "inProgress.entries.emailRemindersAndMore.title",
-    descrition: "inProgress.entries.emailRemindersAndMore.description",
+    description: "inProgress.entries.emailRemindersAndMore.description",
     date: "23/08/2026",
     images: [
       "/work-entries/are-you-coming-8.png",
@@ -14,21 +26,21 @@ export const workEntries = [
   {
     id: 4,
     title: "inProgress.entries.slowProgress.title",
-    descrition: "inProgress.entries.slowProgress.description",
+    description: "inProgress.entries.slowProgress.description",
     date: "03/06/2026",
     images: ["/work-entries/aria-ai-2.png"],
   },
   {
     id: 3,
     title: "inProgress.entries.ariaAI.title",
-    descrition: "inProgress.entries.ariaAI.description",
+    description: "inProgress.entries.ariaAI.description",
     date: "03/04/2026",
     images: ["/work-entries/aria-ai.png"],
   },
   {
     id: 2,
     title: "inProgress.entries.areYouComing.title",
-    descrition: "inProgress.entries.areYouComing.description",
+    description: "inProgress.entries.areYouComing.description",
     date: "17/03/2026",
     images: [
       "/work-entries/are-you-coming-1.png",
@@ -42,7 +54,7 @@ export const workEntries = [
   {
     id: 1,
     title: "inProgress.entries.welcome.title",
-    descrition: "inProgress.entries.welcome.description",
+    description: "inProgress.entries.welcome.description",
     date: "02/03/2026",
     images: [],
   },

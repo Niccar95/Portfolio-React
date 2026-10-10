@@ -105,7 +105,11 @@
       },
       
         "inProgress": {
-        "entries": {
+          "entries": {
+            "QoLImprovements": {
+              "title": "Platform Enhancements & Navigation Features",
+              "description": "The latest work on the 'Are You Coming?' platform has been some Quality of Life improvements like an attendee count on event pages, a new message that will tell attendees when the event is ongoing (when the timer expires) and one message for when the event has passed. This is currently set to show the day after the event since I still haven't made it possible to add event end times.\n\nThe platform is now also a PWA, meaning it can be installed on both desktop and mobile, and I will try to add iOS support soon. I also added a new embedded Google Map that shows the chosen event location, which I felt was a much needed addition. Finally, there is now a button to add the event data to a user's Google Calendar, which means more options for users who want to manage their event invitations."
+          },
            "emailRemindersAndMore": {
             "title": "Important new feature and more",
             "description": "I recently added a new event reminder feature for event creators in the 'Are You Coming?' project. This has been a feature I've waited too long to implement, but now it's finally here. The feature makes use of EmailJS as a third party service for sending out emails to event attendees and works great so far (at least for the current scale of the project).\n\nThe other improvement to the project has been a proper popup modal for calendar days that displays the date, events and a button to add events without having to navigate away from the calendar page, ensuring accessibility."
