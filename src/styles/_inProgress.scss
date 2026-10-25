@@ -50,6 +50,7 @@
 
     @include desktop() {
       width: 45%;
+      height: auto;
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -95,6 +96,8 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    max-height: 408px;
+    overflow-y: auto;
 
     @include desktop() {
       flex: 1;
