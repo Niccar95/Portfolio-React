@@ -1,5 +1,16 @@
 export const workEntries = [
   {
+    id: 7,
+    title: "inProgress.entries.responseManagement.title",
+    description: "inProgress.entries.responseManagement.description",
+    date: "25/10/2026",
+    images: [
+      "/work-entries/are-you-coming-16.png",
+      "/work-entries/are-you-coming-17.png",
+      "/work-entries/are-you-coming-18.png",
+    ],
+  },
+  {
     id: 6,
     title: "inProgress.entries.QoLImprovements.title",
     description: "inProgress.entries.QoLImprovements.description",
