@@ -1,3 +1,4 @@
+
 @use "breakpoints" as *;
 
 .heroSection {
@@ -98,29 +99,29 @@
       }
 
         .introSubheading {
-          font-size: 22px;
+          font-size: 25px;
           
           @include small-desktop() {
-            font-size: 25px;
-          }
-          
-          @include desktop() {
             font-size: 30px;
           }
           
+          @include desktop() {
+            font-size: 35px;
+          }
+          
           @include large-desktop() {
-            font-size: 48px;
+            font-size: 52px;
           }
         }
       }
 
 .introSubheading.sv {
-  animation: typing-sub-sv 1s steps(19, end) forwards, blink 1s step-end infinite;
+  animation: typing-sub-sv 1s steps(10, end) forwards, blink 1s step-end infinite;
 
 }
 
 .introSubheading.en {
-  animation: typing-sub-en 1s steps(18, end) forwards, blink 1s step-end infinite;
+  animation: typing-sub-en 1s steps(9, end) forwards, blink 1s step-end infinite;
 
 }
 
@@ -138,7 +139,7 @@
           width: 0;
         }
         to {
-          width: 18ch;
+          width: 9ch;
         }
       }
 
@@ -147,7 +148,7 @@
           width: 0;
         }
         to {
-          width: 19ch;
+          width: 10ch;
         }
       }
 
@@ -170,9 +171,6 @@
             line-height: 2.2;
                margin: 0.5rem 0rem 3.5rem 0rem;
           }
-      }
-     
+      } 
   
     }
-  
-  

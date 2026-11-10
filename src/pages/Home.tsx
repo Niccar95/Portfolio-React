@@ -89,13 +89,12 @@ const Home = () => {
           >
             <h1 ref={introHeadingRef} className="introHeading">
               <span className="nameLabel1">Nicolas</span>{" "}
-              <span className="nameLabel2">Carrasco</span>
+              <span className="nameLabel1">Carrasco</span>
             </h1>
 
             {run && (
               <h1 className={`introHeading introSubheading ${currentLang}`}>
-                <span className="nameLabel2">Frontend</span>{" "}
-                <span className="nameLabel1">{t("home.occupation")}</span>
+                <span className="nameLabel2">{t("home.occupation")}</span>
               </h1>
             )}
 
