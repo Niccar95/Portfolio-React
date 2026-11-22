@@ -106,6 +106,12 @@
       
         "inProgress": {
           "entries": {
+
+           "dashboardImprovements": {
+             "title": "Expanded Dashboard & Improved Event Management",
+             "description": "I've continued expanding the dashboard in 'Are You Coming?', introducing new features that make it easier for event creators to keep track of their events and manage attendee responses.\n\nOne of the additions is a response log that allows event creators to see how invited guests respond to their invitations. This provides a clearer overview of who is coming, who is unsure, and who won't be attending, making it easier to keep track of attendee responses.\n\nI've also added quick sharing links, allowing users to copy the invitation link for their most recent event directly from the dashboard. This eliminates the need to navigate through the application to find an event just to copy and share its link.\n\nThese additions lay the groundwork for a more advanced dashboard, with the goal of bringing more useful tools together and giving event creators quicker and easier access to important information and frequently used actions."
+          },
+
             "responseManagement": {
               "title": "RSVP Response Management & Dashboard Development",
               "description": "I've been improving the RSVP system in 'Are You Coming?', focusing on how attendees submit and update their responses through personal links. Each link contains a unique token that identifies the attendee's response for a specific event, allowing guests to update their RSVP without needing an account. I've been refining the API and database logic for retrieving responses, validating tokens, and updating stored response statuses: coming, unsure, and skipping.\n\nI've also been working on making attendee registration and confirmation emails more reliable. This includes improving error handling between the attendee API, database service, and EmailJS, so that a failed email request doesn't leave a registration saved when the submission is reported as unsuccessful. The work has involved tightening the relationship between database transactions and email sending, as well as improving how the application handles unsuccessful requests.\n\nAlongside these changes, I've started expanding the dashboard to provide event creators with more useful event management functionality. This is the beginning of a broader set of dashboard improvements, with further development planned to make managing created events more convenient and accessible."

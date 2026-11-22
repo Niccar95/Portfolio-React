@@ -1,5 +1,16 @@
 export const workEntries = [
   {
+    id: 8,
+    title: "inProgress.entries.dashboardImprovements.title",
+    description: "inProgress.entries.dashboardImprovements.description",
+    date: "22/11/2026",
+    images: [
+      "/work-entries/are-you-coming-19.png",
+      "/work-entries/are-you-coming-20.png",
+      "/work-entries/are-you-coming-21.png",
+    ],
+  },
+  {
     id: 7,
     title: "inProgress.entries.responseManagement.title",
     description: "inProgress.entries.responseManagement.description",
